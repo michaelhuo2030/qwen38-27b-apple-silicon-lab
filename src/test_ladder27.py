@@ -25,8 +25,8 @@ import sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from ladder27 import (  # noqa: E402
-    Answer, ConfigError, Ladder, MTP_RE, SENTINELS, SAMPLING, SentinelReport,
-    TIERS, weighted_alpha, validate_config,
+    Answer, BY_ID, ConfigError, Ladder, MTP_RE, SENTINELS, SAMPLING,
+    SentinelReport, TIERS, validate_config, weighted_alpha,
 )
 
 FAILURES: list[str] = []
@@ -346,17 +346,28 @@ def t_answer_contract() -> None:
 # 9. 档位表
 # ======================================================================
 def t_tier_table() -> None:
-    ok(len(TIERS) == 4, f"应为 4 档，实际 {len(TIERS)}")
-    for k in ("ternary", "4bit", "6bit", "8bit"):
+    ok(len(TIERS) == 5, f"应为 5 档，实际 {len(TIERS)}")
+    for k in ("ternary", "oq3e", "4bit", "6bit", "8bit"):
         ok(k in TIERS, f"缺档位 {k}")
-    # 体积必须递增 —— 顺序反了说明填错
-    gbs = [TIERS[k]["gb"] for k in ("ternary", "4bit", "6bit", "8bit")]
-    ok(gbs == sorted(gbs), f"体积必须递增，实际 {gbs}")
+    # 体积必须递增 —— 顺序反了说明填错。
+    # ⚠️ oq3e 故意不参与递增断言：它和 ternary 是**同级的两个 3-bit**
+    # （13.81 vs 13.86 GB），不是更低一档。把它塞进递增序列会让断言必挂，
+    # 而真正该守的是「完整阶梯 3→4→6→8 单调」+「两个 3-bit 体量相当」。
+    ladder = ["ternary", "4bit", "6bit", "8bit"]
+    gbs = [TIERS[k]["gb"] for k in ladder]
+    ok(gbs == sorted(gbs), f"阶梯体积必须递增，实际 {gbs}")
+    ratio = TIERS["oq3e"]["gb"] / TIERS["ternary"]["gb"]
+    ok(0.90 <= ratio <= 1.10,
+       f"oq3e 与 ternary 应为同一体量级（3-bit 档），实际比值 {ratio:.3f}")
     # id 不能重复，否则切档会切错
     ids = [v["id"] for v in TIERS.values()]
-    ok(len(set(ids)) == 4, f"模型 id 重复: {ids}")
+    dup = sorted({i for i in ids if ids.count(i) > 1})
+    ok(not dup, f"模型 id 重复: {dup}")
     # 每档都要记 bpw
     ok(all("bpw" in v for v in TIERS.values()), "每档必须记 bpw")
+    # BY_ID 必须能反查（runner 靠它把 oMLX 返回的 id 映射回档位名）
+    ok(BY_ID.get(TIERS["oq3e"]["id"]) == "oq3e",
+       f"BY_ID 反查失败: {BY_ID.get(TIERS['oq3e']['id'])}")
     guard_fires(lambda: Ladder("3bit", verbose=False), KeyError, "未知档位必须拒绝")
     guard_fires(lambda: Ladder("ternary", ane=True, oq_a8=True, verbose=False),
                 ConfigError, "Ladder 构造必须做配置校验")

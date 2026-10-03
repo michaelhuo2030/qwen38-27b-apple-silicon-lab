@@ -42,6 +42,31 @@ SYSTEM = (
     "4. 确认通过后，用一两句话总结你改了什么，然后停止调用工具。"
 )
 
+# 长程场景额外强调：必须先搜、只改真正不一致的地方。
+# 「全部改一遍」在这个场景会被对照项判负，所以这句不是提示而是判据。
+SYSTEM_LONG = (
+    "你是一个能使用工具的编程助手。工具会自动执行并把结果返回给你。\n"
+    "规则：\n"
+    "1. 先用 search_docs / list_dir / read_file 收集信息，再动手改。\n"
+    "2. 需要修改文件时必须调用 write_file，不要只在对话里贴代码。\n"
+    "3. **只修改真正与文档不一致的地方**。已经一致的地方不要动。\n"
+    "4. 可能有**多处**不一致，要全部找出来并修完。\n"
+    "5. 改完必须调用 run_tests 确认全部通过，"
+    "然后用一两句话总结改了什么，然后停止调用工具。"
+)
+
+
+def probe_for(module: str):
+    """返回 (探针模块, SYSTEM 提示词, 默认输出文件名)。
+
+    short → agent_loop：单文件单 bug，6 轮量级
+    long  → agent_long ：多文件多漂移 + 对照项 + search_docs，需 20+ 轮
+    """
+    if module == "short":
+        return G, SYSTEM, "agent_loop.json"
+    import agent_long as GL
+    return GL, SYSTEM_LONG, "agent_long.json"
+
 
 def _api_key() -> str:
     return L._api_key()
@@ -86,11 +111,14 @@ def chat(messages: list[dict], tools: list[dict], max_tokens: int,
     }
 
 
-def run_episode(scenario: dict, think: bool, max_turns: int) -> dict:
+def run_episode(scenario: dict, think: bool, max_turns: int,
+                probe=None, system: str = None) -> dict:
     """跑完一整局：多轮 + 工具执行 + 结果回灌。"""
-    vfs = G.make_vfs(scenario["files"])
+    P = probe or G
+    SYS = system or SYSTEM
+    vfs = P.make_vfs(scenario["files"])
     msgs = [
-        {"role": "system", "content": SYSTEM},
+        {"role": "system", "content": SYS},
         {"role": "user", "content": f"[run/{time.time_ns()}] {scenario['task']}"},
     ]
     transcript: list[dict] = []
@@ -98,7 +126,7 @@ def run_episode(scenario: dict, think: bool, max_turns: int) -> dict:
     error = None
 
     for turn in range(max_turns):
-        r = chat(msgs, G.TOOLS, max_tokens=768, think=think)
+        r = chat(msgs, P.TOOLS, max_tokens=768, think=think)
         total_ctok += r.get("completion_tokens") or 0
         if r.get("error"):
             error = r["error"]
@@ -120,14 +148,17 @@ def run_episode(scenario: dict, think: bool, max_turns: int) -> dict:
                 args = json.loads(fn.get("arguments") or "{}")
             except Exception:
                 args = {}
-            rec = G._mk(vfs, name, **args)   # 复用 _mk：会记 no_op
+            # agent_long 的 _mk 需要 scenario 才能跑 run_tests，签名不同；
+            # 这里按探针类型分派，别让两个模块的假设互相污染
+            rec = (P._mk_l(vfs, scenario, name, **args) if hasattr(P, "_mk_l")
+                   else P._mk(vfs, name, **args))
             transcript.append(rec)
             msgs.append({"role": "tool", "tool_call_id": tc.get("id", "x"),
                          "name": name, "content": str(rec["result"])[:2000]})
     else:
         error = error or f"max_turns({max_turns}) reached"
 
-    m = G.episode_metrics(transcript, vfs, scenario)
+    m = P.episode_metrics(transcript, vfs, scenario)
     m["max_turns"] = max_turns
     m["completion_tokens"] = total_ctok
     m["error"] = error
@@ -141,32 +172,45 @@ def run_episode(scenario: dict, think: bool, max_turns: int) -> dict:
     return m
 
 
-def task_version() -> str:
+def task_version(probe=None, system: str = None) -> str:
     """场景 + 工具 schema + system prompt 的指纹。任一改动即换版。"""
+    P = probe or G
+    SYS = system or SYSTEM
     h = hashlib.sha256()
-    for s in G.SCENARIOS:
-        h.update(f"{s['key']}|{s['target']}|{s['fn_name']}|{s['task']}|".encode())
+    for s in P.LONG_TASKS if hasattr(P, "LONG_TASKS") else P.SCENARIOS:
+        h.update(f"{s['key']}|{s['task']}|".encode())
         for p, c in sorted(s["files"].items()):
             h.update(f"{p}={c}|".encode())
-    h.update(json.dumps(G.TOOLS, sort_keys=True, ensure_ascii=False).encode())
-    h.update(SYSTEM.encode())
+        for c in s.get("checks", []):
+            h.update(f"{c['name']}={c['fn']}{tuple(c['args'])}->{c['want']}|".encode())
+        for c in s.get("checks", []) or ([{"file": s["target"], "fn": s["fn_name"]}] if "target" in s else []):
+            h.update(f"t={c['file']}:{c['fn']}|".encode())
+    h.update(json.dumps(P.TOOLS, sort_keys=True, ensure_ascii=False).encode())
+    h.update(SYS.encode())
     return h.hexdigest()[:12]
 
 
 def main() -> int:
     ap = argparse.ArgumentParser()
+    ap.add_argument("--module", choices=["short", "long"], default="short",
+                    help="short=单文件单 bug(6轮)  long=多文件多漂移+对照项(20+轮)")
     ap.add_argument("--tiers", nargs="+", default=["ternary", "4bit", "6bit", "8bit"],
                     choices=list(L.TIERS))
     ap.add_argument("--reps", type=int, default=1)
     ap.add_argument("--think", action="store_true")
-    ap.add_argument("--max-turns", type=int, default=G.MAX_TURNS)
+    ap.add_argument("--max-turns", type=int, default=24,
+                    help="长程场景需要更多轮，默认给到 24（短程 16 也够）")
     ap.add_argument("--settle", type=float, default=15.0)
     ap.add_argument("--no-sentinel", action="store_true")
-    ap.add_argument("--out", default=os.path.join(RESULTS, "agent_loop.json"))
+    ap.add_argument("--out", default=None)
     a = ap.parse_args()
 
+    P, SYS, defname = probe_for(a.module)
+    scenarios = P.LONG_TASKS if hasattr(P, "LONG_TASKS") else P.SCENARIOS
+    a.out = a.out or os.path.join(RESULTS, defname)
+
     os.makedirs(RESULTS, exist_ok=True)
-    ver = task_version()
+    ver = task_version(P, SYS)
     rows: list[dict] = []
     if os.path.exists(a.out):
         try:
@@ -174,8 +218,8 @@ def main() -> int:
         except Exception:
             rows = []
     print(f"场景版本 {ver}；沿用同版本旧结果 {len(rows)} 行")
-    print(f"档位 {a.tiers}｜每场景每档 {a.reps} 次｜上限 {a.max_turns} 轮｜"
-          f"thinking {'on' if a.think else 'off'}")
+    print(f"探针 {a.module}｜档位 {a.tiers}｜每场景每档 {a.reps} 次｜"
+          f"上限 {a.max_turns} 轮｜thinking {'on' if a.think else 'off'}")
 
     for ti, tier in enumerate(a.tiers):
         if ti and a.settle:
@@ -204,8 +248,8 @@ def main() -> int:
 
         cfg = lad.describe()
         for rep in range(a.reps):
-            for sc in G.SCENARIOS:
-                m = run_episode(sc, a.think, a.max_turns)
+            for sc in scenarios:
+                m = run_episode(sc, a.think, a.max_turns, probe=P, system=SYS)
                 m["tier"] = tier
                 m["rep"] = rep
                 m["scenario"] = sc["key"]
@@ -225,10 +269,19 @@ def main() -> int:
                         flags.append("只读不写")
                     if m["looped"]:
                         flags.append(f"兜圈p{m['loop_period']}")
-                    if m["premature_done"]:
+                    # premature_done 只有短程探针有这个指标；长程探针改看
+                    # 对照项是否被改坏（过度修改）—— 用 [] 而不是 m["x"]，
+                    # 否则换探针就 KeyError（已踩过一次）
+                    if m.get("premature_done"):
                         flags.append("早退")
-                    if m["repeat_call_count"]:
-                        flags.append(f"重复调用{m['repeat_call_count']}")
+                    if m.get("control_broken"):
+                        flags.append(f"改坏对照{m['control_broken']}")
+                    if m.get("drift_total"):
+                        flags.append(f"漂移{m['drift_fixed']}/{m['drift_total']}")
+                    if m.get("n_search"):
+                        flags.append(f"搜{m['n_search']}")
+                    if m.get("repeat_call_count"):
+                        flags.append(f"重复{m['repeat_call_count']}")
                     extra = (f"  {m['turns']}轮 写{m['n_write']} 读{m['n_read']} "
                              f"测{m['n_test']}  {'/'.join(flags) if flags else '干净'}")
                 print(f"  rep{rep} {mark} {sc['key']:22s}{extra}")
@@ -241,17 +294,29 @@ def main() -> int:
     # 汇总
     tiers = [t for t in a.tiers if any(r.get("tier") == t for r in rows)]
     print(f"\n{'='*70}\n社区指控直接对照\n{'='*70}")
-    print(f"{'档位':10s}{'n':>4s}{'解决':>7s}{'写过文件':>10s}{'只读不写':>10s}"
-          f"{'兜圈':>7s}{'早退':>7s}{'平均轮数':>9s}")
+    head = (f"{'档位':10s}{'n':>4s}{'解决':>7s}{'写过文件':>10s}{'只读不写':>10s}"
+            f"{'兜圈':>7s}{'改坏对照':>9s}{'搜索次数':>10s}{'检查通过':>12s}{'平均轮数':>9s}"
+            if a.module == "long" else
+            f"{'档位':10s}{'n':>4s}{'解决':>7s}{'写过文件':>10s}{'只读不写':>10s}"
+            f"{'兜圈':>7s}{'早退':>7s}{'平均轮数':>9s}")
+    print(head)
     for t in tiers:
         c = [r for r in rows if r.get("tier") == t and not r.get("error")]
         n = len(c)
         if not n:
             continue
         f = lambda k: sum(1 for r in c if r.get(k))
-        print(f"{t:10s}{n:>4d}{f('solved'):>7d}{f('wrote_any_file'):>10d}"
-              f"{f('read_only_episode'):>10d}{f('looped'):>7d}"
-              f"{f('premature_done'):>7d}{sum(r['turns'] for r in c)/n:>9.1f}")
+        if a.module == "long":
+            chk = sum(r.get("checks_passed", 0) for r in c)
+            tot = sum(r.get("checks_total", 0) for r in c)
+            print(f"{t:10s}{n:>4d}{f('solved'):>7d}{f('wrote_any_file'):>10d}"
+                  f"{f('read_only_episode'):>10d}{f('looped'):>7d}"
+                  f"{f('control_broken'):>7d}{f('n_search') / n:>9.1f}"
+                  f"{chk:>6d}/{tot:<4d}{sum(r['turns'] for r in c)/n:>7.1f}")
+        else:
+            print(f"{t:10s}{n:>4d}{f('solved'):>7d}{f('wrote_any_file'):>10d}"
+                  f"{f('read_only_episode'):>10d}{f('looped'):>7d}"
+                  f"{f('premature_done'):>7d}{sum(r['turns'] for r in c)/n:>9.1f}")
     return 0
 
 

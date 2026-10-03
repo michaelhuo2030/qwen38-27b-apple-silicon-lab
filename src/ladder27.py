@@ -58,6 +58,11 @@ LOG = os.path.expanduser("~/.omlx/logs/omlx_launchd.log")
 
 TIERS: dict[str, dict[str, Any]] = {
     "ternary": {"id": "Qwen3.8-27B-ternary-oQ3-mtp", "gb": 13.86, "bpw": 3.70},
+    # oQ3e：同一条 oQ 流水线的真 3-bit（d9beuD 从 Qwen/Qwen3.8-27B 直接量化）。
+    # 与 ternary 的区别是**位宽覆盖更全**：155 个模块有逐模块位宽指定
+    # （92→146 个 5-bit、8 个 4-bit、1 个 6-bit），而 TokenAI-zer 那份
+    # 只有 100 个。这是检验「四档无差异是不是因为 oQ3 实际位宽不够低」的关键对照。
+    "oq3e":     {"id": "Qwen3.8-27B-oQ3e-mtp",        "gb": 13.81, "bpw": 3.60},
     "4bit":    {"id": "Qwen3.8-27B-oQ4e-mtp",       "gb": 16.97, "bpw": 4.70},
     "6bit":    {"id": "Qwen3.8-27B-oQ6e-mtp",       "gb": 23.72, "bpw": 6.70},
     "8bit":    {"id": "Qwen3.8-27B-oQ8e-mtp",       "gb": 30.00, "bpw": 8.50},
