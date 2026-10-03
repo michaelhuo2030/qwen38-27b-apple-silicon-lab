@@ -328,9 +328,17 @@ class Ladder:
         return "think_on" if self.think else "think_off"
 
     def settings(self) -> dict:
+        # ⚠️ depth=0 必须表示「关闭 MTP」。原来这里无条件写
+        #    mtp_enabled=self.mtp + mtp_fixed_depth=self.depth，
+        #    于是 depth=0 会发出 {mtp_enabled: True, mtp_fixed_depth: 0} ——
+        #    自相矛盾，而且 oMLX 0.7.0 对 mtp_fixed_depth=0 直接返 **HTTP 400**，
+        #    整个 sweep 第一组就崩。之前所有实验 depth ≥ 1，所以从没触发。
+        mtp_on = bool(self.mtp) and int(self.depth or 0) > 0
         s = {
-            "mtp_enabled": self.mtp,
-            "mtp_fixed_depth": self.depth,
+            "mtp_enabled": mtp_on,
+            # depth ≤ 0 时干脆不发这个键：发 0 会被服务端拒，
+            # 沿用上一次的值反而可能让「关闭 MTP」这组名不副实
+            **({"mtp_fixed_depth": int(self.depth)} if mtp_on else {}),
             "mtp_adaptive_max_depth": None,
             "qwen35_ane_prefill_enabled": self.ane,
             "qwen35_oq_a8_enabled": self.oq_a8,
