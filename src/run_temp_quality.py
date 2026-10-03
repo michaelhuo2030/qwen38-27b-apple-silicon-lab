@@ -241,7 +241,16 @@ def main():
             Path(a.out).write_text(json.dumps(
                 {"results": results, "temps": temps, "reps": a.reps,
                  "depth": a.depth, "prose_quality_measured":
-                     Q.prose_quality_measured},
+                     Q.prose_quality_measured,
+                 # 必须记录用了哪个模型（2026-10-03 补）
+                 #
+                 # 历史 temp_quality*.json 全都缺这个字段，导致「这批数据来自
+                 # 125B Flash 还是 27B」只能靠翻 omlx_client.py 的默认
+                 # MODEL_ID 反推——一个静默的、可能致命的歧义
+                 # （27B 的结论被当 125B 用，或反过来）。
+                 # 写进每个结果文件，结论才能自证来源。
+                 "model": L.MODEL_ID,
+                 "recorded_at": time.strftime("%Y-%m-%dT%H:%M:%S")},
                 ensure_ascii=False, indent=2))
 
     # summary
