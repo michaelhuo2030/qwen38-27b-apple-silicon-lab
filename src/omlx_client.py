@@ -240,6 +240,58 @@ def _post_chat(body: dict) -> dict:
     raise RuntimeError("unreachable")
 
 
+def _post_chat_with_deadline(body: dict, deadline_s: float = 300.0) -> dict:
+    """发一个 chat 请求，并对**总耗时**设硬性上限。
+
+    ## 为什么需要它（2026-10-04 实测，代价是 8 小时 + 122 次生成）
+
+    `urlopen(timeout=1800)` 的 timeout 是**连接/套接字级**的，
+    对「TCP 已建立、但对端既不发数据也不关连接」这种**半开连接无效**。
+    实测现场：2026-10-04 00:49:12 之后 omlx-server 不再写日志，
+    但 `ps` 显示服务端**健康**（healthz 秒回、手工 curl 正常出结果），
+    而客户端 `sample` 出来是：
+
+        _buffered_readline → sock_recv_into → sock_call_ex
+                          → internal_select → poll      ← 永远挂在这里
+
+    进程 CPU 时间冻结在 0:00.70，`retries=3` 永远不触发
+    （没有异常抛出，重试逻辑压根没机会跑）。
+    结果：一个 182 次生成的温度扫描**挂死 8 小时 41 分**，只完成 60 次。
+
+    所以这里不能只靠 socket timeout，必须在**外层**加一道墙：
+    超时就抛异常，让上层走它已有的重试/记账路径。
+    """
+    if deadline_s <= 0:
+        return _post_chat(body)
+    # ⚠️ 这里**必须**用裸 daemon 线程，不能用 `with ThreadPoolExecutor()`。
+    #
+    # 第一版修复用的是 ThreadPoolExecutor，结果**同样挂死**（实测 90s+ 不返回）：
+    # `with` 块退出时调 `ex.shutdown(wait=True)`，又去 join 那个卡在
+    # sock_recv 的僵尸线程——超时抛了异常，可主流程仍然被它拖住。
+    # 执行验证（模拟半开连接）当场抓到了这个 bug。
+    #
+    # daemon=True 的线程不阻止解释器退出，所以放弃它之后能真正走人。
+    import threading as _th
+    box: dict = {}
+
+    def _work():
+        try:
+            box["ok"] = _post_chat(body)
+        except BaseException as e:            # noqa: BLE001
+            box["err"] = e
+
+    t = _th.Thread(target=_work, daemon=True)
+    t.start()
+    t.join(deadline_s)
+    if t.is_alive():
+        raise TimeoutError(
+            f"chat 请求超过 {deadline_s:.0f}s 无响应（疑似服务端半开连接）"
+        )
+    if "err" in box:
+        raise box["err"]
+    return box["ok"]
+
+
 def _extract_text(d: dict) -> str:
     """Pull the assistant text out, or raise a diagnosable error.
 
@@ -296,9 +348,14 @@ def generate(prompt: str, max_tokens: int = 800, temperature: float = 0.0,
     t0 = time.time()
     last_err = None
     d = None
+    # 硬性总时限：实测一次温度扫描在这里挂了 8h41m（服务端半开连接，
+    # socket timeout 形同虚设）。必须让单次调用有确定的上界。
+    # 取值依据：正常最慢的请求是 depth sweep 的 900-token 长生成，实测 <120s；
+    # 并发 4 条时单波 <480s。300s 给足余量又能兜住挂死。
+    call_deadline = float(os.environ.get("OMLX_CALL_DEADLINE_S", "300"))
     for attempt in range(retries):
         try:
-            d = _post_chat(body)
+            d = _post_chat_with_deadline(body, call_deadline)
             text = _extract_text(d)
             break
         except Exception as e:          # transport or shape fault — retry
@@ -322,6 +379,15 @@ def generate(prompt: str, max_tokens: int = 800, temperature: float = 0.0,
     }
     if last_err:
         rec["transport_error"] = last_err
+        # ⚠️ `error` 键必须**同步**设置（2026-10-04 修）。
+        #
+        # 契约不一致的真实后果：传输失败只写在 `transport_error`，
+        # 而 `bench_concurrent.py` 读的是 `a.get("error")` —— 永远读不到，
+        # 于是**失败请求被当成成功计入吞吐**。更隐蔽的是 `transport_error`
+        # 明明存在，下游却统计出 "n_err=0"。
+        #
+        # 两边都读、都写，这个键就是唯一真相。
+        rec["error"] = last_err
         rec["valid"] = False
         return rec
 
