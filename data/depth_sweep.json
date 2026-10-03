@@ -1,0 +1,2060 @@
+{
+  "1": {
+    "T1_json_structured@T0.0": {
+      "tps_mean": 52.657,
+      "accept_mean": 93.35,
+      "tok_per_cycle_mean": 1.94,
+      "backbone_ms_mean": 35.13,
+      "mtp_ms_mean": 0.743,
+      "cache_ms_mean": 0.378,
+      "sample_ms_mean": 0.036,
+      "out_tokens_mean": 700,
+      "tps_all": [
+        52.76,
+        52.67,
+        52.54
+      ],
+      "accept_all": [
+        93.35,
+        93.35,
+        93.35
+      ],
+      "accept_den_all": [
+        361,
+        361,
+        361
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=337/361",
+      "n_runs": 3,
+      "entropy": "极低熵·结构化输出",
+      "temp": 0.0
+    },
+    "T2_code_function@T0.0": {
+      "tps_mean": 52.53,
+      "accept_mean": 96.07,
+      "tok_per_cycle_mean": 1.97,
+      "backbone_ms_mean": 35.77,
+      "mtp_ms_mean": 0.732,
+      "cache_ms_mean": 0.373,
+      "sample_ms_mean": 0.039,
+      "out_tokens_mean": 600,
+      "tps_all": [
+        50.81,
+        52.94,
+        53.84
+      ],
+      "accept_all": [
+        96.07,
+        96.07,
+        96.07
+      ],
+      "accept_den_all": [
+        305,
+        305,
+        305
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=293/305",
+      "n_runs": 3,
+      "entropy": "低熵·代码生成",
+      "temp": 0.0
+    },
+    "T3_code_repetitive@T0.0": {
+      "tps_mean": 54.55,
+      "accept_mean": 98.29,
+      "tok_per_cycle_mean": 2.0,
+      "backbone_ms_mean": 35.177,
+      "mtp_ms_mean": 0.553,
+      "cache_ms_mean": 0.303,
+      "sample_ms_mean": 0.02,
+      "out_tokens_mean": 233,
+      "tps_all": [
+        53.32,
+        55.17,
+        55.16
+      ],
+      "accept_all": [
+        98.29,
+        98.29,
+        98.29
+      ],
+      "accept_den_all": [
+        117,
+        117,
+        117
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=115/117",
+      "n_runs": 3,
+      "entropy": "极低熵·重复模式",
+      "temp": 0.0
+    },
+    "T4_translation@T0.0": {
+      "tps_mean": 52.22,
+      "accept_mean": 88.37,
+      "tok_per_cycle_mean": 1.93,
+      "backbone_ms_mean": 35.13,
+      "mtp_ms_mean": 0.563,
+      "cache_ms_mean": 0.315,
+      "sample_ms_mean": 0.022,
+      "out_tokens_mean": 82,
+      "tps_all": [
+        50.48,
+        53.46,
+        52.72
+      ],
+      "accept_all": [
+        88.37,
+        88.37,
+        88.37
+      ],
+      "accept_den_all": [
+        43,
+        43,
+        43
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=38/43",
+      "n_runs": 3,
+      "entropy": "低熵·翻译",
+      "temp": 0.0
+    },
+    "T5_extraction@T0.0": {
+      "tps_mean": 52.067,
+      "accept_mean": 89.25,
+      "tok_per_cycle_mean": 1.91,
+      "backbone_ms_mean": 35.217,
+      "mtp_ms_mean": 0.541,
+      "cache_ms_mean": 0.303,
+      "sample_ms_mean": 0.019,
+      "out_tokens_mean": 177,
+      "tps_all": [
+        50.82,
+        52.58,
+        52.8
+      ],
+      "accept_all": [
+        89.25,
+        89.25,
+        89.25
+      ],
+      "accept_den_all": [
+        93,
+        93,
+        93
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=83/93",
+      "n_runs": 3,
+      "entropy": "中低熵·信息抽取",
+      "temp": 0.0
+    },
+    "T6_qa_factual@T0.0": {
+      "tps_mean": 44.96,
+      "accept_mean": 65.29,
+      "tok_per_cycle_mean": 1.66,
+      "backbone_ms_mean": 35.553,
+      "mtp_ms_mean": 0.529,
+      "cache_ms_mean": 0.313,
+      "sample_ms_mean": 0.02,
+      "out_tokens_mean": 401,
+      "tps_all": [
+        43.2,
+        45.99,
+        45.69
+      ],
+      "accept_all": [
+        65.29,
+        65.29,
+        65.29
+      ],
+      "accept_den_all": [
+        242,
+        242,
+        242
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=158/242",
+      "n_runs": 3,
+      "entropy": "中熵·知识问答",
+      "temp": 0.0
+    },
+    "T7_math_reasoning@T0.0": {
+      "tps_mean": 52.733,
+      "accept_mean": 92.28,
+      "tok_per_cycle_mean": 1.93,
+      "backbone_ms_mean": 35.247,
+      "mtp_ms_mean": 0.545,
+      "cache_ms_mean": 0.303,
+      "sample_ms_mean": 0.019,
+      "out_tokens_mean": 600,
+      "tps_all": [
+        52.04,
+        53.11,
+        53.05
+      ],
+      "accept_all": [
+        92.28,
+        92.28,
+        92.28
+      ],
+      "accept_den_all": [
+        311,
+        311,
+        311
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=287/311",
+      "n_runs": 3,
+      "entropy": "中高熵·数学推理",
+      "temp": 0.0
+    },
+    "T8_creative_writing@T0.0": {
+      "tps_mean": 42.767,
+      "accept_mean": 56.7,
+      "tok_per_cycle_mean": 1.57,
+      "backbone_ms_mean": 35.403,
+      "mtp_ms_mean": 0.524,
+      "cache_ms_mean": 0.318,
+      "sample_ms_mean": 0.02,
+      "out_tokens_mean": 457,
+      "tps_all": [
+        41.23,
+        43.57,
+        43.5
+      ],
+      "accept_all": [
+        56.7,
+        56.7,
+        56.7
+      ],
+      "accept_den_all": [
+        291,
+        291,
+        291
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=165/291",
+      "n_runs": 3,
+      "entropy": "高熵·创意写作",
+      "temp": 0.0
+    },
+    "T9_rust_impl@T0.0": {
+      "tps_mean": 45.413,
+      "accept_mean": 91.83,
+      "tok_per_cycle_mean": 1.92,
+      "backbone_ms_mean": 40.85,
+      "mtp_ms_mean": 0.612,
+      "cache_ms_mean": 0.34,
+      "sample_ms_mean": 0.022,
+      "out_tokens_mean": 800,
+      "tps_all": [
+        45.99,
+        46.24,
+        44.01
+      ],
+      "accept_all": [
+        91.83,
+        91.83,
+        91.83
+      ],
+      "accept_den_all": [
+        416,
+        416,
+        416
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=382/416",
+      "n_runs": 3,
+      "entropy": "低熵·Rust 实现",
+      "temp": 0.0
+    },
+    "T10_ts_component@T0.0": {
+      "tps_mean": 42.437,
+      "accept_mean": 96.74,
+      "tok_per_cycle_mean": 1.97,
+      "backbone_ms_mean": 44.773,
+      "mtp_ms_mean": 0.691,
+      "cache_ms_mean": 0.377,
+      "sample_ms_mean": 0.024,
+      "out_tokens_mean": 725,
+      "tps_all": [
+        43.61,
+        42.59,
+        41.11
+      ],
+      "accept_all": [
+        96.74,
+        96.74,
+        96.74
+      ],
+      "accept_den_all": [
+        368,
+        368,
+        368
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=356/368",
+      "n_runs": 3,
+      "entropy": "低熵·TypeScript 组件",
+      "temp": 0.0
+    },
+    "T11_doc_rewrite@T0.0": {
+      "tps_mean": 37.093,
+      "accept_mean": 80.77,
+      "tok_per_cycle_mean": 1.81,
+      "backbone_ms_mean": 47.03,
+      "mtp_ms_mean": 0.727,
+      "cache_ms_mean": 0.417,
+      "sample_ms_mean": 0.026,
+      "out_tokens_mean": 659,
+      "tps_all": [
+        37.06,
+        37.01,
+        37.21
+      ],
+      "accept_all": [
+        80.77,
+        80.77,
+        80.77
+      ],
+      "accept_den_all": [
+        364,
+        364,
+        364
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=294/364",
+      "n_runs": 3,
+      "entropy": "中熵·技术文档重写",
+      "temp": 0.0
+    }
+  },
+  "2": {
+    "T1_json_structured@T0.0": {
+      "tps_mean": 48.723,
+      "accept_mean": 95.58,
+      "tok_per_cycle_mean": 2.87,
+      "backbone_ms_mean": 56.017,
+      "mtp_ms_mean": 1.625,
+      "cache_ms_mean": 0.477,
+      "sample_ms_mean": 0.029,
+      "out_tokens_mean": 700,
+      "tps_all": [
+        45.43,
+        49.3,
+        51.44
+      ],
+      "accept_all": [
+        95.58,
+        95.58,
+        95.58
+      ],
+      "accept_den_all": [
+        475,
+        475,
+        475
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=231/244,d2=223/231",
+      "n_runs": 3,
+      "entropy": "极低熵·结构化输出",
+      "temp": 0.0
+    },
+    "T2_code_function@T0.0": {
+      "tps_mean": 52.953,
+      "accept_mean": 95.1,
+      "tok_per_cycle_mean": 2.86,
+      "backbone_ms_mean": 51.29,
+      "mtp_ms_mean": 1.407,
+      "cache_ms_mean": 0.44,
+      "sample_ms_mean": 0.027,
+      "out_tokens_mean": 600,
+      "tps_all": [
+        51.81,
+        53.73,
+        53.32
+      ],
+      "accept_all": [
+        95.1,
+        95.1,
+        95.1
+      ],
+      "accept_den_all": [
+        408,
+        408,
+        408
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=198/210,d2=190/198",
+      "n_runs": 3,
+      "entropy": "低熵·代码生成",
+      "temp": 0.0
+    },
+    "T3_code_repetitive@T0.0": {
+      "tps_mean": 60.553,
+      "accept_mean": 98.72,
+      "tok_per_cycle_mean": 3.0,
+      "backbone_ms_mean": 46.857,
+      "mtp_ms_mean": 1.232,
+      "cache_ms_mean": 0.384,
+      "sample_ms_mean": 0.023,
+      "out_tokens_mean": 233,
+      "tps_all": [
+        60.09,
+        60.76,
+        60.81
+      ],
+      "accept_all": [
+        98.72,
+        98.72,
+        98.72
+      ],
+      "accept_den_all": [
+        156,
+        156,
+        156
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=78/78,d2=76/78",
+      "n_runs": 3,
+      "entropy": "极低熵·重复模式",
+      "temp": 0.0
+    },
+    "T4_translation@T0.0": {
+      "tps_mean": 50.187,
+      "accept_mean": 80.0,
+      "tok_per_cycle_mean": 2.52,
+      "backbone_ms_mean": 47.197,
+      "mtp_ms_mean": 1.143,
+      "cache_ms_mean": 0.386,
+      "sample_ms_mean": 0.023,
+      "out_tokens_mean": 82,
+      "tps_all": [
+        47.41,
+        51.45,
+        51.7
+      ],
+      "accept_all": [
+        80.0,
+        80.0,
+        80.0
+      ],
+      "accept_den_all": [
+        60,
+        60,
+        60
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=27/33,d2=21/27",
+      "n_runs": 3,
+      "entropy": "低熵·翻译",
+      "temp": 0.0
+    },
+    "T5_extraction@T0.0": {
+      "tps_mean": 57.373,
+      "accept_mean": 92.62,
+      "tok_per_cycle_mean": 2.83,
+      "backbone_ms_mean": 46.613,
+      "mtp_ms_mean": 1.188,
+      "cache_ms_mean": 0.378,
+      "sample_ms_mean": 0.022,
+      "out_tokens_mean": 177,
+      "tps_all": [
+        56.56,
+        57.77,
+        57.79
+      ],
+      "accept_all": [
+        92.62,
+        92.62,
+        92.62
+      ],
+      "accept_den_all": [
+        122,
+        122,
+        122
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=59/63,d2=54/59",
+      "n_runs": 3,
+      "entropy": "中低熵·信息抽取",
+      "temp": 0.0
+    },
+    "T6_qa_factual@T0.0": {
+      "tps_mean": 37.913,
+      "accept_mean": 62.93,
+      "tok_per_cycle_mean": 2.03,
+      "backbone_ms_mean": 51.133,
+      "mtp_ms_mean": 1.234,
+      "cache_ms_mean": 0.436,
+      "sample_ms_mean": 0.025,
+      "out_tokens_mean": 401,
+      "tps_all": [
+        35.58,
+        39.04,
+        39.12
+      ],
+      "accept_all": [
+        62.93,
+        62.93,
+        62.93
+      ],
+      "accept_den_all": [
+        321,
+        321,
+        321
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=123/198,d2=79/123",
+      "n_runs": 3,
+      "entropy": "中熵·知识问答",
+      "temp": 0.0
+    },
+    "T7_math_reasoning@T0.0": {
+      "tps_mean": 51.8,
+      "accept_mean": 92.74,
+      "tok_per_cycle_mean": 2.79,
+      "backbone_ms_mean": 51.213,
+      "mtp_ms_mean": 1.402,
+      "cache_ms_mean": 0.437,
+      "sample_ms_mean": 0.028,
+      "out_tokens_mean": 600,
+      "tps_all": [
+        51.54,
+        52.39,
+        51.47
+      ],
+      "accept_all": [
+        92.74,
+        92.74,
+        92.74
+      ],
+      "accept_den_all": [
+        413,
+        413,
+        413
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=198/215,d2=185/198",
+      "n_runs": 3,
+      "entropy": "中高熵·数学推理",
+      "temp": 0.0
+    },
+    "T8_creative_writing@T0.0": {
+      "tps_mean": 34.887,
+      "accept_mean": 56.73,
+      "tok_per_cycle_mean": 1.9,
+      "backbone_ms_mean": 51.967,
+      "mtp_ms_mean": 1.244,
+      "cache_ms_mean": 0.445,
+      "sample_ms_mean": 0.025,
+      "out_tokens_mean": 457,
+      "tps_all": [
+        33.76,
+        35.49,
+        35.41
+      ],
+      "accept_all": [
+        56.73,
+        56.73,
+        56.73
+      ],
+      "accept_den_all": [
+        379,
+        379,
+        379
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=138/241,d2=77/138",
+      "n_runs": 3,
+      "entropy": "高熵·创意写作",
+      "temp": 0.0
+    },
+    "T9_rust_impl@T0.0": {
+      "tps_mean": 48.413,
+      "accept_mean": 89.52,
+      "tok_per_cycle_mean": 2.72,
+      "backbone_ms_mean": 53.48,
+      "mtp_ms_mean": 1.459,
+      "cache_ms_mean": 0.461,
+      "sample_ms_mean": 0.028,
+      "out_tokens_mean": 800,
+      "tps_all": [
+        47.77,
+        49.17,
+        48.3
+      ],
+      "accept_all": [
+        89.52,
+        89.52,
+        89.52
+      ],
+      "accept_den_all": [
+        563,
+        563,
+        563
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=269/294,d2=235/269",
+      "n_runs": 3,
+      "entropy": "低熵·Rust 实现",
+      "temp": 0.0
+    },
+    "T10_ts_component@T0.0": {
+      "tps_mean": 50.043,
+      "accept_mean": 95.34,
+      "tok_per_cycle_mean": 2.87,
+      "backbone_ms_mean": 54.487,
+      "mtp_ms_mean": 1.458,
+      "cache_ms_mean": 0.449,
+      "sample_ms_mean": 0.027,
+      "out_tokens_mean": 725,
+      "tps_all": [
+        50.26,
+        49.99,
+        49.88
+      ],
+      "accept_all": [
+        95.34,
+        95.34,
+        95.34
+      ],
+      "accept_den_all": [
+        494,
+        494,
+        494
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=241/253,d2=230/241",
+      "n_runs": 3,
+      "entropy": "低熵·TypeScript 组件",
+      "temp": 0.0
+    },
+    "T11_doc_rewrite@T0.0": {
+      "tps_mean": 41.68,
+      "accept_mean": 80.41,
+      "tok_per_cycle_mean": 2.46,
+      "backbone_ms_mean": 56.217,
+      "mtp_ms_mean": 1.482,
+      "cache_ms_mean": 0.49,
+      "sample_ms_mean": 0.028,
+      "out_tokens_mean": 659,
+      "tps_all": [
+        41.18,
+        41.82,
+        42.04
+      ],
+      "accept_all": [
+        80.41,
+        80.41,
+        80.41
+      ],
+      "accept_den_all": [
+        485,
+        485,
+        485
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=217/268,d2=173/217",
+      "n_runs": 3,
+      "entropy": "中熵·技术文档重写",
+      "temp": 0.0
+    }
+  },
+  "3": {
+    "T1_json_structured@T0.0": {
+      "tps_mean": 51.623,
+      "accept_mean": 94.42,
+      "tok_per_cycle_mean": 3.68,
+      "backbone_ms_mean": 67.187,
+      "mtp_ms_mean": 2.488,
+      "cache_ms_mean": 0.56,
+      "sample_ms_mean": 0.035,
+      "out_tokens_mean": 700,
+      "tps_all": [
+        48.82,
+        52.25,
+        53.8
+      ],
+      "accept_all": [
+        94.42,
+        94.42,
+        94.42
+      ],
+      "accept_den_all": [
+        538,
+        538,
+        538
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=177/190,d2=171/177,d3=160/171",
+      "n_runs": 3,
+      "entropy": "极低熵·结构化输出",
+      "temp": 0.0
+    },
+    "T2_code_function@T0.0": {
+      "tps_mean": 54.353,
+      "accept_mean": 93.1,
+      "tok_per_cycle_mean": 3.61,
+      "backbone_ms_mean": 62.697,
+      "mtp_ms_mean": 2.193,
+      "cache_ms_mean": 0.506,
+      "sample_ms_mean": 0.03,
+      "out_tokens_mean": 600,
+      "tps_all": [
+        53.43,
+        54.32,
+        55.31
+      ],
+      "accept_all": [
+        93.1,
+        93.1,
+        93.1
+      ],
+      "accept_den_all": [
+        464,
+        464,
+        464
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=156/166,d2=142/156,d3=134/142",
+      "n_runs": 3,
+      "entropy": "低熵·代码生成",
+      "temp": 0.0
+    },
+    "T3_code_repetitive@T0.0": {
+      "tps_mean": 60.653,
+      "accept_mean": 96.63,
+      "tok_per_cycle_mean": 3.9,
+      "backbone_ms_mean": 60.16,
+      "mtp_ms_mean": 2.134,
+      "cache_ms_mean": 0.482,
+      "sample_ms_mean": 0.03,
+      "out_tokens_mean": 233,
+      "tps_all": [
+        59.88,
+        61.01,
+        61.07
+      ],
+      "accept_all": [
+        96.63,
+        96.63,
+        96.63
+      ],
+      "accept_den_all": [
+        178,
+        178,
+        178
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=60/60,d2=58/60,d3=54/58",
+      "n_runs": 3,
+      "entropy": "极低熵·重复模式",
+      "temp": 0.0
+    },
+    "T4_translation@T0.0": {
+      "tps_mean": 49.213,
+      "accept_mean": 82.09,
+      "tok_per_cycle_mean": 3.19,
+      "backbone_ms_mean": 60.397,
+      "mtp_ms_mean": 1.994,
+      "cache_ms_mean": 0.491,
+      "sample_ms_mean": 0.032,
+      "out_tokens_mean": 82,
+      "tps_all": [
+        47.08,
+        50.49,
+        50.07
+      ],
+      "accept_all": [
+        82.09,
+        82.09,
+        82.09
+      ],
+      "accept_den_all": [
+        67,
+        67,
+        67
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=22/26,d2=19/22,d3=14/19",
+      "n_runs": 3,
+      "entropy": "低熵·翻译",
+      "temp": 0.0
+    },
+    "T5_extraction@T0.0": {
+      "tps_mean": 51.78,
+      "accept_mean": 87.23,
+      "tok_per_cycle_mean": 3.36,
+      "backbone_ms_mean": 60.597,
+      "mtp_ms_mean": 2.254,
+      "cache_ms_mean": 0.515,
+      "sample_ms_mean": 0.036,
+      "out_tokens_mean": 177,
+      "tps_all": [
+        50.38,
+        52.39,
+        52.57
+      ],
+      "accept_all": [
+        87.23,
+        87.23,
+        87.23
+      ],
+      "accept_den_all": [
+        141,
+        141,
+        141
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=46/53,d2=42/46,d3=35/42",
+      "n_runs": 3,
+      "entropy": "中低熵·信息抽取",
+      "temp": 0.0
+    },
+    "T6_qa_factual@T0.0": {
+      "tps_mean": 34.56,
+      "accept_mean": 62.18,
+      "tok_per_cycle_mean": 2.26,
+      "backbone_ms_mean": 61.79,
+      "mtp_ms_mean": 2.087,
+      "cache_ms_mean": 0.536,
+      "sample_ms_mean": 0.03,
+      "out_tokens_mean": 401,
+      "tps_all": [
+        33.05,
+        35.62,
+        35.01
+      ],
+      "accept_all": [
+        62.18,
+        62.18,
+        62.18
+      ],
+      "accept_den_all": [
+        357,
+        357,
+        357
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=109/178,d2=70/109,d3=43/70",
+      "n_runs": 3,
+      "entropy": "中熵·知识问答",
+      "temp": 0.0
+    },
+    "T7_math_reasoning@T0.0": {
+      "tps_mean": 52.41,
+      "accept_mean": 92.47,
+      "tok_per_cycle_mean": 3.57,
+      "backbone_ms_mean": 64.11,
+      "mtp_ms_mean": 2.315,
+      "cache_ms_mean": 0.532,
+      "sample_ms_mean": 0.032,
+      "out_tokens_mean": 600,
+      "tps_all": [
+        52.61,
+        52.11,
+        52.51
+      ],
+      "accept_all": [
+        92.47,
+        92.47,
+        92.47
+      ],
+      "accept_den_all": [
+        465,
+        465,
+        465
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=153/168,d2=144/153,d3=133/144",
+      "n_runs": 3,
+      "entropy": "中高熵·数学推理",
+      "temp": 0.0
+    },
+    "T8_creative_writing@T0.0": {
+      "tps_mean": 29.113,
+      "accept_mean": 55.06,
+      "tok_per_cycle_mean": 2.06,
+      "backbone_ms_mean": 66.947,
+      "mtp_ms_mean": 2.263,
+      "cache_ms_mean": 0.593,
+      "sample_ms_mean": 0.033,
+      "out_tokens_mean": 457,
+      "tps_all": [
+        28.67,
+        29.71,
+        28.96
+      ],
+      "accept_all": [
+        55.06,
+        55.06,
+        55.06
+      ],
+      "accept_den_all": [
+        425,
+        425,
+        425
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=130/222,d2=73/130,d3=31/73",
+      "n_runs": 3,
+      "entropy": "高熵·创意写作",
+      "temp": 0.0
+    },
+    "T9_rust_impl@T0.0": {
+      "tps_mean": 45.957,
+      "accept_mean": 88.54,
+      "tok_per_cycle_mean": 3.42,
+      "backbone_ms_mean": 69.88,
+      "mtp_ms_mean": 2.684,
+      "cache_ms_mean": 0.618,
+      "sample_ms_mean": 0.039,
+      "out_tokens_mean": 800,
+      "tps_all": [
+        45.75,
+        46.49,
+        45.63
+      ],
+      "accept_all": [
+        88.54,
+        88.54,
+        88.54
+      ],
+      "accept_den_all": [
+        637,
+        637,
+        637
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=216/234,d2=187/216,d3=161/187",
+      "n_runs": 3,
+      "entropy": "低熵·Rust 实现",
+      "temp": 0.0
+    },
+    "T10_ts_component@T0.0": {
+      "tps_mean": 49.213,
+      "accept_mean": 95.15,
+      "tok_per_cycle_mean": 3.74,
+      "backbone_ms_mean": 71.197,
+      "mtp_ms_mean": 2.739,
+      "cache_ms_mean": 0.612,
+      "sample_ms_mean": 0.039,
+      "out_tokens_mean": 725,
+      "tps_all": [
+        49.11,
+        49.67,
+        48.86
+      ],
+      "accept_all": [
+        95.15,
+        95.15,
+        95.15
+      ],
+      "accept_den_all": [
+        557,
+        557,
+        557
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=186/194,d2=177/186,d3=167/177",
+      "n_runs": 3,
+      "entropy": "低熵·TypeScript 组件",
+      "temp": 0.0
+    },
+    "T11_doc_rewrite@T0.0": {
+      "tps_mean": 37.487,
+      "accept_mean": 79.01,
+      "tok_per_cycle_mean": 2.93,
+      "backbone_ms_mean": 73.057,
+      "mtp_ms_mean": 3.149,
+      "cache_ms_mean": 0.73,
+      "sample_ms_mean": 0.049,
+      "out_tokens_mean": 659,
+      "tps_all": [
+        36.98,
+        38.01,
+        37.47
+      ],
+      "accept_all": [
+        79.01,
+        79.01,
+        79.01
+      ],
+      "accept_den_all": [
+        548,
+        548,
+        548
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=177/225,d2=146/177,d3=110/146",
+      "n_runs": 3,
+      "entropy": "中熵·技术文档重写",
+      "temp": 0.0
+    }
+  },
+  "4": {
+    "T1_json_structured@T0.0": {
+      "tps_mean": 50.517,
+      "accept_mean": 92.96,
+      "tok_per_cycle_mean": 4.46,
+      "backbone_ms_mean": 82.01,
+      "mtp_ms_mean": 4.034,
+      "cache_ms_mean": 0.716,
+      "sample_ms_mean": 0.044,
+      "out_tokens_mean": 700,
+      "tps_all": [
+        47.44,
+        51.05,
+        53.06
+      ],
+      "accept_all": [
+        92.96,
+        92.96,
+        92.96
+      ],
+      "accept_den_all": [
+        582,
+        582,
+        582
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=148/157,d2=145/148,d3=132/145,d4=116/132",
+      "n_runs": 3,
+      "entropy": "极低熵·结构化输出",
+      "temp": 0.0
+    },
+    "T2_code_function@T0.0": {
+      "tps_mean": 52.523,
+      "accept_mean": 91.8,
+      "tok_per_cycle_mean": 4.32,
+      "backbone_ms_mean": 76.233,
+      "mtp_ms_mean": 3.789,
+      "cache_ms_mean": 0.67,
+      "sample_ms_mean": 0.047,
+      "out_tokens_mean": 600,
+      "tps_all": [
+        51.49,
+        53.3,
+        52.78
+      ],
+      "accept_all": [
+        91.8,
+        91.8,
+        91.8
+      ],
+      "accept_den_all": [
+        500,
+        500,
+        500
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=129/139,d2=121/129,d3=111/121,d4=98/111",
+      "n_runs": 3,
+      "entropy": "低熵·代码生成",
+      "temp": 0.0
+    },
+    "T3_code_repetitive@T0.0": {
+      "tps_mean": 61.193,
+      "accept_mean": 98.4,
+      "tok_per_cycle_mean": 4.88,
+      "backbone_ms_mean": 73.743,
+      "mtp_ms_mean": 3.162,
+      "cache_ms_mean": 0.556,
+      "sample_ms_mean": 0.034,
+      "out_tokens_mean": 233,
+      "tps_all": [
+        60.39,
+        61.52,
+        61.67
+      ],
+      "accept_all": [
+        98.4,
+        98.4,
+        98.4
+      ],
+      "accept_den_all": [
+        187,
+        187,
+        187
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=47/48,d2=47/47,d3=45/47,d4=45/45",
+      "n_runs": 3,
+      "entropy": "极低熵·重复模式",
+      "temp": 0.0
+    },
+    "T4_translation@T0.0": {
+      "tps_mean": 43.093,
+      "accept_mean": 79.17,
+      "tok_per_cycle_mean": 3.46,
+      "backbone_ms_mean": 73.463,
+      "mtp_ms_mean": 3.483,
+      "cache_ms_mean": 0.653,
+      "sample_ms_mean": 0.044,
+      "out_tokens_mean": 82,
+      "tps_all": [
+        41.38,
+        44.09,
+        43.81
+      ],
+      "accept_all": [
+        79.17,
+        79.17,
+        79.17
+      ],
+      "accept_den_all": [
+        72,
+        72,
+        72
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=21/24,d2=16/21,d3=11/16,d4=9/11",
+      "n_runs": 3,
+      "entropy": "低熵·翻译",
+      "temp": 0.0
+    },
+    "T5_extraction@T0.0": {
+      "tps_mean": 54.393,
+      "accept_mean": 92.47,
+      "tok_per_cycle_mean": 4.34,
+      "backbone_ms_mean": 73.98,
+      "mtp_ms_mean": 3.137,
+      "cache_ms_mean": 0.575,
+      "sample_ms_mean": 0.033,
+      "out_tokens_mean": 177,
+      "tps_all": [
+        53.2,
+        54.89,
+        55.09
+      ],
+      "accept_all": [
+        92.47,
+        92.47,
+        92.47
+      ],
+      "accept_den_all": [
+        146,
+        146,
+        146
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=37/41,d2=34/37,d3=34/34,d4=30/34",
+      "n_runs": 3,
+      "entropy": "中低熵·信息抽取",
+      "temp": 0.0
+    },
+    "T6_qa_factual@T0.0": {
+      "tps_mean": 28.403,
+      "accept_mean": 59.74,
+      "tok_per_cycle_mean": 2.32,
+      "backbone_ms_mean": 77.313,
+      "mtp_ms_mean": 2.835,
+      "cache_ms_mean": 0.582,
+      "sample_ms_mean": 0.034,
+      "out_tokens_mean": 401,
+      "tps_all": [
+        28.1,
+        29.21,
+        27.9
+      ],
+      "accept_all": [
+        59.74,
+        59.74,
+        59.74
+      ],
+      "accept_den_all": [
+        380,
+        380,
+        380
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=102/173,d2=65/102,d3=40/65,d4=20/40",
+      "n_runs": 3,
+      "entropy": "中熵·知识问答",
+      "temp": 0.0
+    },
+    "T7_math_reasoning@T0.0": {
+      "tps_mean": 48.657,
+      "accept_mean": 91.92,
+      "tok_per_cycle_mean": 4.2,
+      "backbone_ms_mean": 80.053,
+      "mtp_ms_mean": 3.895,
+      "cache_ms_mean": 0.679,
+      "sample_ms_mean": 0.045,
+      "out_tokens_mean": 600,
+      "tps_all": [
+        48.91,
+        48.57,
+        48.49
+      ],
+      "accept_all": [
+        91.92,
+        91.92,
+        91.92
+      ],
+      "accept_den_all": [
+        495,
+        495,
+        495
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=125/143,d2=119/125,d3=108/119,d4=103/108",
+      "n_runs": 3,
+      "entropy": "中高熵·数学推理",
+      "temp": 0.0
+    },
+    "T8_creative_writing@T0.0": {
+      "tps_mean": 23.5,
+      "accept_mean": 54.52,
+      "tok_per_cycle_mean": 2.13,
+      "backbone_ms_mean": 84.753,
+      "mtp_ms_mean": 3.85,
+      "cache_ms_mean": 0.762,
+      "sample_ms_mean": 0.044,
+      "out_tokens_mean": 457,
+      "tps_all": [
+        23.38,
+        23.79,
+        23.33
+      ],
+      "accept_all": [
+        54.52,
+        54.52,
+        54.52
+      ],
+      "accept_den_all": [
+        442,
+        442,
+        442
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=123/215,d2=74/123,d3=30/74,d4=14/30",
+      "n_runs": 3,
+      "entropy": "高熵·创意写作",
+      "temp": 0.0
+    },
+    "T9_rust_impl@T0.0": {
+      "tps_mean": 40.833,
+      "accept_mean": 86.55,
+      "tok_per_cycle_mean": 3.88,
+      "backbone_ms_mean": 87.483,
+      "mtp_ms_mean": 5.225,
+      "cache_ms_mean": 0.808,
+      "sample_ms_mean": 0.067,
+      "out_tokens_mean": 800,
+      "tps_all": [
+        40.69,
+        41.07,
+        40.74
+      ],
+      "accept_all": [
+        86.55,
+        86.55,
+        86.55
+      ],
+      "accept_den_all": [
+        684,
+        684,
+        684
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=185/206,d2=158/185,d3=135/158,d4=114/135",
+      "n_runs": 3,
+      "entropy": "低熵·Rust 实现",
+      "temp": 0.0
+    },
+    "T10_ts_component@T0.0": {
+      "tps_mean": 47.183,
+      "accept_mean": 94.64,
+      "tok_per_cycle_mean": 4.57,
+      "backbone_ms_mean": 90.253,
+      "mtp_ms_mean": 4.162,
+      "cache_ms_mean": 0.585,
+      "sample_ms_mean": 0.059,
+      "out_tokens_mean": 725,
+      "tps_all": [
+        46.98,
+        47.88,
+        46.69
+      ],
+      "accept_all": [
+        94.64,
+        94.64,
+        94.64
+      ],
+      "accept_den_all": [
+        597,
+        597,
+        597
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=154/159,d2=147/154,d3=137/147,d4=127/137",
+      "n_runs": 3,
+      "entropy": "低熵·TypeScript 组件",
+      "temp": 0.0
+    },
+    "T11_doc_rewrite@T0.0": {
+      "tps_mean": 33.003,
+      "accept_mean": 77.7,
+      "tok_per_cycle_mean": 3.22,
+      "backbone_ms_mean": 90.11,
+      "mtp_ms_mean": 5.187,
+      "cache_ms_mean": 0.751,
+      "sample_ms_mean": 0.085,
+      "out_tokens_mean": 659,
+      "tps_all": [
+        32.23,
+        33.56,
+        33.22
+      ],
+      "accept_all": [
+        77.7,
+        77.7,
+        77.7
+      ],
+      "accept_den_all": [
+        583,
+        583,
+        583
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=158/205,d2=126/158,d3=94/126,d4=75/94",
+      "n_runs": 3,
+      "entropy": "中熵·技术文档重写",
+      "temp": 0.0
+    }
+  },
+  "6": {
+    "T1_json_structured@T0.0": {
+      "tps_mean": 46.61,
+      "accept_mean": 92.87,
+      "tok_per_cycle_mean": 5.6,
+      "backbone_ms_mean": 111.683,
+      "mtp_ms_mean": 6.572,
+      "cache_ms_mean": 0.492,
+      "sample_ms_mean": 0.064,
+      "out_tokens_mean": 700,
+      "tps_all": [
+        43.55,
+        47.35,
+        48.93
+      ],
+      "accept_all": [
+        92.87,
+        92.87,
+        92.87
+      ],
+      "accept_den_all": [
+        617,
+        617,
+        617
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=114/125,d2=109/114,d3=97/109,d4=87/97,d5=85/87,d6=81/85",
+      "n_runs": 3,
+      "entropy": "极低熵·结构化输出",
+      "temp": 0.0
+    },
+    "T2_code_function@T0.0": {
+      "tps_mean": 47.2,
+      "accept_mean": 89.81,
+      "tok_per_cycle_mean": 5.31,
+      "backbone_ms_mean": 102.383,
+      "mtp_ms_mean": 7.67,
+      "cache_ms_mean": 0.645,
+      "sample_ms_mean": 0.079,
+      "out_tokens_mean": 600,
+      "tps_all": [
+        46.26,
+        47.74,
+        47.6
+      ],
+      "accept_all": [
+        89.81,
+        89.81,
+        89.81
+      ],
+      "accept_den_all": [
+        540,
+        540,
+        540
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=104/113,d2=97/104,d3=88/97,d4=72/88,d5=66/72,d6=58/66",
+      "n_runs": 3,
+      "entropy": "低熵·代码生成",
+      "temp": 0.0
+    },
+    "T3_code_repetitive@T0.0": {
+      "tps_mean": 58.587,
+      "accept_mean": 95.12,
+      "tok_per_cycle_mean": 6.32,
+      "backbone_ms_mean": 97.043,
+      "mtp_ms_mean": 7.242,
+      "cache_ms_mean": 0.696,
+      "sample_ms_mean": 0.078,
+      "out_tokens_mean": 233,
+      "tps_all": [
+        57.78,
+        58.79,
+        59.19
+      ],
+      "accept_all": [
+        95.12,
+        95.12,
+        95.12
+      ],
+      "accept_den_all": [
+        205,
+        205,
+        205
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=36/37,d2=35/36,d3=34/35,d4=33/34,d5=30/33,d6=27/30",
+      "n_runs": 3,
+      "entropy": "极低熵·重复模式",
+      "temp": 0.0
+    },
+    "T4_translation@T0.0": {
+      "tps_mean": 32.22,
+      "accept_mean": 72.15,
+      "tok_per_cycle_mean": 3.46,
+      "backbone_ms_mean": 98.37,
+      "mtp_ms_mean": 5.422,
+      "cache_ms_mean": 0.644,
+      "sample_ms_mean": 0.047,
+      "out_tokens_mean": 82,
+      "tps_all": [
+        29.92,
+        33.91,
+        32.83
+      ],
+      "accept_all": [
+        72.15,
+        72.15,
+        72.15
+      ],
+      "accept_den_all": [
+        79,
+        79,
+        79
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=18/24,d2=15/18,d3=11/15,d4=8/11,d5=3/8,d6=2/3",
+      "n_runs": 3,
+      "entropy": "低熵·翻译",
+      "temp": 0.0
+    },
+    "T5_extraction@T0.0": {
+      "tps_mean": 42.747,
+      "accept_mean": 85.19,
+      "tok_per_cycle_mean": 4.68,
+      "backbone_ms_mean": 100.95,
+      "mtp_ms_mean": 5.833,
+      "cache_ms_mean": 0.548,
+      "sample_ms_mean": 0.056,
+      "out_tokens_mean": 177,
+      "tps_all": [
+        40.27,
+        44.31,
+        43.66
+      ],
+      "accept_all": [
+        85.19,
+        85.19,
+        85.19
+      ],
+      "accept_den_all": [
+        162,
+        162,
+        162
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=32/38,d2=28/32,d3=24/28,d4=22/24,d5=18/22,d6=14/18",
+      "n_runs": 3,
+      "entropy": "中低熵·信息抽取",
+      "temp": 0.0
+    },
+    "T6_qa_factual@T0.0": {
+      "tps_mean": 20.75,
+      "accept_mean": 59.69,
+      "tok_per_cycle_mean": 2.42,
+      "backbone_ms_mean": 105.103,
+      "mtp_ms_mean": 9.123,
+      "cache_ms_mean": 0.864,
+      "sample_ms_mean": 0.109,
+      "out_tokens_mean": 401,
+      "tps_all": [
+        20.45,
+        21.03,
+        20.77
+      ],
+      "accept_all": [
+        59.69,
+        59.69,
+        59.69
+      ],
+      "accept_den_all": [
+        392,
+        392,
+        392
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=94/166,d2=62/94,d3=38/62,d4=22/38,d5=10/22,d6=8/10",
+      "n_runs": 3,
+      "entropy": "中熵·知识问答",
+      "temp": 0.0
+    },
+    "T7_math_reasoning@T0.0": {
+      "tps_mean": 46.33,
+      "accept_mean": 91.73,
+      "tok_per_cycle_mean": 5.45,
+      "backbone_ms_mean": 109.943,
+      "mtp_ms_mean": 5.797,
+      "cache_ms_mean": 0.464,
+      "sample_ms_mean": 0.051,
+      "out_tokens_mean": 600,
+      "tps_all": [
+        46.27,
+        46.62,
+        46.1
+      ],
+      "accept_all": [
+        91.73,
+        91.73,
+        91.73
+      ],
+      "accept_den_all": [
+        532,
+        532,
+        532
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=98/110,d2=93/98,d3=83/93,d4=77/83,d5=71/77,d6=66/71",
+      "n_runs": 3,
+      "entropy": "中高熵·数学推理",
+      "temp": 0.0
+    },
+    "T8_creative_writing@T0.0": {
+      "tps_mean": 17.207,
+      "accept_mean": 53.52,
+      "tok_per_cycle_mean": 2.15,
+      "backbone_ms_mean": 119.327,
+      "mtp_ms_mean": 4.109,
+      "cache_ms_mean": 0.433,
+      "sample_ms_mean": 0.043,
+      "out_tokens_mean": 457,
+      "tps_all": [
+        17.36,
+        17.81,
+        16.45
+      ],
+      "accept_all": [
+        53.52,
+        53.52,
+        53.52
+      ],
+      "accept_den_all": [
+        454,
+        454,
+        454
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=123/213,d2=71/123,d3=27/71,d4=14/27,d5=6/14,d6=2/6",
+      "n_runs": 3,
+      "entropy": "高熵·创意写作",
+      "temp": 0.0
+    },
+    "T9_rust_impl@T0.0": {
+      "tps_mean": 36.487,
+      "accept_mean": 85.46,
+      "tok_per_cycle_mean": 4.73,
+      "backbone_ms_mean": 121.017,
+      "mtp_ms_mean": 6.62,
+      "cache_ms_mean": 0.569,
+      "sample_ms_mean": 0.066,
+      "out_tokens_mean": 800,
+      "tps_all": [
+        35.89,
+        36.91,
+        36.66
+      ],
+      "accept_all": [
+        85.46,
+        85.46,
+        85.46
+      ],
+      "accept_den_all": [
+        736,
+        736,
+        736
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=154/169,d2=129/154,d3=112/129,d4=94/112,d5=78/94,d6=62/78",
+      "n_runs": 3,
+      "entropy": "低熵·Rust 实现",
+      "temp": 0.0
+    },
+    "T10_ts_component@T0.0": {
+      "tps_mean": 43.81,
+      "accept_mean": 92.13,
+      "tok_per_cycle_mean": 5.72,
+      "backbone_ms_mean": 120.343,
+      "mtp_ms_mean": 7.482,
+      "cache_ms_mean": 0.62,
+      "sample_ms_mean": 0.068,
+      "out_tokens_mean": 725,
+      "tps_all": [
+        43.0,
+        44.11,
+        44.32
+      ],
+      "accept_all": [
+        92.13,
+        92.13,
+        92.13
+      ],
+      "accept_den_all": [
+        648,
+        648,
+        648
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=119/127,d2=111/119,d3=105/111,d4=97/105,d5=89/97,d6=76/89",
+      "n_runs": 3,
+      "entropy": "低熵·TypeScript 组件",
+      "temp": 0.0
+    },
+    "T11_doc_rewrite@T0.0": {
+      "tps_mean": 27.827,
+      "accept_mean": 77.22,
+      "tok_per_cycle_mean": 3.67,
+      "backbone_ms_mean": 122.5,
+      "mtp_ms_mean": 7.026,
+      "cache_ms_mean": 0.654,
+      "sample_ms_mean": 0.082,
+      "out_tokens_mean": 659,
+      "tps_all": [
+        26.71,
+        28.2,
+        28.57
+      ],
+      "accept_all": [
+        77.22,
+        77.22,
+        77.22
+      ],
+      "accept_den_all": [
+        619,
+        619,
+        619
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=136/180,d2=108/136,d3=80/108,d4=64/80,d5=51/64,d6=39/51",
+      "n_runs": 3,
+      "entropy": "中熵·技术文档重写",
+      "temp": 0.0
+    }
+  },
+  "8": {
+    "T1_json_structured@T0.0": {
+      "tps_mean": 40.523,
+      "accept_mean": 94.04,
+      "tok_per_cycle_mean": 7.14,
+      "backbone_ms_mean": 161.943,
+      "mtp_ms_mean": 10.675,
+      "cache_ms_mean": 0.635,
+      "sample_ms_mean": 0.043,
+      "out_tokens_mean": 700,
+      "tps_all": [
+        38.37,
+        41.21,
+        41.99
+      ],
+      "accept_all": [
+        94.04,
+        94.04,
+        94.04
+      ],
+      "accept_den_all": [
+        638,
+        638,
+        638
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=92/98,d2=88/92,d3=83/88,d4=77/83,d5=71/77,d6=66/71,d7=63/66,d8=60/63",
+      "n_runs": 3,
+      "entropy": "极低熵·结构化输出",
+      "temp": 0.0
+    },
+    "T2_code_function@T0.0": {
+      "tps_mean": 36.797,
+      "accept_mean": 89.78,
+      "tok_per_cycle_mean": 6.19,
+      "backbone_ms_mean": 154.477,
+      "mtp_ms_mean": 10.145,
+      "cache_ms_mean": 0.625,
+      "sample_ms_mean": 0.038,
+      "out_tokens_mean": 600,
+      "tps_all": [
+        36.38,
+        37.13,
+        36.88
+      ],
+      "accept_all": [
+        89.78,
+        89.78,
+        89.78
+      ],
+      "accept_den_all": [
+        558,
+        558,
+        558
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=91/97,d2=81/91,d3=74/81,d4=67/74,d5=57/67,d6=48/57,d7=43/48,d8=40/43",
+      "n_runs": 3,
+      "entropy": "低熵·代码生成",
+      "temp": 0.0
+    },
+    "T3_code_repetitive@T0.0": {
+      "tps_mean": 43.943,
+      "accept_mean": 92.99,
+      "tok_per_cycle_mean": 7.09,
+      "backbone_ms_mean": 146.673,
+      "mtp_ms_mean": 10.063,
+      "cache_ms_mean": 0.58,
+      "sample_ms_mean": 0.038,
+      "out_tokens_mean": 233,
+      "tps_all": [
+        42.76,
+        44.61,
+        44.46
+      ],
+      "accept_all": [
+        92.99,
+        92.99,
+        92.99
+      ],
+      "accept_den_all": [
+        214,
+        214,
+        214
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=31/33,d2=29/31,d3=28/29,d4=26/28,d5=25/26,d6=23/25,d7=19/23,d8=18/19",
+      "n_runs": 3,
+      "entropy": "极低熵·重复模式",
+      "temp": 0.0
+    },
+    "T4_translation@T0.0": {
+      "tps_mean": 23.163,
+      "accept_mean": 73.75,
+      "tok_per_cycle_mean": 3.77,
+      "backbone_ms_mean": 148.463,
+      "mtp_ms_mean": 9.37,
+      "cache_ms_mean": 0.63,
+      "sample_ms_mean": 0.045,
+      "out_tokens_mean": 82,
+      "tps_all": [
+        21.9,
+        23.86,
+        23.73
+      ],
+      "accept_all": [
+        73.75,
+        73.75,
+        73.75
+      ],
+      "accept_den_all": [
+        80,
+        80,
+        80
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=19/22,d2=13/19,d3=9/13,d4=8/9,d5=4/8,d6=3/4,d7=2/3,d8=1/2",
+      "n_runs": 3,
+      "entropy": "低熵·翻译",
+      "temp": 0.0
+    },
+    "T5_extraction@T0.0": {
+      "tps_mean": 34.53,
+      "accept_mean": 86.23,
+      "tok_per_cycle_mean": 5.56,
+      "backbone_ms_mean": 146.997,
+      "mtp_ms_mean": 9.673,
+      "cache_ms_mean": 0.606,
+      "sample_ms_mean": 0.034,
+      "out_tokens_mean": 177,
+      "tps_all": [
+        33.55,
+        35.02,
+        35.02
+      ],
+      "accept_all": [
+        86.23,
+        86.23,
+        86.23
+      ],
+      "accept_den_all": [
+        167,
+        167,
+        167
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=28/32,d2=24/28,d3=22/24,d4=20/22,d5=16/20,d6=13/16,d7=12/13,d8=9/12",
+      "n_runs": 3,
+      "entropy": "中低熵·信息抽取",
+      "temp": 0.0
+    },
+    "T6_qa_factual@T0.0": {
+      "tps_mean": 14.04,
+      "accept_mean": 62.15,
+      "tok_per_cycle_mean": 2.63,
+      "backbone_ms_mean": 174.857,
+      "mtp_ms_mean": 9.521,
+      "cache_ms_mean": 0.68,
+      "sample_ms_mean": 0.039,
+      "out_tokens_mean": 431,
+      "tps_all": [
+        13.82,
+        14.31,
+        13.99
+      ],
+      "accept_all": [
+        62.15,
+        62.15,
+        62.15
+      ],
+      "accept_den_all": [
+        428,
+        428,
+        428
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=108/164,d2=71/108,d3=40/71,d4=19/40,d5=13/19,d6=8/13,d7=5/8,d8=2/5",
+      "n_runs": 3,
+      "entropy": "中熵·知识问答",
+      "temp": 0.0
+    },
+    "T7_math_reasoning@T0.0": {
+      "tps_mean": 30.913,
+      "accept_mean": 90.07,
+      "tok_per_cycle_mean": 6.06,
+      "backbone_ms_mean": 181.087,
+      "mtp_ms_mean": 11.073,
+      "cache_ms_mean": 0.693,
+      "sample_ms_mean": 0.054,
+      "out_tokens_mean": 600,
+      "tps_all": [
+        30.81,
+        31.21,
+        30.72
+      ],
+      "accept_all": [
+        90.07,
+        90.07,
+        90.07
+      ],
+      "accept_den_all": [
+        554,
+        554,
+        554
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=88/99,d2=76/88,d3=67/76,d4=63/67,d5=60/63,d6=53/60,d7=48/53,d8=44/48",
+      "n_runs": 3,
+      "entropy": "中高熵·数学推理",
+      "temp": 0.0
+    },
+    "T8_creative_writing@T0.0": {
+      "tps_mean": 10.753,
+      "accept_mean": 53.56,
+      "tok_per_cycle_mean": 2.16,
+      "backbone_ms_mean": 188.05,
+      "mtp_ms_mean": 9.677,
+      "cache_ms_mean": 0.714,
+      "sample_ms_mean": 0.043,
+      "out_tokens_mean": 465,
+      "tps_all": [
+        10.23,
+        10.94,
+        11.09
+      ],
+      "accept_all": [
+        53.56,
+        53.56,
+        53.56
+      ],
+      "accept_den_all": [
+        463,
+        463,
+        463
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=126/216,d2=67/126,d3=32/67,d4=13/32,d5=5/13,d6=2/5,d7=2/2,d8=1/2",
+      "n_runs": 3,
+      "entropy": "高熵·创意写作",
+      "temp": 0.0
+    },
+    "T9_rust_impl@T0.0": {
+      "tps_mean": 26.767,
+      "accept_mean": 84.31,
+      "tok_per_cycle_mean": 5.23,
+      "backbone_ms_mean": 180.81,
+      "mtp_ms_mean": 10.804,
+      "cache_ms_mean": 0.722,
+      "sample_ms_mean": 0.046,
+      "out_tokens_mean": 800,
+      "tps_all": [
+        26.11,
+        27.04,
+        27.15
+      ],
+      "accept_all": [
+        84.31,
+        84.31,
+        84.31
+      ],
+      "accept_den_all": [
+        765,
+        765,
+        765
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=137/153,d2=114/137,d3=99/114,d4=84/99,d5=71/84,d6=59/71,d7=48/59,d8=33/48",
+      "n_runs": 3,
+      "entropy": "低熵·Rust 实现",
+      "temp": 0.0
+    },
+    "T10_ts_component@T0.0": {
+      "tps_mean": 34.633,
+      "accept_mean": 90.51,
+      "tok_per_cycle_mean": 6.61,
+      "backbone_ms_mean": 175.943,
+      "mtp_ms_mean": 11.061,
+      "cache_ms_mean": 0.685,
+      "sample_ms_mean": 0.046,
+      "out_tokens_mean": 800,
+      "tps_all": [
+        34.09,
+        34.79,
+        35.02
+      ],
+      "accept_all": [
+        90.51,
+        90.51,
+        90.51
+      ],
+      "accept_den_all": [
+        748,
+        748,
+        748
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=114/121,d2=108/114,d3=99/108,d4=91/99,d5=84/91,d6=71/84,d7=60/71,d8=50/60",
+      "n_runs": 3,
+      "entropy": "低熵·TypeScript 组件",
+      "temp": 0.0
+    },
+    "T11_doc_rewrite@T0.0": {
+      "tps_mean": 21.16,
+      "accept_mean": 78.14,
+      "tok_per_cycle_mean": 4.04,
+      "backbone_ms_mean": 177.227,
+      "mtp_ms_mean": 10.222,
+      "cache_ms_mean": 0.71,
+      "sample_ms_mean": 0.044,
+      "out_tokens_mean": 581,
+      "tps_all": [
+        20.76,
+        21.44,
+        21.28
+      ],
+      "accept_all": [
+        78.14,
+        78.14,
+        78.14
+      ],
+      "accept_den_all": [
+        558,
+        558,
+        558
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=113/144,d2=87/113,d3=67/87,d4=48/67,d5=41/48,d6=31/41,d7=27/31,d8=22/27",
+      "n_runs": 3,
+      "entropy": "中熵·技术文档重写",
+      "temp": 0.0
+    }
+  }
+}

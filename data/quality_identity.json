@@ -1,0 +1,98 @@
+{
+  "experiment": "quality_identity",
+  "temperature": 0.0,
+  "depth": 1,
+  "tasks": [
+    "T9_rust_impl",
+    "T1_json_structured",
+    "T8_creative_writing"
+  ],
+  "on": {
+    "T9_rust_impl": {
+      "sha256": "802c75469643f79b4d579f0650a7c65ccec5f03f57176e328f992504e3d3b807",
+      "chars": 3096,
+      "completion_tokens": 800,
+      "alpha": 91.83,
+      "tps": 46.66,
+      "n_mtp_lines": 1
+    },
+    "T1_json_structured": {
+      "sha256": "f907c3aea7224687acbd522221afcb0e4e786608a1ce525bcf3f7b68801a40bc",
+      "chars": 1741,
+      "completion_tokens": 700,
+      "alpha": 93.35,
+      "tps": 52.54,
+      "n_mtp_lines": 1
+    },
+    "T8_creative_writing": {
+      "sha256": "6e8ad1f9fc8f0fb7551d77b0bdcda2c8f76519a54199fd8aa8a62d08fa0c2d59",
+      "chars": 682,
+      "completion_tokens": 457,
+      "alpha": 56.7,
+      "tps": 43.31,
+      "n_mtp_lines": 1
+    }
+  },
+  "off": {
+    "T9_rust_impl": {
+      "sha256": "802c75469643f79b4d579f0650a7c65ccec5f03f57176e328f992504e3d3b807",
+      "chars": 3096,
+      "completion_tokens": 800,
+      "alpha": null,
+      "tps": 43.46,
+      "n_mtp_lines": 0
+    },
+    "T1_json_structured": {
+      "sha256": "ee981772511b0c37c224b155922097f4d940f6cd662c9a6936081dfd7572cbae",
+      "chars": 1723,
+      "completion_tokens": 700,
+      "alpha": null,
+      "tps": 43.73,
+      "n_mtp_lines": 0
+    },
+    "T8_creative_writing": {
+      "sha256": "06e05df6ce7ba9841c9919c20099c18d7bc6727a6aa9ca4469891d679016b1ed",
+      "chars": 681,
+      "completion_tokens": 457,
+      "alpha": null,
+      "tps": 43.47,
+      "n_mtp_lines": 0
+    }
+  },
+  "diffs": {
+    "T9_rust_impl": {
+      "identical": true,
+      "common_prefix_chars": 3096,
+      "len_a": 3096,
+      "len_b": 3096,
+      "first_diff_index": null,
+      "n_chars_differing": 0,
+      "excerpt_a": null,
+      "excerpt_b": null
+    },
+    "T1_json_structured": {
+      "identical": false,
+      "common_prefix_chars": 685,
+      "len_a": 1741,
+      "len_b": 1723,
+      "first_diff_index": 685,
+      "n_chars_differing": 950,
+      "excerpt_a": "assistant\", \"bluetooth\"]\n  },\n  {\n    \"id\": 5,\n    \"name\": \"Smart Lock\",\n    \"price\": 249.99,\n    \"category\": \"Security\"",
+      "excerpt_b": "assistant\", \"bluetooth\"]\n  },\n  {\n    \"id\": 5,\n    \"name\": \"Robot Vacuum\",\n    \"price\": 299.99,\n    \"category\": \"Cleanin"
+    },
+    "T8_creative_writing": {
+      "identical": false,
+      "common_prefix_chars": 631,
+      "len_a": 682,
+      "len_b": 681,
+      "first_diff_index": 631,
+      "n_chars_differing": 34,
+      "excerpt_a": "深吸一口气，感到胸腔中涌起一股莫名的感动。深秋的雨，洗净了尘埃，也洗涤了心灵。在这短暂的停留中，我听见了自己心跳的声音，清晰而有力，与江水的脉搏同频共振。这不仅是季节的更替，更是生命的一次深呼吸，在萧瑟中孕育着新生的希望。",
+      "excerpt_b": "深吸一口气，感到胸腔中涌起一股莫名的感动。深秋的雨，洗净了尘埃，也洗涤了心灵。在这短暂的停留中，我听见了自己心跳的声音，沉稳而有力，与江水的脉搏同频共振。继续前行，步伐轻盈，仿佛卸下了千斤重担，走向那片被余晖照亮的远方。"
+    }
+  },
+  "n_identical": 1,
+  "all_identical": false,
+  "toggle_verified": true,
+  "note": "oMLX runs the Qwen4-Exp multi-row verify forward with serial-decode arithmetic (_omlx_mtp_row_exact_verify), which makes greedy MTP output equal MTP-off output for deterministic tasks. It is a best-effort contract, not a proof: free-form output can still diverge where two candidate tokens were within rounding of each other. OMLX_MTP_ROW_EXACT_VERIFY=0 drops even that guarantee for faster kernels."
+}

@@ -1,0 +1,436 @@
+{
+  "_note": "Aggregate only. Prompts are real but withheld: they contain personal project context. Ids are re-numbered and carry only category and language.",
+  "provenance": {
+    "source": "personal coding-agent history (Claude Code + Codex) on one machine",
+    "n_prompts": 16,
+    "selection": "self-contained prompts only, deduplicated by content-word Jaccard, language-balanced, secrets and high-entropy strings excluded",
+    "task_mix": {
+      "运维/配置": 1,
+      "对话/元指令": 9,
+      "调研/分析": 3,
+      "代码生成/重构": 3
+    }
+  },
+  "by_depth": {
+    "1": {
+      "R01": {
+        "accept_mean": 81.78,
+        "tps_mean": 44.63,
+        "out_tokens_mean": 900,
+        "cat": "代码生成/重构",
+        "lang": "en"
+      },
+      "R02": {
+        "accept_mean": 74.37,
+        "tps_mean": 44.177,
+        "out_tokens_mean": 900,
+        "cat": "代码生成/重构",
+        "lang": "en"
+      },
+      "R03": {
+        "accept_mean": 76.42,
+        "tps_mean": 42.207,
+        "out_tokens_mean": 900,
+        "cat": "代码生成/重构",
+        "lang": "en"
+      },
+      "R04": {
+        "accept_mean": 72.36,
+        "tps_mean": 38.137,
+        "out_tokens_mean": 900,
+        "cat": "调研/分析",
+        "lang": "cn"
+      },
+      "R05": {
+        "accept_mean": 75.39,
+        "tps_mean": 37.523,
+        "out_tokens_mean": 900,
+        "cat": "调研/分析",
+        "lang": "en"
+      },
+      "R06": {
+        "accept_mean": 76.09,
+        "tps_mean": 46.407,
+        "out_tokens_mean": 82,
+        "cat": "运维/配置",
+        "lang": "cn"
+      },
+      "R07": {
+        "accept_mean": 76.37,
+        "tps_mean": 36.65,
+        "out_tokens_mean": 710,
+        "cat": "对话/元指令",
+        "lang": "cn"
+      },
+      "R08": {
+        "accept_mean": 71.88,
+        "tps_mean": 36.357,
+        "out_tokens_mean": 551,
+        "cat": "对话/元指令",
+        "lang": "cn"
+      },
+      "R09": {
+        "accept_mean": 69.75,
+        "tps_mean": 36.163,
+        "out_tokens_mean": 900,
+        "cat": "对话/元指令",
+        "lang": "cn"
+      },
+      "R10": {
+        "accept_mean": 70.93,
+        "tps_mean": 38.12,
+        "out_tokens_mean": 389,
+        "cat": "对话/元指令",
+        "lang": "en"
+      },
+      "R11": {
+        "accept_mean": 87.47,
+        "tps_mean": 40.9,
+        "out_tokens_mean": 900,
+        "cat": "对话/元指令",
+        "lang": "en"
+      },
+      "R12": {
+        "accept_mean": 70.72,
+        "tps_mean": 36.853,
+        "out_tokens_mean": 900,
+        "cat": "对话/元指令",
+        "lang": "cn"
+      },
+      "R13": {
+        "accept_mean": 78.17,
+        "tps_mean": 38.857,
+        "out_tokens_mean": 900,
+        "cat": "对话/元指令",
+        "lang": "en"
+      },
+      "R14": {
+        "accept_mean": 76.49,
+        "tps_mean": 39.063,
+        "out_tokens_mean": 624,
+        "cat": "调研/分析",
+        "lang": "en"
+      },
+      "R15": {
+        "accept_mean": 72.67,
+        "tps_mean": 38.35,
+        "out_tokens_mean": 538,
+        "cat": "对话/元指令",
+        "lang": "cn"
+      },
+      "R16": {
+        "accept_mean": 75.64,
+        "tps_mean": 37.987,
+        "out_tokens_mean": 823,
+        "cat": "对话/元指令",
+        "lang": "en"
+      }
+    },
+    "2": {
+      "R01": {
+        "accept_mean": 77.3,
+        "tps_mean": 41.32,
+        "out_tokens_mean": 900,
+        "cat": "代码生成/重构",
+        "lang": "en"
+      },
+      "R02": {
+        "accept_mean": 73.76,
+        "tps_mean": 41.663,
+        "out_tokens_mean": 900,
+        "cat": "代码生成/重构",
+        "lang": "en"
+      },
+      "R03": {
+        "accept_mean": 75.41,
+        "tps_mean": 40.223,
+        "out_tokens_mean": 900,
+        "cat": "代码生成/重构",
+        "lang": "en"
+      },
+      "R04": {
+        "accept_mean": 71.14,
+        "tps_mean": 36.317,
+        "out_tokens_mean": 900,
+        "cat": "调研/分析",
+        "lang": "cn"
+      },
+      "R05": {
+        "accept_mean": 73.8,
+        "tps_mean": 36.417,
+        "out_tokens_mean": 900,
+        "cat": "调研/分析",
+        "lang": "en"
+      },
+      "R06": {
+        "accept_mean": 74.19,
+        "tps_mean": 46.317,
+        "out_tokens_mean": 82,
+        "cat": "运维/配置",
+        "lang": "cn"
+      },
+      "R07": {
+        "accept_mean": 77.27,
+        "tps_mean": 37.413,
+        "out_tokens_mean": 710,
+        "cat": "对话/元指令",
+        "lang": "cn"
+      },
+      "R08": {
+        "accept_mean": 67.97,
+        "tps_mean": 34.873,
+        "out_tokens_mean": 551,
+        "cat": "对话/元指令",
+        "lang": "cn"
+      },
+      "R09": {
+        "accept_mean": 67.18,
+        "tps_mean": 34.503,
+        "out_tokens_mean": 900,
+        "cat": "对话/元指令",
+        "lang": "cn"
+      },
+      "R10": {
+        "accept_mean": 70.33,
+        "tps_mean": 37.92,
+        "out_tokens_mean": 389,
+        "cat": "对话/元指令",
+        "lang": "en"
+      },
+      "R11": {
+        "accept_mean": 83.87,
+        "tps_mean": 43.227,
+        "out_tokens_mean": 900,
+        "cat": "对话/元指令",
+        "lang": "en"
+      },
+      "R12": {
+        "accept_mean": 65.46,
+        "tps_mean": 35.483,
+        "out_tokens_mean": 900,
+        "cat": "对话/元指令",
+        "lang": "cn"
+      },
+      "R13": {
+        "accept_mean": 78.56,
+        "tps_mean": 40.427,
+        "out_tokens_mean": 900,
+        "cat": "对话/元指令",
+        "lang": "en"
+      },
+      "R14": {
+        "accept_mean": 70.72,
+        "tps_mean": 37.697,
+        "out_tokens_mean": 624,
+        "cat": "调研/分析",
+        "lang": "en"
+      },
+      "R15": {
+        "accept_mean": 69.86,
+        "tps_mean": 37.333,
+        "out_tokens_mean": 538,
+        "cat": "对话/元指令",
+        "lang": "cn"
+      },
+      "R16": {
+        "accept_mean": 73.6,
+        "tps_mean": 38.323,
+        "out_tokens_mean": 823,
+        "cat": "对话/元指令",
+        "lang": "en"
+      }
+    },
+    "3": {
+      "R01": {
+        "accept_mean": 76.68,
+        "tps_mean": 41.9,
+        "out_tokens_mean": 900,
+        "cat": "代码生成/重构",
+        "lang": "en"
+      },
+      "R02": {
+        "accept_mean": 72.06,
+        "tps_mean": 39.663,
+        "out_tokens_mean": 900,
+        "cat": "代码生成/重构",
+        "lang": "en"
+      },
+      "R03": {
+        "accept_mean": 73.14,
+        "tps_mean": 37.007,
+        "out_tokens_mean": 900,
+        "cat": "代码生成/重构",
+        "lang": "en"
+      },
+      "R04": {
+        "accept_mean": 69.4,
+        "tps_mean": 31.827,
+        "out_tokens_mean": 900,
+        "cat": "调研/分析",
+        "lang": "cn"
+      },
+      "R05": {
+        "accept_mean": 72.16,
+        "tps_mean": 33.027,
+        "out_tokens_mean": 900,
+        "cat": "调研/分析",
+        "lang": "en"
+      },
+      "R06": {
+        "accept_mean": 75.36,
+        "tps_mean": 43.673,
+        "out_tokens_mean": 82,
+        "cat": "运维/配置",
+        "lang": "cn"
+      },
+      "R07": {
+        "accept_mean": 75.42,
+        "tps_mean": 34.76,
+        "out_tokens_mean": 710,
+        "cat": "对话/元指令",
+        "lang": "cn"
+      },
+      "R08": {
+        "accept_mean": 65.43,
+        "tps_mean": 30.527,
+        "out_tokens_mean": 551,
+        "cat": "对话/元指令",
+        "lang": "cn"
+      },
+      "R09": {
+        "accept_mean": 67.17,
+        "tps_mean": 31.307,
+        "out_tokens_mean": 900,
+        "cat": "对话/元指令",
+        "lang": "cn"
+      },
+      "R10": {
+        "accept_mean": 68.44,
+        "tps_mean": 33.353,
+        "out_tokens_mean": 389,
+        "cat": "对话/元指令",
+        "lang": "en"
+      },
+      "R11": {
+        "accept_mean": 85.2,
+        "tps_mean": 41.603,
+        "out_tokens_mean": 900,
+        "cat": "对话/元指令",
+        "lang": "en"
+      },
+      "R12": {
+        "accept_mean": 65.03,
+        "tps_mean": 30.42,
+        "out_tokens_mean": 900,
+        "cat": "对话/元指令",
+        "lang": "cn"
+      },
+      "R13": {
+        "accept_mean": 77.03,
+        "tps_mean": 36.493,
+        "out_tokens_mean": 900,
+        "cat": "对话/元指令",
+        "lang": "en"
+      },
+      "R14": {
+        "accept_mean": 68.81,
+        "tps_mean": 32.887,
+        "out_tokens_mean": 624,
+        "cat": "调研/分析",
+        "lang": "en"
+      },
+      "R15": {
+        "accept_mean": 68.95,
+        "tps_mean": 33.097,
+        "out_tokens_mean": 538,
+        "cat": "对话/元指令",
+        "lang": "cn"
+      },
+      "R16": {
+        "accept_mean": 70.77,
+        "tps_mean": 34.083,
+        "out_tokens_mean": 823,
+        "cat": "对话/元指令",
+        "lang": "en"
+      }
+    }
+  },
+  "sign_test": {
+    "n": 16,
+    "alpha_wins_d1": 14,
+    "alpha_p": 0.0021,
+    "tps_wins_d1": 12,
+    "alpha_delta_mean": 2.26,
+    "alpha_delta_median": 1.97,
+    "alpha_delta_range": [
+      -0.9,
+      5.77
+    ]
+  },
+  "depth2_t07": {
+    "R01": {
+      "accept_mean": 84.003,
+      "tps_mean": 42.313
+    },
+    "R02": {
+      "accept_mean": 72.313,
+      "tps_mean": 38.727
+    },
+    "R03": {
+      "accept_mean": 75.927,
+      "tps_mean": 40.603
+    },
+    "R04": {
+      "accept_mean": 67.99,
+      "tps_mean": 35.07
+    },
+    "R05": {
+      "accept_mean": 73.65,
+      "tps_mean": 36.047
+    },
+    "R06": {
+      "accept_mean": 64.707,
+      "tps_mean": 36.4
+    },
+    "R07": {
+      "accept_mean": 75.107,
+      "tps_mean": 36.09
+    },
+    "R08": {
+      "accept_mean": 75.74,
+      "tps_mean": 36.1
+    },
+    "R09": {
+      "accept_mean": 69.167,
+      "tps_mean": 33.677
+    },
+    "R10": {
+      "accept_mean": 72.127,
+      "tps_mean": 35.74
+    },
+    "R11": {
+      "accept_mean": 79.613,
+      "tps_mean": 40.223
+    },
+    "R12": {
+      "accept_mean": 68.527,
+      "tps_mean": 34.067
+    },
+    "R13": {
+      "accept_mean": 74.273,
+      "tps_mean": 36.06
+    },
+    "R14": {
+      "accept_mean": 72.687,
+      "tps_mean": 35.33
+    },
+    "R15": {
+      "accept_mean": 67.79,
+      "tps_mean": 33.413
+    },
+    "R16": {
+      "accept_mean": 77.77,
+      "tps_mean": 38.32
+    }
+  }
+}

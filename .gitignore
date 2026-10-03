@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.DS_Store
+# Local overrides
+.env
+local_config.json
+
+# local secrets — never commit
+src/.ask.local.json

@@ -1,0 +1,229 @@
+{
+  "experiment": "ab_mtp_on_off",
+  "temperature": 0.0,
+  "depth": 1,
+  "reps": 3,
+  "tasks": [
+    "T2_code_function",
+    "T3_code_repetitive",
+    "T6_qa_factual",
+    "T8_creative_writing"
+  ],
+  "noise_pct": 4.5,
+  "on": {
+    "T2_code_function": {
+      "runs": [
+        {
+          "tps": 41.65,
+          "alpha": 96.07,
+          "completion_tokens": 600,
+          "n_mtp_lines": 1
+        },
+        {
+          "tps": 46.6,
+          "alpha": 96.07,
+          "completion_tokens": 600,
+          "n_mtp_lines": 1
+        },
+        {
+          "tps": 48.2,
+          "alpha": 96.07,
+          "completion_tokens": 600,
+          "n_mtp_lines": 1
+        }
+      ],
+      "tps_mean": 45.48,
+      "alpha_mean": 96.07,
+      "mtp_lines_total": 3
+    },
+    "T3_code_repetitive": {
+      "runs": [
+        {
+          "tps": 51.49,
+          "alpha": 98.29,
+          "completion_tokens": 233,
+          "n_mtp_lines": 1
+        },
+        {
+          "tps": 53.79,
+          "alpha": 98.29,
+          "completion_tokens": 233,
+          "n_mtp_lines": 1
+        },
+        {
+          "tps": 53.75,
+          "alpha": 98.29,
+          "completion_tokens": 233,
+          "n_mtp_lines": 1
+        }
+      ],
+      "tps_mean": 53.01,
+      "alpha_mean": 98.29,
+      "mtp_lines_total": 3
+    },
+    "T6_qa_factual": {
+      "runs": [
+        {
+          "tps": 38.55,
+          "alpha": 65.29,
+          "completion_tokens": 401,
+          "n_mtp_lines": 1
+        },
+        {
+          "tps": 43.23,
+          "alpha": 65.29,
+          "completion_tokens": 401,
+          "n_mtp_lines": 1
+        },
+        {
+          "tps": 41.14,
+          "alpha": 65.29,
+          "completion_tokens": 401,
+          "n_mtp_lines": 1
+        }
+      ],
+      "tps_mean": 40.97,
+      "alpha_mean": 65.29,
+      "mtp_lines_total": 3
+    },
+    "T8_creative_writing": {
+      "runs": [
+        {
+          "tps": 37.84,
+          "alpha": 56.7,
+          "completion_tokens": 457,
+          "n_mtp_lines": 1
+        },
+        {
+          "tps": 36.74,
+          "alpha": 56.7,
+          "completion_tokens": 457,
+          "n_mtp_lines": 1
+        },
+        {
+          "tps": 34.14,
+          "alpha": 56.7,
+          "completion_tokens": 457,
+          "n_mtp_lines": 1
+        }
+      ],
+      "tps_mean": 36.24,
+      "alpha_mean": 56.7,
+      "mtp_lines_total": 3
+    }
+  },
+  "off": {
+    "T2_code_function": {
+      "runs": [
+        {
+          "tps": 36.67,
+          "alpha": null,
+          "completion_tokens": 600,
+          "n_mtp_lines": 0
+        },
+        {
+          "tps": 40.14,
+          "alpha": null,
+          "completion_tokens": 600,
+          "n_mtp_lines": 0
+        },
+        {
+          "tps": 41.42,
+          "alpha": null,
+          "completion_tokens": 600,
+          "n_mtp_lines": 0
+        }
+      ],
+      "tps_mean": 39.41,
+      "alpha_mean": null,
+      "mtp_lines_total": 0
+    },
+    "T3_code_repetitive": {
+      "runs": [
+        {
+          "tps": 42.16,
+          "alpha": null,
+          "completion_tokens": 233,
+          "n_mtp_lines": 0
+        },
+        {
+          "tps": 43.19,
+          "alpha": null,
+          "completion_tokens": 233,
+          "n_mtp_lines": 0
+        },
+        {
+          "tps": 43.27,
+          "alpha": null,
+          "completion_tokens": 233,
+          "n_mtp_lines": 0
+        }
+      ],
+      "tps_mean": 42.87,
+      "alpha_mean": null,
+      "mtp_lines_total": 0
+    },
+    "T6_qa_factual": {
+      "runs": [
+        {
+          "tps": 39.79,
+          "alpha": null,
+          "completion_tokens": 417,
+          "n_mtp_lines": 0
+        },
+        {
+          "tps": 43.08,
+          "alpha": null,
+          "completion_tokens": 417,
+          "n_mtp_lines": 0
+        },
+        {
+          "tps": 43.32,
+          "alpha": null,
+          "completion_tokens": 417,
+          "n_mtp_lines": 0
+        }
+      ],
+      "tps_mean": 42.06,
+      "alpha_mean": null,
+      "mtp_lines_total": 0
+    },
+    "T8_creative_writing": {
+      "runs": [
+        {
+          "tps": 42.52,
+          "alpha": null,
+          "completion_tokens": 457,
+          "n_mtp_lines": 0
+        },
+        {
+          "tps": 42.88,
+          "alpha": null,
+          "completion_tokens": 457,
+          "n_mtp_lines": 0
+        },
+        {
+          "tps": 41.92,
+          "alpha": null,
+          "completion_tokens": 457,
+          "n_mtp_lines": 0
+        }
+      ],
+      "tps_mean": 42.44,
+      "alpha_mean": null,
+      "mtp_lines_total": 0
+    }
+  },
+  "deltas_pct": [
+    15.4,
+    23.65,
+    -2.59,
+    -14.61
+  ],
+  "mean_delta_pct": 5.46,
+  "median_delta_pct": 6.41,
+  "n_faster": 2,
+  "n_slower": 1,
+  "toggle_verified": true,
+  "confound": "mtp_enabled is a single switch: there is no way to disable only the draft head, so the two arms also differ in which decode kernel runs (multi-row row-exact verify vs serial decode). The PLE block is unconditional (if \"ple\" in self, inside the decoder layer), so it and its SSD reads are present in both arms. The measured delta is real; its cause is not isolated by this design."
+}

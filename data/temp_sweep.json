@@ -1,0 +1,4089 @@
+{
+  "1": {
+    "T1_json_structured@T0.0": {
+      "tps_mean": 49.19,
+      "accept_mean": 93.35,
+      "tok_per_cycle_mean": 1.94,
+      "backbone_ms_mean": 38.013,
+      "mtp_ms_mean": 0.585,
+      "cache_ms_mean": 0.326,
+      "sample_ms_mean": 0.021,
+      "out_tokens_mean": 700,
+      "tps_all": [
+        46.75,
+        49.87,
+        50.95
+      ],
+      "accept_all": [
+        93.35,
+        93.35,
+        93.35
+      ],
+      "accept_den_all": [
+        361,
+        361,
+        361
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=337/361",
+      "n_runs": 3,
+      "entropy": "极低熵·结构化输出",
+      "temp": 0.0
+    },
+    "T1_json_structured@T0.3": {
+      "tps_mean": 49.41,
+      "accept_mean": 93.247,
+      "tok_per_cycle_mean": 1.94,
+      "backbone_ms_mean": 37.853,
+      "mtp_ms_mean": 0.674,
+      "cache_ms_mean": 0.311,
+      "sample_ms_mean": 0.02,
+      "out_tokens_mean": 615.667,
+      "tps_all": [
+        51.14,
+        45.45,
+        51.64
+      ],
+      "accept_all": [
+        94.43,
+        89.79,
+        95.52
+      ],
+      "accept_den_all": [
+        359,
+        235,
+        357
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=341/357",
+      "n_runs": 3,
+      "entropy": "极低熵·结构化输出",
+      "temp": 0.3
+    },
+    "T1_json_structured@T0.6": {
+      "tps_mean": 50.893,
+      "accept_mean": 96.253,
+      "tok_per_cycle_mean": 1.97,
+      "backbone_ms_mean": 37.193,
+      "mtp_ms_mean": 0.667,
+      "cache_ms_mean": 0.305,
+      "sample_ms_mean": 0.02,
+      "out_tokens_mean": 700,
+      "tps_all": [
+        50.42,
+        51.32,
+        50.94
+      ],
+      "accept_all": [
+        96.07,
+        96.62,
+        96.07
+      ],
+      "accept_den_all": [
+        356,
+        355,
+        356
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=342/356",
+      "n_runs": 3,
+      "entropy": "极低熵·结构化输出",
+      "temp": 0.6
+    },
+    "T1_json_structured@T0.9": {
+      "tps_mean": 48.883,
+      "accept_mean": 95.893,
+      "tok_per_cycle_mean": 1.963,
+      "backbone_ms_mean": 38.683,
+      "mtp_ms_mean": 0.695,
+      "cache_ms_mean": 0.319,
+      "sample_ms_mean": 0.02,
+      "out_tokens_mean": 700,
+      "tps_all": [
+        49.69,
+        48.25,
+        48.71
+      ],
+      "accept_all": [
+        95.52,
+        94.43,
+        97.73
+      ],
+      "accept_den_all": [
+        357,
+        359,
+        353
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=345/353",
+      "n_runs": 3,
+      "entropy": "极低熵·结构化输出",
+      "temp": 0.9
+    },
+    "T1_json_structured@T1.2": {
+      "tps_mean": 44.713,
+      "accept_mean": 90.557,
+      "tok_per_cycle_mean": 1.913,
+      "backbone_ms_mean": 41.207,
+      "mtp_ms_mean": 0.69,
+      "cache_ms_mean": 0.319,
+      "sample_ms_mean": 0.021,
+      "out_tokens_mean": 585.333,
+      "tps_all": [
+        45.36,
+        45.16,
+        43.62
+      ],
+      "accept_all": [
+        91.23,
+        93.25,
+        87.19
+      ],
+      "accept_den_all": [
+        365,
+        311,
+        242
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=211/242",
+      "n_runs": 3,
+      "entropy": "极低熵·结构化输出",
+      "temp": 1.2
+    },
+    "T1_json_structured@T1.6": {
+      "tps_mean": 42.89,
+      "accept_mean": 89.21,
+      "tok_per_cycle_mean": 1.9,
+      "backbone_ms_mean": 42.703,
+      "mtp_ms_mean": 0.708,
+      "cache_ms_mean": 0.329,
+      "sample_ms_mean": 0.021,
+      "out_tokens_mean": 510,
+      "tps_all": [
+        42.67,
+        44.14,
+        41.86
+      ],
+      "accept_all": [
+        87.39,
+        90.05,
+        90.19
+      ],
+      "accept_den_all": [
+        238,
+        201,
+        367
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=331/367",
+      "n_runs": 3,
+      "entropy": "极低熵·结构化输出",
+      "temp": 1.6
+    },
+    "T2_code_function@T0.0": {
+      "tps_mean": 44.683,
+      "accept_mean": 96.07,
+      "tok_per_cycle_mean": 1.97,
+      "backbone_ms_mean": 42.44,
+      "mtp_ms_mean": 0.634,
+      "cache_ms_mean": 0.351,
+      "sample_ms_mean": 0.022,
+      "out_tokens_mean": 600,
+      "tps_all": [
+        44.34,
+        45.04,
+        44.67
+      ],
+      "accept_all": [
+        96.07,
+        96.07,
+        96.07
+      ],
+      "accept_den_all": [
+        305,
+        305,
+        305
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=293/305",
+      "n_runs": 3,
+      "entropy": "低熵·代码生成",
+      "temp": 0.0
+    },
+    "T2_code_function@T0.3": {
+      "tps_mean": 42.403,
+      "accept_mean": 95.223,
+      "tok_per_cycle_mean": 1.96,
+      "backbone_ms_mean": 44.44,
+      "mtp_ms_mean": 0.798,
+      "cache_ms_mean": 0.363,
+      "sample_ms_mean": 0.023,
+      "out_tokens_mean": 600,
+      "tps_all": [
+        41.57,
+        42.93,
+        42.71
+      ],
+      "accept_all": [
+        93.53,
+        96.07,
+        96.07
+      ],
+      "accept_den_all": [
+        309,
+        305,
+        305
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=293/305",
+      "n_runs": 3,
+      "entropy": "低熵·代码生成",
+      "temp": 0.3
+    },
+    "T2_code_function@T0.6": {
+      "tps_mean": 42.773,
+      "accept_mean": 95.613,
+      "tok_per_cycle_mean": 1.96,
+      "backbone_ms_mean": 44.157,
+      "mtp_ms_mean": 0.776,
+      "cache_ms_mean": 0.352,
+      "sample_ms_mean": 0.022,
+      "out_tokens_mean": 575.333,
+      "tps_all": [
+        42.65,
+        42.79,
+        42.88
+      ],
+      "accept_all": [
+        95.42,
+        96.63,
+        94.79
+      ],
+      "accept_den_all": [
+        306,
+        267,
+        307
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=291/307",
+      "n_runs": 3,
+      "entropy": "低熵·代码生成",
+      "temp": 0.6
+    },
+    "T2_code_function@T0.9": {
+      "tps_mean": 43.323,
+      "accept_mean": 94.65,
+      "tok_per_cycle_mean": 1.953,
+      "backbone_ms_mean": 43.367,
+      "mtp_ms_mean": 0.761,
+      "cache_ms_mean": 0.348,
+      "sample_ms_mean": 0.022,
+      "out_tokens_mean": 498,
+      "tps_all": [
+        42.43,
+        44.41,
+        43.13
+      ],
+      "accept_all": [
+        92.66,
+        96.5,
+        94.79
+      ],
+      "accept_den_all": [
+        259,
+        200,
+        307
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=291/307",
+      "n_runs": 3,
+      "entropy": "低熵·代码生成",
+      "temp": 0.9
+    },
+    "T2_code_function@T1.2": {
+      "tps_mean": 43.333,
+      "accept_mean": 93.967,
+      "tok_per_cycle_mean": 1.947,
+      "backbone_ms_mean": 43.18,
+      "mtp_ms_mean": 0.766,
+      "cache_ms_mean": 0.348,
+      "sample_ms_mean": 0.022,
+      "out_tokens_mean": 591,
+      "tps_all": [
+        43.19,
+        43.06,
+        43.75
+      ],
+      "accept_all": [
+        93.58,
+        94.16,
+        94.16
+      ],
+      "accept_den_all": [
+        296,
+        308,
+        308
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=290/308",
+      "n_runs": 3,
+      "entropy": "低熵·代码生成",
+      "temp": 1.2
+    },
+    "T2_code_function@T1.6": {
+      "tps_mean": 43.977,
+      "accept_mean": 94.37,
+      "tok_per_cycle_mean": 1.95,
+      "backbone_ms_mean": 42.68,
+      "mtp_ms_mean": 0.759,
+      "cache_ms_mean": 0.346,
+      "sample_ms_mean": 0.022,
+      "out_tokens_mean": 600,
+      "tps_all": [
+        43.22,
+        44.52,
+        44.19
+      ],
+      "accept_all": [
+        92.9,
+        95.42,
+        94.79
+      ],
+      "accept_den_all": [
+        310,
+        306,
+        307
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=291/307",
+      "n_runs": 3,
+      "entropy": "低熵·代码生成",
+      "temp": 1.6
+    },
+    "T3_code_repetitive@T0.0": {
+      "tps_mean": 50.98,
+      "accept_mean": 98.29,
+      "tok_per_cycle_mean": 2.0,
+      "backbone_ms_mean": 37.53,
+      "mtp_ms_mean": 0.578,
+      "cache_ms_mean": 0.316,
+      "sample_ms_mean": 0.021,
+      "out_tokens_mean": 233,
+      "tps_all": [
+        50.79,
+        50.92,
+        51.23
+      ],
+      "accept_all": [
+        98.29,
+        98.29,
+        98.29
+      ],
+      "accept_den_all": [
+        117,
+        117,
+        117
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=115/117",
+      "n_runs": 3,
+      "entropy": "极低熵·重复模式",
+      "temp": 0.0
+    },
+    "T3_code_repetitive@T0.3": {
+      "tps_mean": 49.337,
+      "accept_mean": 98.29,
+      "tok_per_cycle_mean": 2.0,
+      "backbone_ms_mean": 38.813,
+      "mtp_ms_mean": 0.736,
+      "cache_ms_mean": 0.333,
+      "sample_ms_mean": 0.022,
+      "out_tokens_mean": 233,
+      "tps_all": [
+        49.39,
+        49.41,
+        49.21
+      ],
+      "accept_all": [
+        98.29,
+        98.29,
+        98.29
+      ],
+      "accept_den_all": [
+        117,
+        117,
+        117
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=115/117",
+      "n_runs": 3,
+      "entropy": "极低熵·重复模式",
+      "temp": 0.3
+    },
+    "T3_code_repetitive@T0.6": {
+      "tps_mean": 49.35,
+      "accept_mean": 98.107,
+      "tok_per_cycle_mean": 1.997,
+      "backbone_ms_mean": 38.853,
+      "mtp_ms_mean": 0.707,
+      "cache_ms_mean": 0.321,
+      "sample_ms_mean": 0.021,
+      "out_tokens_mean": 243.333,
+      "tps_all": [
+        50.05,
+        48.25,
+        49.75
+      ],
+      "accept_all": [
+        99.15,
+        97.78,
+        97.39
+      ],
+      "accept_den_all": [
+        117,
+        135,
+        115
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=112/115",
+      "n_runs": 3,
+      "entropy": "极低熵·重复模式",
+      "temp": 0.6
+    },
+    "T3_code_repetitive@T0.9": {
+      "tps_mean": 49.633,
+      "accept_mean": 97.77,
+      "tok_per_cycle_mean": 1.993,
+      "backbone_ms_mean": 38.533,
+      "mtp_ms_mean": 0.694,
+      "cache_ms_mean": 0.312,
+      "sample_ms_mean": 0.02,
+      "out_tokens_mean": 237,
+      "tps_all": [
+        49.39,
+        49.21,
+        50.3
+      ],
+      "accept_all": [
+        97.44,
+        97.58,
+        98.29
+      ],
+      "accept_den_all": [
+        117,
+        124,
+        117
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=115/117",
+      "n_runs": 3,
+      "entropy": "极低熵·重复模式",
+      "temp": 0.9
+    },
+    "T3_code_repetitive@T1.2": {
+      "tps_mean": 48.847,
+      "accept_mean": 96.35,
+      "tok_per_cycle_mean": 1.98,
+      "backbone_ms_mean": 38.9,
+      "mtp_ms_mean": 0.686,
+      "cache_ms_mean": 0.312,
+      "sample_ms_mean": 0.02,
+      "out_tokens_mean": 241,
+      "tps_all": [
+        50.33,
+        49.27,
+        46.94
+      ],
+      "accept_all": [
+        98.18,
+        97.54,
+        93.33
+      ],
+      "accept_den_all": [
+        110,
+        122,
+        135
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=126/135",
+      "n_runs": 3,
+      "entropy": "极低熵·重复模式",
+      "temp": 1.2
+    },
+    "T3_code_repetitive@T1.6": {
+      "tps_mean": 49.073,
+      "accept_mean": 97.263,
+      "tok_per_cycle_mean": 1.987,
+      "backbone_ms_mean": 38.773,
+      "mtp_ms_mean": 0.714,
+      "cache_ms_mean": 0.326,
+      "sample_ms_mean": 0.021,
+      "out_tokens_mean": 241,
+      "tps_all": [
+        48.86,
+        49.69,
+        48.67
+      ],
+      "accept_all": [
+        97.44,
+        96.75,
+        97.6
+      ],
+      "accept_den_all": [
+        117,
+        123,
+        125
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=122/125",
+      "n_runs": 3,
+      "entropy": "极低熵·重复模式",
+      "temp": 1.6
+    },
+    "T4_translation@T0.0": {
+      "tps_mean": 51.727,
+      "accept_mean": 88.37,
+      "tok_per_cycle_mean": 1.93,
+      "backbone_ms_mean": 35.433,
+      "mtp_ms_mean": 0.551,
+      "cache_ms_mean": 0.305,
+      "sample_ms_mean": 0.02,
+      "out_tokens_mean": 82,
+      "tps_all": [
+        49.54,
+        52.83,
+        52.81
+      ],
+      "accept_all": [
+        88.37,
+        88.37,
+        88.37
+      ],
+      "accept_den_all": [
+        43,
+        43,
+        43
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=38/43",
+      "n_runs": 3,
+      "entropy": "低熵·翻译",
+      "temp": 0.0
+    },
+    "T4_translation@T0.3": {
+      "tps_mean": 49.9,
+      "accept_mean": 86.117,
+      "tok_per_cycle_mean": 1.907,
+      "backbone_ms_mean": 36.313,
+      "mtp_ms_mean": 0.659,
+      "cache_ms_mean": 0.306,
+      "sample_ms_mean": 0.02,
+      "out_tokens_mean": 81,
+      "tps_all": [
+        51.33,
+        47.99,
+        50.38
+      ],
+      "accept_all": [
+        90.48,
+        81.82,
+        86.05
+      ],
+      "accept_den_all": [
+        42,
+        44,
+        43
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=37/43",
+      "n_runs": 3,
+      "entropy": "低熵·翻译",
+      "temp": 0.3
+    },
+    "T4_translation@T0.6": {
+      "tps_mean": 48.38,
+      "accept_mean": 83.413,
+      "tok_per_cycle_mean": 1.883,
+      "backbone_ms_mean": 36.967,
+      "mtp_ms_mean": 0.643,
+      "cache_ms_mean": 0.301,
+      "sample_ms_mean": 0.019,
+      "out_tokens_mean": 81.667,
+      "tps_all": [
+        45.92,
+        51.19,
+        48.03
+      ],
+      "accept_all": [
+        75.0,
+        93.02,
+        82.22
+      ],
+      "accept_den_all": [
+        44,
+        43,
+        45
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=37/45",
+      "n_runs": 3,
+      "entropy": "低熵·翻译",
+      "temp": 0.6
+    },
+    "T4_translation@T0.9": {
+      "tps_mean": 48.213,
+      "accept_mean": 85.167,
+      "tok_per_cycle_mean": 1.893,
+      "backbone_ms_mean": 37.42,
+      "mtp_ms_mean": 0.655,
+      "cache_ms_mean": 0.307,
+      "sample_ms_mean": 0.02,
+      "out_tokens_mean": 83.667,
+      "tps_all": [
+        46.79,
+        48.07,
+        49.78
+      ],
+      "accept_all": [
+        82.98,
+        81.82,
+        90.7
+      ],
+      "accept_den_all": [
+        47,
+        44,
+        43
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=39/43",
+      "n_runs": 3,
+      "entropy": "低熵·翻译",
+      "temp": 0.9
+    },
+    "T4_translation@T1.2": {
+      "tps_mean": 46.953,
+      "accept_mean": 79.83,
+      "tok_per_cycle_mean": 1.843,
+      "backbone_ms_mean": 37.28,
+      "mtp_ms_mean": 0.682,
+      "cache_ms_mean": 0.32,
+      "sample_ms_mean": 0.022,
+      "out_tokens_mean": 81.333,
+      "tps_all": [
+        46.92,
+        46.57,
+        47.37
+      ],
+      "accept_all": [
+        82.22,
+        77.27,
+        80.0
+      ],
+      "accept_den_all": [
+        45,
+        44,
+        45
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=36/45",
+      "n_runs": 3,
+      "entropy": "低熵·翻译",
+      "temp": 1.2
+    },
+    "T4_translation@T1.6": {
+      "tps_mean": 46.39,
+      "accept_mean": 75.767,
+      "tok_per_cycle_mean": 1.8,
+      "backbone_ms_mean": 36.93,
+      "mtp_ms_mean": 0.642,
+      "cache_ms_mean": 0.303,
+      "sample_ms_mean": 0.019,
+      "out_tokens_mean": 83,
+      "tps_all": [
+        45.15,
+        47.08,
+        46.94
+      ],
+      "accept_all": [
+        72.92,
+        76.6,
+        77.78
+      ],
+      "accept_den_all": [
+        48,
+        47,
+        45
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=35/45",
+      "n_runs": 3,
+      "entropy": "低熵·翻译",
+      "temp": 1.6
+    },
+    "T5_extraction@T0.0": {
+      "tps_mean": 52.107,
+      "accept_mean": 89.25,
+      "tok_per_cycle_mean": 1.91,
+      "backbone_ms_mean": 35.123,
+      "mtp_ms_mean": 0.539,
+      "cache_ms_mean": 0.303,
+      "sample_ms_mean": 0.019,
+      "out_tokens_mean": 177,
+      "tps_all": [
+        51.22,
+        52.65,
+        52.45
+      ],
+      "accept_all": [
+        89.25,
+        89.25,
+        89.25
+      ],
+      "accept_den_all": [
+        93,
+        93,
+        93
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=83/93",
+      "n_runs": 3,
+      "entropy": "中低熵·信息抽取",
+      "temp": 0.0
+    },
+    "T5_extraction@T0.3": {
+      "tps_mean": 51.123,
+      "accept_mean": 92.6,
+      "tok_per_cycle_mean": 1.95,
+      "backbone_ms_mean": 36.487,
+      "mtp_ms_mean": 0.656,
+      "cache_ms_mean": 0.302,
+      "sample_ms_mean": 0.019,
+      "out_tokens_mean": 183.333,
+      "tps_all": [
+        51.39,
+        51.15,
+        50.83
+      ],
+      "accept_all": [
+        92.47,
+        92.47,
+        92.86
+      ],
+      "accept_den_all": [
+        93,
+        93,
+        98
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=91/98",
+      "n_runs": 3,
+      "entropy": "中低熵·信息抽取",
+      "temp": 0.3
+    },
+    "T5_extraction@T0.6": {
+      "tps_mean": 50.013,
+      "accept_mean": 91.193,
+      "tok_per_cycle_mean": 1.933,
+      "backbone_ms_mean": 37.047,
+      "mtp_ms_mean": 0.653,
+      "cache_ms_mean": 0.3,
+      "sample_ms_mean": 0.02,
+      "out_tokens_mean": 195.333,
+      "tps_all": [
+        49.23,
+        50.22,
+        50.59
+      ],
+      "accept_all": [
+        91.07,
+        90.2,
+        92.31
+      ],
+      "accept_den_all": [
+        112,
+        102,
+        91
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=84/91",
+      "n_runs": 3,
+      "entropy": "中低熵·信息抽取",
+      "temp": 0.6
+    },
+    "T5_extraction@T0.9": {
+      "tps_mean": 50.283,
+      "accept_mean": 92.937,
+      "tok_per_cycle_mean": 1.95,
+      "backbone_ms_mean": 37.2,
+      "mtp_ms_mean": 0.67,
+      "cache_ms_mean": 0.306,
+      "sample_ms_mean": 0.019,
+      "out_tokens_mean": 184.333,
+      "tps_all": [
+        50.6,
+        51.56,
+        48.69
+      ],
+      "accept_all": [
+        91.95,
+        94.0,
+        92.86
+      ],
+      "accept_den_all": [
+        87,
+        100,
+        98
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=91/98",
+      "n_runs": 3,
+      "entropy": "中低熵·信息抽取",
+      "temp": 0.9
+    },
+    "T5_extraction@T1.2": {
+      "tps_mean": 50.093,
+      "accept_mean": 92.933,
+      "tok_per_cycle_mean": 1.947,
+      "backbone_ms_mean": 37.253,
+      "mtp_ms_mean": 0.678,
+      "cache_ms_mean": 0.307,
+      "sample_ms_mean": 0.021,
+      "out_tokens_mean": 201.667,
+      "tps_all": [
+        49.94,
+        49.72,
+        50.62
+      ],
+      "accept_all": [
+        92.16,
+        93.64,
+        93.0
+      ],
+      "accept_den_all": [
+        102,
+        110,
+        100
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=93/100",
+      "n_runs": 3,
+      "entropy": "中低熵·信息抽取",
+      "temp": 1.2
+    },
+    "T5_extraction@T1.6": {
+      "tps_mean": 48.55,
+      "accept_mean": 89.377,
+      "tok_per_cycle_mean": 1.913,
+      "backbone_ms_mean": 37.813,
+      "mtp_ms_mean": 0.667,
+      "cache_ms_mean": 0.308,
+      "sample_ms_mean": 0.02,
+      "out_tokens_mean": 227.667,
+      "tps_all": [
+        47.64,
+        49.45,
+        48.56
+      ],
+      "accept_all": [
+        89.17,
+        91.13,
+        87.83
+      ],
+      "accept_den_all": [
+        120,
+        124,
+        115
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=101/115",
+      "n_runs": 3,
+      "entropy": "中低熵·信息抽取",
+      "temp": 1.6
+    },
+    "T6_qa_factual@T0.0": {
+      "tps_mean": 42.4,
+      "accept_mean": 65.29,
+      "tok_per_cycle_mean": 1.66,
+      "backbone_ms_mean": 37.747,
+      "mtp_ms_mean": 0.546,
+      "cache_ms_mean": 0.325,
+      "sample_ms_mean": 0.02,
+      "out_tokens_mean": 401,
+      "tps_all": [
+        43.14,
+        41.88,
+        42.18
+      ],
+      "accept_all": [
+        65.29,
+        65.29,
+        65.29
+      ],
+      "accept_den_all": [
+        242,
+        242,
+        242
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=158/242",
+      "n_runs": 3,
+      "entropy": "中熵·知识问答",
+      "temp": 0.0
+    },
+    "T6_qa_factual@T0.3": {
+      "tps_mean": 40.017,
+      "accept_mean": 69.977,
+      "tok_per_cycle_mean": 1.707,
+      "backbone_ms_mean": 41.137,
+      "mtp_ms_mean": 0.653,
+      "cache_ms_mean": 0.315,
+      "sample_ms_mean": 0.02,
+      "out_tokens_mean": 413.333,
+      "tps_all": [
+        38.79,
+        41.93,
+        39.33
+      ],
+      "accept_all": [
+        65.35,
+        76.47,
+        68.11
+      ],
+      "accept_den_all": [
+        254,
+        221,
+        254
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=173/254",
+      "n_runs": 3,
+      "entropy": "中熵·知识问答",
+      "temp": 0.3
+    },
+    "T6_qa_factual@T0.6": {
+      "tps_mean": 39.313,
+      "accept_mean": 68.25,
+      "tok_per_cycle_mean": 1.69,
+      "backbone_ms_mean": 41.437,
+      "mtp_ms_mean": 0.666,
+      "cache_ms_mean": 0.321,
+      "sample_ms_mean": 0.021,
+      "out_tokens_mean": 405.667,
+      "tps_all": [
+        39.38,
+        39.99,
+        38.57
+      ],
+      "accept_all": [
+        68.24,
+        70.87,
+        65.64
+      ],
+      "accept_den_all": [
+        233,
+        230,
+        259
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=170/259",
+      "n_runs": 3,
+      "entropy": "中熵·知识问答",
+      "temp": 0.6
+    },
+    "T6_qa_factual@T0.9": {
+      "tps_mean": 38.717,
+      "accept_mean": 70.067,
+      "tok_per_cycle_mean": 1.71,
+      "backbone_ms_mean": 42.527,
+      "mtp_ms_mean": 0.671,
+      "cache_ms_mean": 0.324,
+      "sample_ms_mean": 0.022,
+      "out_tokens_mean": 429.667,
+      "tps_all": [
+        38.82,
+        38.81,
+        38.52
+      ],
+      "accept_all": [
+        68.18,
+        71.01,
+        71.01
+      ],
+      "accept_den_all": [
+        242,
+        238,
+        276
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=196/276",
+      "n_runs": 3,
+      "entropy": "中熵·知识问答",
+      "temp": 0.9
+    },
+    "T6_qa_factual@T1.2": {
+      "tps_mean": 38.557,
+      "accept_mean": 67.467,
+      "tok_per_cycle_mean": 1.683,
+      "backbone_ms_mean": 42.12,
+      "mtp_ms_mean": 0.651,
+      "cache_ms_mean": 0.317,
+      "sample_ms_mean": 0.021,
+      "out_tokens_mean": 362.667,
+      "tps_all": [
+        38.13,
+        39.73,
+        37.81
+      ],
+      "accept_all": [
+        65.35,
+        73.11,
+        63.94
+      ],
+      "accept_den_all": [
+        228,
+        212,
+        208
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=133/208",
+      "n_runs": 3,
+      "entropy": "中熵·知识问答",
+      "temp": 1.2
+    },
+    "T6_qa_factual@T1.6": {
+      "tps_mean": 35.553,
+      "accept_mean": 65.407,
+      "tok_per_cycle_mean": 1.66,
+      "backbone_ms_mean": 45.203,
+      "mtp_ms_mean": 0.645,
+      "cache_ms_mean": 0.314,
+      "sample_ms_mean": 0.021,
+      "out_tokens_mean": 593,
+      "tps_all": [
+        36.52,
+        35.82,
+        34.32
+      ],
+      "accept_all": [
+        72.35,
+        61.54,
+        62.33
+      ],
+      "accept_den_all": [
+        405,
+        234,
+        430
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=268/430",
+      "n_runs": 3,
+      "entropy": "中熵·知识问答",
+      "temp": 1.6
+    },
+    "T7_math_reasoning@T0.0": {
+      "tps_mean": 44.597,
+      "accept_mean": 92.28,
+      "tok_per_cycle_mean": 1.93,
+      "backbone_ms_mean": 41.687,
+      "mtp_ms_mean": 0.639,
+      "cache_ms_mean": 0.351,
+      "sample_ms_mean": 0.023,
+      "out_tokens_mean": 600,
+      "tps_all": [
+        44.29,
+        44.74,
+        44.76
+      ],
+      "accept_all": [
+        92.28,
+        92.28,
+        92.28
+      ],
+      "accept_den_all": [
+        311,
+        311,
+        311
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=287/311",
+      "n_runs": 3,
+      "entropy": "中高熵·数学推理",
+      "temp": 0.0
+    },
+    "T7_math_reasoning@T0.3": {
+      "tps_mean": 43.08,
+      "accept_mean": 91.343,
+      "tok_per_cycle_mean": 1.92,
+      "backbone_ms_mean": 42.913,
+      "mtp_ms_mean": 0.759,
+      "cache_ms_mean": 0.345,
+      "sample_ms_mean": 0.022,
+      "out_tokens_mean": 600,
+      "tps_all": [
+        43.95,
+        43.9,
+        41.39
+      ],
+      "accept_all": [
+        94.16,
+        94.16,
+        85.71
+      ],
+      "accept_den_all": [
+        308,
+        308,
+        322
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=276/322",
+      "n_runs": 3,
+      "entropy": "中高熵·数学推理",
+      "temp": 0.3
+    },
+    "T7_math_reasoning@T0.6": {
+      "tps_mean": 42.77,
+      "accept_mean": 92.3,
+      "tok_per_cycle_mean": 1.93,
+      "backbone_ms_mean": 43.457,
+      "mtp_ms_mean": 0.762,
+      "cache_ms_mean": 0.345,
+      "sample_ms_mean": 0.022,
+      "out_tokens_mean": 600,
+      "tps_all": [
+        42.7,
+        43.67,
+        41.94
+      ],
+      "accept_all": [
+        92.9,
+        94.16,
+        89.84
+      ],
+      "accept_den_all": [
+        310,
+        308,
+        315
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=283/315",
+      "n_runs": 3,
+      "entropy": "中高熵·数学推理",
+      "temp": 0.6
+    },
+    "T7_math_reasoning@T0.9": {
+      "tps_mean": 42.88,
+      "accept_mean": 90.657,
+      "tok_per_cycle_mean": 1.913,
+      "backbone_ms_mean": 42.973,
+      "mtp_ms_mean": 0.748,
+      "cache_ms_mean": 0.348,
+      "sample_ms_mean": 0.021,
+      "out_tokens_mean": 600,
+      "tps_all": [
+        41.81,
+        42.99,
+        43.84
+      ],
+      "accept_all": [
+        89.24,
+        90.45,
+        92.28
+      ],
+      "accept_den_all": [
+        316,
+        314,
+        311
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=287/311",
+      "n_runs": 3,
+      "entropy": "中高熵·数学推理",
+      "temp": 0.9
+    },
+    "T7_math_reasoning@T1.2": {
+      "tps_mean": 42.853,
+      "accept_mean": 90.46,
+      "tok_per_cycle_mean": 1.913,
+      "backbone_ms_mean": 43.007,
+      "mtp_ms_mean": 0.742,
+      "cache_ms_mean": 0.338,
+      "sample_ms_mean": 0.022,
+      "out_tokens_mean": 600,
+      "tps_all": [
+        41.59,
+        43.09,
+        43.88
+      ],
+      "accept_all": [
+        88.05,
+        91.05,
+        92.28
+      ],
+      "accept_den_all": [
+        318,
+        313,
+        311
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=287/311",
+      "n_runs": 3,
+      "entropy": "中高熵·数学推理",
+      "temp": 1.2
+    },
+    "T7_math_reasoning@T1.6": {
+      "tps_mean": 42.723,
+      "accept_mean": 89.46,
+      "tok_per_cycle_mean": 1.9,
+      "backbone_ms_mean": 42.89,
+      "mtp_ms_mean": 0.737,
+      "cache_ms_mean": 0.338,
+      "sample_ms_mean": 0.022,
+      "out_tokens_mean": 600,
+      "tps_all": [
+        42.14,
+        43.4,
+        42.63
+      ],
+      "accept_all": [
+        87.46,
+        92.28,
+        88.64
+      ],
+      "accept_den_all": [
+        319,
+        311,
+        317
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=281/317",
+      "n_runs": 3,
+      "entropy": "中高熵·数学推理",
+      "temp": 1.6
+    },
+    "T8_creative_writing@T0.0": {
+      "tps_mean": 37.31,
+      "accept_mean": 56.7,
+      "tok_per_cycle_mean": 1.57,
+      "backbone_ms_mean": 40.64,
+      "mtp_ms_mean": 0.585,
+      "cache_ms_mean": 0.355,
+      "sample_ms_mean": 0.022,
+      "out_tokens_mean": 457,
+      "tps_all": [
+        36.93,
+        37.61,
+        37.39
+      ],
+      "accept_all": [
+        56.7,
+        56.7,
+        56.7
+      ],
+      "accept_den_all": [
+        291,
+        291,
+        291
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=165/291",
+      "n_runs": 3,
+      "entropy": "高熵·创意写作",
+      "temp": 0.0
+    },
+    "T8_creative_writing@T0.3": {
+      "tps_mean": 34.763,
+      "accept_mean": 59.59,
+      "tok_per_cycle_mean": 1.603,
+      "backbone_ms_mean": 44.613,
+      "mtp_ms_mean": 0.651,
+      "cache_ms_mean": 0.32,
+      "sample_ms_mean": 0.021,
+      "out_tokens_mean": 476,
+      "tps_all": [
+        34.2,
+        35.11,
+        34.98
+      ],
+      "accept_all": [
+        59.08,
+        60.48,
+        59.21
+      ],
+      "accept_den_all": [
+        325,
+        291,
+        277
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=164/277",
+      "n_runs": 3,
+      "entropy": "高熵·创意写作",
+      "temp": 0.3
+    },
+    "T8_creative_writing@T0.6": {
+      "tps_mean": 35.213,
+      "accept_mean": 60.81,
+      "tok_per_cycle_mean": 1.613,
+      "backbone_ms_mean": 44.24,
+      "mtp_ms_mean": 0.652,
+      "cache_ms_mean": 0.322,
+      "sample_ms_mean": 0.021,
+      "out_tokens_mean": 477,
+      "tps_all": [
+        34.9,
+        35.53,
+        35.21
+      ],
+      "accept_all": [
+        59.52,
+        62.71,
+        60.2
+      ],
+      "accept_den_all": [
+        289,
+        295,
+        304
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=183/304",
+      "n_runs": 3,
+      "entropy": "高熵·创意写作",
+      "temp": 0.6
+    },
+    "T8_creative_writing@T0.9": {
+      "tps_mean": 35.68,
+      "accept_mean": 61.64,
+      "tok_per_cycle_mean": 1.623,
+      "backbone_ms_mean": 43.977,
+      "mtp_ms_mean": 0.645,
+      "cache_ms_mean": 0.316,
+      "sample_ms_mean": 0.02,
+      "out_tokens_mean": 460,
+      "tps_all": [
+        35.48,
+        35.37,
+        36.19
+      ],
+      "accept_all": [
+        61.9,
+        59.27,
+        63.75
+      ],
+      "accept_den_all": [
+        294,
+        248,
+        309
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=197/309",
+      "n_runs": 3,
+      "entropy": "高熵·创意写作",
+      "temp": 0.9
+    },
+    "T8_creative_writing@T1.2": {
+      "tps_mean": 34.873,
+      "accept_mean": 58.11,
+      "tok_per_cycle_mean": 1.587,
+      "backbone_ms_mean": 44.01,
+      "mtp_ms_mean": 0.643,
+      "cache_ms_mean": 0.321,
+      "sample_ms_mean": 0.02,
+      "out_tokens_mean": 465.333,
+      "tps_all": [
+        34.24,
+        35.05,
+        35.33
+      ],
+      "accept_all": [
+        56.06,
+        58.61,
+        59.66
+      ],
+      "accept_den_all": [
+        289,
+        302,
+        290
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=173/290",
+      "n_runs": 3,
+      "entropy": "高熵·创意写作",
+      "temp": 1.2
+    },
+    "T8_creative_writing@T1.6": {
+      "tps_mean": 34.563,
+      "accept_mean": 57.46,
+      "tok_per_cycle_mean": 1.58,
+      "backbone_ms_mean": 44.193,
+      "mtp_ms_mean": 0.641,
+      "cache_ms_mean": 0.318,
+      "sample_ms_mean": 0.021,
+      "out_tokens_mean": 575,
+      "tps_all": [
+        34.19,
+        35.38,
+        34.12
+      ],
+      "accept_all": [
+        59.92,
+        58.82,
+        53.64
+      ],
+      "accept_den_all": [
+        499,
+        289,
+        302
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=162/302",
+      "n_runs": 3,
+      "entropy": "高熵·创意写作",
+      "temp": 1.6
+    },
+    "T9_rust_impl@T0.0": {
+      "tps_mean": 44.28,
+      "accept_mean": 91.83,
+      "tok_per_cycle_mean": 1.92,
+      "backbone_ms_mean": 41.883,
+      "mtp_ms_mean": 0.613,
+      "cache_ms_mean": 0.338,
+      "sample_ms_mean": 0.022,
+      "out_tokens_mean": 800,
+      "tps_all": [
+        43.18,
+        44.78,
+        44.88
+      ],
+      "accept_all": [
+        91.83,
+        91.83,
+        91.83
+      ],
+      "accept_den_all": [
+        416,
+        416,
+        416
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=382/416",
+      "n_runs": 3,
+      "entropy": "低熵·Rust 实现",
+      "temp": 0.0
+    },
+    "T9_rust_impl@T0.3": {
+      "tps_mean": 42.15,
+      "accept_mean": 89.55,
+      "tok_per_cycle_mean": 1.9,
+      "backbone_ms_mean": 43.42,
+      "mtp_ms_mean": 0.738,
+      "cache_ms_mean": 0.337,
+      "sample_ms_mean": 0.022,
+      "out_tokens_mean": 800,
+      "tps_all": [
+        42.27,
+        42.29,
+        41.89
+      ],
+      "accept_all": [
+        89.55,
+        90.0,
+        89.1
+      ],
+      "accept_den_all": [
+        421,
+        420,
+        422
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=376/422",
+      "n_runs": 3,
+      "entropy": "低熵·Rust 实现",
+      "temp": 0.3
+    },
+    "T9_rust_impl@T0.6": {
+      "tps_mean": 42.49,
+      "accept_mean": 90.663,
+      "tok_per_cycle_mean": 1.91,
+      "backbone_ms_mean": 43.307,
+      "mtp_ms_mean": 0.749,
+      "cache_ms_mean": 0.342,
+      "sample_ms_mean": 0.022,
+      "out_tokens_mean": 800,
+      "tps_all": [
+        42.78,
+        43.44,
+        41.25
+      ],
+      "accept_all": [
+        92.29,
+        93.69,
+        86.01
+      ],
+      "accept_den_all": [
+        415,
+        412,
+        429
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=369/429",
+      "n_runs": 3,
+      "entropy": "低熵·Rust 实现",
+      "temp": 0.6
+    },
+    "T9_rust_impl@T0.9": {
+      "tps_mean": 42.04,
+      "accept_mean": 89.71,
+      "tok_per_cycle_mean": 1.903,
+      "backbone_ms_mean": 43.52,
+      "mtp_ms_mean": 0.748,
+      "cache_ms_mean": 0.348,
+      "sample_ms_mean": 0.022,
+      "out_tokens_mean": 800,
+      "tps_all": [
+        41.78,
+        42.44,
+        41.9
+      ],
+      "accept_all": [
+        89.55,
+        91.37,
+        88.21
+      ],
+      "accept_den_all": [
+        421,
+        417,
+        424
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=374/424",
+      "n_runs": 3,
+      "entropy": "低熵·Rust 实现",
+      "temp": 0.9
+    },
+    "T9_rust_impl@T1.2": {
+      "tps_mean": 37.13,
+      "accept_mean": 52.94,
+      "tok_per_cycle_mean": 1.57,
+      "backbone_ms_mean": 40.41,
+      "mtp_ms_mean": 0.618,
+      "cache_ms_mean": 0.312,
+      "sample_ms_mean": 0.02,
+      "out_tokens_mean": 79,
+      "tps_all": [
+        37.13
+      ],
+      "accept_all": [
+        52.94
+      ],
+      "accept_den_all": [
+        51
+      ],
+      "n_valid": 1,
+      "n_invalid": 2,
+      "depth_hist_last": "d1=27/51",
+      "n_runs": 3,
+      "entropy": "低熵·Rust 实现",
+      "temp": 1.2
+    },
+    "T9_rust_impl@T1.6": {
+      "tps_mean": 41.087,
+      "accept_mean": 82.563,
+      "tok_per_cycle_mean": 1.83,
+      "backbone_ms_mean": 42.923,
+      "mtp_ms_mean": 0.721,
+      "cache_ms_mean": 0.335,
+      "sample_ms_mean": 0.022,
+      "out_tokens_mean": 800,
+      "tps_all": [
+        39.52,
+        41.97,
+        41.77
+      ],
+      "accept_all": [
+        73.48,
+        87.32,
+        86.89
+      ],
+      "accept_den_all": [
+        460,
+        426,
+        427
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=371/427",
+      "n_runs": 3,
+      "entropy": "低熵·Rust 实现",
+      "temp": 1.6
+    },
+    "T10_ts_component@T0.0": {
+      "tps_mean": 45.19,
+      "accept_mean": 96.74,
+      "tok_per_cycle_mean": 1.97,
+      "backbone_ms_mean": 42.063,
+      "mtp_ms_mean": 0.618,
+      "cache_ms_mean": 0.336,
+      "sample_ms_mean": 0.022,
+      "out_tokens_mean": 725,
+      "tps_all": [
+        43.59,
+        46.28,
+        45.7
+      ],
+      "accept_all": [
+        96.74,
+        96.74,
+        96.74
+      ],
+      "accept_den_all": [
+        368,
+        368,
+        368
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=356/368",
+      "n_runs": 3,
+      "entropy": "低熵·TypeScript 组件",
+      "temp": 0.0
+    },
+    "T10_ts_component@T0.3": {
+      "tps_mean": 44.09,
+      "accept_mean": 95.77,
+      "tok_per_cycle_mean": 1.967,
+      "backbone_ms_mean": 42.833,
+      "mtp_ms_mean": 0.746,
+      "cache_ms_mean": 0.335,
+      "sample_ms_mean": 0.022,
+      "out_tokens_mean": 719.333,
+      "tps_all": [
+        43.85,
+        43.47,
+        44.95
+      ],
+      "accept_all": [
+        96.07,
+        95.11,
+        96.13
+      ],
+      "accept_den_all": [
+        407,
+        409,
+        284
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=273/284",
+      "n_runs": 3,
+      "entropy": "低熵·TypeScript 组件",
+      "temp": 0.3
+    },
+    "T10_ts_component@T0.6": {
+      "tps_mean": 44.467,
+      "accept_mean": 95.96,
+      "tok_per_cycle_mean": 1.967,
+      "backbone_ms_mean": 42.473,
+      "mtp_ms_mean": 0.775,
+      "cache_ms_mean": 0.353,
+      "sample_ms_mean": 0.023,
+      "out_tokens_mean": 670.333,
+      "tps_all": [
+        44.41,
+        44.12,
+        44.87
+      ],
+      "accept_all": [
+        95.12,
+        96.55,
+        96.21
+      ],
+      "accept_den_all": [
+        328,
+        406,
+        290
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=279/290",
+      "n_runs": 3,
+      "entropy": "低熵·TypeScript 组件",
+      "temp": 0.6
+    },
+    "T10_ts_component@T0.9": {
+      "tps_mean": 43.523,
+      "accept_mean": 94.3,
+      "tok_per_cycle_mean": 1.95,
+      "backbone_ms_mean": 43.023,
+      "mtp_ms_mean": 0.762,
+      "cache_ms_mean": 0.348,
+      "sample_ms_mean": 0.022,
+      "out_tokens_mean": 692,
+      "tps_all": [
+        43.99,
+        43.54,
+        43.04
+      ],
+      "accept_all": [
+        95.2,
+        95.11,
+        92.59
+      ],
+      "accept_den_all": [
+        333,
+        409,
+        324
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=300/324",
+      "n_runs": 3,
+      "entropy": "低熵·TypeScript 组件",
+      "temp": 0.9
+    },
+    "T10_ts_component@T1.2": {
+      "tps_mean": 42.917,
+      "accept_mean": 94.337,
+      "tok_per_cycle_mean": 1.947,
+      "backbone_ms_mean": 43.657,
+      "mtp_ms_mean": 0.78,
+      "cache_ms_mean": 0.351,
+      "sample_ms_mean": 0.022,
+      "out_tokens_mean": 800,
+      "tps_all": [
+        43.47,
+        42.44,
+        42.84
+      ],
+      "accept_all": [
+        96.55,
+        91.83,
+        94.63
+      ],
+      "accept_den_all": [
+        406,
+        416,
+        410
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=388/410",
+      "n_runs": 3,
+      "entropy": "低熵·TypeScript 组件",
+      "temp": 1.2
+    },
+    "T10_ts_component@T1.6": {
+      "tps_mean": 41.15,
+      "accept_mean": 86.577,
+      "tok_per_cycle_mean": 1.87,
+      "backbone_ms_mean": 43.977,
+      "mtp_ms_mean": 0.717,
+      "cache_ms_mean": 0.331,
+      "sample_ms_mean": 0.021,
+      "out_tokens_mean": 767,
+      "tps_all": [
+        36.37,
+        43.69,
+        43.39
+      ],
+      "accept_all": [
+        72.73,
+        94.16,
+        92.84
+      ],
+      "accept_den_all": [
+        462,
+        411,
+        363
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=337/363",
+      "n_runs": 3,
+      "entropy": "低熵·TypeScript 组件",
+      "temp": 1.6
+    },
+    "T11_doc_rewrite@T0.0": {
+      "tps_mean": 41.827,
+      "accept_mean": 80.77,
+      "tok_per_cycle_mean": 1.81,
+      "backbone_ms_mean": 41.82,
+      "mtp_ms_mean": 0.594,
+      "cache_ms_mean": 0.337,
+      "sample_ms_mean": 0.022,
+      "out_tokens_mean": 659,
+      "tps_all": [
+        40.21,
+        42.8,
+        42.47
+      ],
+      "accept_all": [
+        80.77,
+        80.77,
+        80.77
+      ],
+      "accept_den_all": [
+        364,
+        364,
+        364
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=294/364",
+      "n_runs": 3,
+      "entropy": "中熵·技术文档重写",
+      "temp": 0.0
+    },
+    "T11_doc_rewrite@T0.3": {
+      "tps_mean": 40.443,
+      "accept_mean": 82.137,
+      "tok_per_cycle_mean": 1.827,
+      "backbone_ms_mean": 43.483,
+      "mtp_ms_mean": 0.708,
+      "cache_ms_mean": 0.332,
+      "sample_ms_mean": 0.021,
+      "out_tokens_mean": 760,
+      "tps_all": [
+        40.37,
+        40.95,
+        40.01
+      ],
+      "accept_all": [
+        81.21,
+        83.42,
+        81.78
+      ],
+      "accept_den_all": [
+        431,
+        380,
+        439
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=359/439",
+      "n_runs": 3,
+      "entropy": "中熵·技术文档重写",
+      "temp": 0.3
+    },
+    "T11_doc_rewrite@T0.6": {
+      "tps_mean": 41.383,
+      "accept_mean": 84.13,
+      "tok_per_cycle_mean": 1.847,
+      "backbone_ms_mean": 42.983,
+      "mtp_ms_mean": 0.727,
+      "cache_ms_mean": 0.34,
+      "sample_ms_mean": 0.021,
+      "out_tokens_mean": 713.667,
+      "tps_all": [
+        41.14,
+        41.01,
+        42.0
+      ],
+      "accept_all": [
+        84.16,
+        83.45,
+        84.78
+      ],
+      "accept_den_all": [
+        404,
+        435,
+        322
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=273/322",
+      "n_runs": 3,
+      "entropy": "中熵·技术文档重写",
+      "temp": 0.6
+    },
+    "T11_doc_rewrite@T0.9": {
+      "tps_mean": 39.237,
+      "accept_mean": 77.717,
+      "tok_per_cycle_mean": 1.783,
+      "backbone_ms_mean": 43.82,
+      "mtp_ms_mean": 0.715,
+      "cache_ms_mean": 0.337,
+      "sample_ms_mean": 0.023,
+      "out_tokens_mean": 787.667,
+      "tps_all": [
+        39.46,
+        39.91,
+        38.34
+      ],
+      "accept_all": [
+        78.04,
+        79.73,
+        75.38
+      ],
+      "accept_den_all": [
+        428,
+        444,
+        455
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=343/455",
+      "n_runs": 3,
+      "entropy": "中熵·技术文档重写",
+      "temp": 0.9
+    },
+    "T11_doc_rewrite@T1.2": {
+      "tps_mean": 40.05,
+      "accept_mean": 80.963,
+      "tok_per_cycle_mean": 1.817,
+      "backbone_ms_mean": 43.69,
+      "mtp_ms_mean": 0.716,
+      "cache_ms_mean": 0.336,
+      "sample_ms_mean": 0.021,
+      "out_tokens_mean": 762,
+      "tps_all": [
+        40.0,
+        40.14,
+        40.01
+      ],
+      "accept_all": [
+        81.36,
+        81.11,
+        80.42
+      ],
+      "accept_den_all": [
+        440,
+        397,
+        424
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=341/424",
+      "n_runs": 3,
+      "entropy": "中熵·技术文档重写",
+      "temp": 1.2
+    },
+    "T11_doc_rewrite@T1.6": {
+      "tps_mean": 39.21,
+      "accept_mean": 77.49,
+      "tok_per_cycle_mean": 1.78,
+      "backbone_ms_mean": 43.683,
+      "mtp_ms_mean": 0.71,
+      "cache_ms_mean": 0.337,
+      "sample_ms_mean": 0.022,
+      "out_tokens_mean": 743.333,
+      "tps_all": [
+        40.05,
+        39.69,
+        37.89
+      ],
+      "accept_all": [
+        79.2,
+        80.54,
+        72.73
+      ],
+      "accept_den_all": [
+        351,
+        442,
+        462
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=336/462",
+      "n_runs": 3,
+      "entropy": "中熵·技术文档重写",
+      "temp": 1.6
+    }
+  },
+  "2": {
+    "T1_json_structured@T0.0": {
+      "tps_mean": 52.237,
+      "accept_mean": 95.58,
+      "tok_per_cycle_mean": 2.87,
+      "backbone_ms_mean": 52.47,
+      "mtp_ms_mean": 1.386,
+      "cache_ms_mean": 0.425,
+      "sample_ms_mean": 0.027,
+      "out_tokens_mean": 700,
+      "tps_all": [
+        48.1,
+        53.79,
+        54.82
+      ],
+      "accept_all": [
+        95.58,
+        95.58,
+        95.58
+      ],
+      "accept_den_all": [
+        475,
+        475,
+        475
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=231/244,d2=223/231",
+      "n_runs": 3,
+      "entropy": "极低熵·结构化输出",
+      "temp": 0.0
+    },
+    "T1_json_structured@T0.3": {
+      "tps_mean": 54.05,
+      "accept_mean": 95.183,
+      "tok_per_cycle_mean": 2.867,
+      "backbone_ms_mean": 50.36,
+      "mtp_ms_mean": 1.58,
+      "cache_ms_mean": 0.401,
+      "sample_ms_mean": 0.025,
+      "out_tokens_mean": 700,
+      "tps_all": [
+        54.02,
+        54.41,
+        53.72
+      ],
+      "accept_all": [
+        96.0,
+        95.59,
+        93.96
+      ],
+      "accept_den_all": [
+        475,
+        476,
+        480
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=233/247,d2=218/233",
+      "n_runs": 3,
+      "entropy": "极低熵·结构化输出",
+      "temp": 0.3
+    },
+    "T1_json_structured@T0.6": {
+      "tps_mean": 53.77,
+      "accept_mean": 95.933,
+      "tok_per_cycle_mean": 2.887,
+      "backbone_ms_mean": 50.893,
+      "mtp_ms_mean": 1.61,
+      "cache_ms_mean": 0.401,
+      "sample_ms_mean": 0.026,
+      "out_tokens_mean": 700,
+      "tps_all": [
+        52.79,
+        55.05,
+        53.47
+      ],
+      "accept_all": [
+        94.97,
+        97.25,
+        95.58
+      ],
+      "accept_den_all": [
+        477,
+        472,
+        475
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=231/244,d2=223/231",
+      "n_runs": 3,
+      "entropy": "极低熵·结构化输出",
+      "temp": 0.6
+    },
+    "T1_json_structured@T0.9": {
+      "tps_mean": 50.793,
+      "accept_mean": 93.25,
+      "tok_per_cycle_mean": 2.827,
+      "backbone_ms_mean": 52.89,
+      "mtp_ms_mean": 1.548,
+      "cache_ms_mean": 0.391,
+      "sample_ms_mean": 0.024,
+      "out_tokens_mean": 610.667,
+      "tps_all": [
+        49.01,
+        53.85,
+        49.52
+      ],
+      "accept_all": [
+        91.36,
+        96.62,
+        91.77
+      ],
+      "accept_den_all": [
+        301,
+        474,
+        486
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=234/252,d2=212/234",
+      "n_runs": 3,
+      "entropy": "极低熵·结构化输出",
+      "temp": 0.9
+    },
+    "T1_json_structured@T1.2": {
+      "tps_mean": 48.483,
+      "accept_mean": 90.63,
+      "tok_per_cycle_mean": 2.767,
+      "backbone_ms_mean": 54.187,
+      "mtp_ms_mean": 1.604,
+      "cache_ms_mean": 0.404,
+      "sample_ms_mean": 0.025,
+      "out_tokens_mean": 527,
+      "tps_all": [
+        48.46,
+        47.27,
+        49.72
+      ],
+      "accept_all": [
+        89.0,
+        87.7,
+        95.19
+      ],
+      "accept_den_all": [
+        309,
+        317,
+        478
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=235/243,d2=220/235",
+      "n_runs": 3,
+      "entropy": "极低熵·结构化输出",
+      "temp": 1.2
+    },
+    "T1_json_structured@T1.6": {
+      "tps_mean": 46.07,
+      "accept_mean": 89.95,
+      "tok_per_cycle_mean": 2.723,
+      "backbone_ms_mean": 56.207,
+      "mtp_ms_mean": 1.624,
+      "cache_ms_mean": 0.417,
+      "sample_ms_mean": 0.025,
+      "out_tokens_mean": 579,
+      "tps_all": [
+        46.71,
+        46.83,
+        44.67
+      ],
+      "accept_all": [
+        91.18,
+        91.75,
+        86.92
+      ],
+      "accept_den_all": [
+        408,
+        485,
+        321
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=151/170,d2=128/151",
+      "n_runs": 3,
+      "entropy": "极低熵·结构化输出",
+      "temp": 1.6
+    },
+    "T2_code_function@T0.0": {
+      "tps_mean": 46.04,
+      "accept_mean": 95.1,
+      "tok_per_cycle_mean": 2.86,
+      "backbone_ms_mean": 58.467,
+      "mtp_ms_mean": 2.166,
+      "cache_ms_mean": 0.617,
+      "sample_ms_mean": 0.059,
+      "out_tokens_mean": 600,
+      "tps_all": [
+        43.44,
+        45.38,
+        49.3
+      ],
+      "accept_all": [
+        95.1,
+        95.1,
+        95.1
+      ],
+      "accept_den_all": [
+        408,
+        408,
+        408
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=198/210,d2=190/198",
+      "n_runs": 3,
+      "entropy": "低熵·代码生成",
+      "temp": 0.0
+    },
+    "T2_code_function@T0.3": {
+      "tps_mean": 46.693,
+      "accept_mean": 94.123,
+      "tok_per_cycle_mean": 2.837,
+      "backbone_ms_mean": 57.657,
+      "mtp_ms_mean": 1.798,
+      "cache_ms_mean": 0.445,
+      "sample_ms_mean": 0.027,
+      "out_tokens_mean": 526,
+      "tps_all": [
+        47.28,
+        46.35,
+        46.45
+      ],
+      "accept_all": [
+        93.82,
+        94.39,
+        94.16
+      ],
+      "accept_den_all": [
+        259,
+        410,
+        411
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=200/211,d2=187/200",
+      "n_runs": 3,
+      "entropy": "低熵·代码生成",
+      "temp": 0.3
+    },
+    "T2_code_function@T0.6": {
+      "tps_mean": 46.253,
+      "accept_mean": 94.287,
+      "tok_per_cycle_mean": 2.85,
+      "backbone_ms_mean": 58.54,
+      "mtp_ms_mean": 1.732,
+      "cache_ms_mean": 0.422,
+      "sample_ms_mean": 0.027,
+      "out_tokens_mean": 573.333,
+      "tps_all": [
+        46.73,
+        46.56,
+        45.47
+      ],
+      "accept_all": [
+        95.54,
+        94.65,
+        92.67
+      ],
+      "accept_den_all": [
+        359,
+        411,
+        409
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=197/212,d2=182/197",
+      "n_runs": 3,
+      "entropy": "低熵·代码生成",
+      "temp": 0.6
+    },
+    "T2_code_function@T0.9": {
+      "tps_mean": 46.237,
+      "accept_mean": 93.537,
+      "tok_per_cycle_mean": 2.827,
+      "backbone_ms_mean": 57.957,
+      "mtp_ms_mean": 1.786,
+      "cache_ms_mean": 0.449,
+      "sample_ms_mean": 0.027,
+      "out_tokens_mean": 526.667,
+      "tps_all": [
+        44.48,
+        48.37,
+        45.86
+      ],
+      "accept_all": [
+        91.95,
+        94.74,
+        93.92
+      ],
+      "accept_den_all": [
+        410,
+        266,
+        411
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=199/212,d2=187/199",
+      "n_runs": 3,
+      "entropy": "低熵·代码生成",
+      "temp": 0.9
+    },
+    "T2_code_function@T1.2": {
+      "tps_mean": 46.123,
+      "accept_mean": 92.79,
+      "tok_per_cycle_mean": 2.82,
+      "backbone_ms_mean": 58.003,
+      "mtp_ms_mean": 1.776,
+      "cache_ms_mean": 0.448,
+      "sample_ms_mean": 0.027,
+      "out_tokens_mean": 530.333,
+      "tps_all": [
+        43.55,
+        46.56,
+        48.26
+      ],
+      "accept_all": [
+        89.13,
+        94.31,
+        94.93
+      ],
+      "accept_den_all": [
+        423,
+        404,
+        276
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=136/140,d2=126/136",
+      "n_runs": 3,
+      "entropy": "低熵·代码生成",
+      "temp": 1.2
+    },
+    "T2_code_function@T1.6": {
+      "tps_mean": 45.187,
+      "accept_mean": 92.38,
+      "tok_per_cycle_mean": 2.78,
+      "backbone_ms_mean": 58.283,
+      "mtp_ms_mean": 1.867,
+      "cache_ms_mean": 0.465,
+      "sample_ms_mean": 0.028,
+      "out_tokens_mean": 595.333,
+      "tps_all": [
+        43.5,
+        46.33,
+        45.73
+      ],
+      "accept_all": [
+        90.62,
+        93.45,
+        93.07
+      ],
+      "accept_den_all": [
+        416,
+        412,
+        404
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=195/209,d2=181/195",
+      "n_runs": 3,
+      "entropy": "低熵·代码生成",
+      "temp": 1.6
+    },
+    "T3_code_repetitive@T0.0": {
+      "tps_mean": 54.987,
+      "accept_mean": 98.72,
+      "tok_per_cycle_mean": 3.0,
+      "backbone_ms_mean": 51.927,
+      "mtp_ms_mean": 1.316,
+      "cache_ms_mean": 0.394,
+      "sample_ms_mean": 0.026,
+      "out_tokens_mean": 233,
+      "tps_all": [
+        52.64,
+        56.41,
+        55.91
+      ],
+      "accept_all": [
+        98.72,
+        98.72,
+        98.72
+      ],
+      "accept_den_all": [
+        156,
+        156,
+        156
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=78/78,d2=76/78",
+      "n_runs": 3,
+      "entropy": "极低熵·重复模式",
+      "temp": 0.0
+    },
+    "T3_code_repetitive@T0.3": {
+      "tps_mean": 53.883,
+      "accept_mean": 97.893,
+      "tok_per_cycle_mean": 2.973,
+      "backbone_ms_mean": 52.13,
+      "mtp_ms_mean": 1.657,
+      "cache_ms_mean": 0.407,
+      "sample_ms_mean": 0.025,
+      "out_tokens_mean": 235,
+      "tps_all": [
+        54.76,
+        52.62,
+        54.27
+      ],
+      "accept_all": [
+        98.72,
+        97.48,
+        97.48
+      ],
+      "accept_den_all": [
+        156,
+        159,
+        159
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=79/80,d2=76/79",
+      "n_runs": 3,
+      "entropy": "极低熵·重复模式",
+      "temp": 0.3
+    },
+    "T3_code_repetitive@T0.6": {
+      "tps_mean": 54.08,
+      "accept_mean": 96.533,
+      "tok_per_cycle_mean": 2.94,
+      "backbone_ms_mean": 51.267,
+      "mtp_ms_mean": 1.641,
+      "cache_ms_mean": 0.401,
+      "sample_ms_mean": 0.024,
+      "out_tokens_mean": 227.333,
+      "tps_all": [
+        53.0,
+        55.2,
+        54.04
+      ],
+      "accept_all": [
+        94.19,
+        98.72,
+        96.69
+      ],
+      "accept_den_all": [
+        155,
+        156,
+        151
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=74/77,d2=72/74",
+      "n_runs": 3,
+      "entropy": "极低熵·重复模式",
+      "temp": 0.6
+    },
+    "T3_code_repetitive@T0.9": {
+      "tps_mean": 53.887,
+      "accept_mean": 97.267,
+      "tok_per_cycle_mean": 2.95,
+      "backbone_ms_mean": 51.717,
+      "mtp_ms_mean": 1.588,
+      "cache_ms_mean": 0.394,
+      "sample_ms_mean": 0.025,
+      "out_tokens_mean": 232,
+      "tps_all": [
+        53.0,
+        55.85,
+        52.81
+      ],
+      "accept_all": [
+        96.73,
+        99.34,
+        95.73
+      ],
+      "accept_den_all": [
+        153,
+        152,
+        164
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=81/83,d2=76/81",
+      "n_runs": 3,
+      "entropy": "极低熵·重复模式",
+      "temp": 0.9
+    },
+    "T3_code_repetitive@T1.2": {
+      "tps_mean": 52.423,
+      "accept_mean": 96.67,
+      "tok_per_cycle_mean": 2.927,
+      "backbone_ms_mean": 53.017,
+      "mtp_ms_mean": 1.649,
+      "cache_ms_mean": 0.413,
+      "sample_ms_mean": 0.026,
+      "out_tokens_mean": 318.667,
+      "tps_all": [
+        47.95,
+        55.09,
+        54.23
+      ],
+      "accept_all": [
+        96.39,
+        96.1,
+        97.52
+      ],
+      "accept_den_all": [
+        332,
+        154,
+        161
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=79/82,d2=78/79",
+      "n_runs": 3,
+      "entropy": "极低熵·重复模式",
+      "temp": 1.2
+    },
+    "T3_code_repetitive@T1.6": {
+      "tps_mean": 54.423,
+      "accept_mean": 96.693,
+      "tok_per_cycle_mean": 2.93,
+      "backbone_ms_mean": 50.917,
+      "mtp_ms_mean": 1.615,
+      "cache_ms_mean": 0.401,
+      "sample_ms_mean": 0.024,
+      "out_tokens_mean": 261.333,
+      "tps_all": [
+        55.95,
+        52.11,
+        55.21
+      ],
+      "accept_all": [
+        98.22,
+        94.87,
+        96.99
+      ],
+      "accept_den_all": [
+        169,
+        195,
+        166
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=82/84,d2=79/82",
+      "n_runs": 3,
+      "entropy": "极低熵·重复模式",
+      "temp": 1.6
+    },
+    "T4_translation@T0.0": {
+      "tps_mean": 48.067,
+      "accept_mean": 80.0,
+      "tok_per_cycle_mean": 2.52,
+      "backbone_ms_mean": 49.897,
+      "mtp_ms_mean": 1.111,
+      "cache_ms_mean": 0.37,
+      "sample_ms_mean": 0.024,
+      "out_tokens_mean": 82,
+      "tps_all": [
+        41.6,
+        51.25,
+        51.35
+      ],
+      "accept_all": [
+        80.0,
+        80.0,
+        80.0
+      ],
+      "accept_den_all": [
+        60,
+        60,
+        60
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=27/33,d2=21/27",
+      "n_runs": 3,
+      "entropy": "低熵·翻译",
+      "temp": 0.0
+    },
+    "T4_translation@T0.3": {
+      "tps_mean": 48.053,
+      "accept_mean": 80.51,
+      "tok_per_cycle_mean": 2.517,
+      "backbone_ms_mean": 49.297,
+      "mtp_ms_mean": 1.4,
+      "cache_ms_mean": 0.37,
+      "sample_ms_mean": 0.022,
+      "out_tokens_mean": 82,
+      "tps_all": [
+        46.34,
+        47.52,
+        50.3
+      ],
+      "accept_all": [
+        77.05,
+        80.0,
+        84.48
+      ],
+      "accept_den_all": [
+        61,
+        60,
+        58
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=26/32,d2=23/26",
+      "n_runs": 3,
+      "entropy": "低熵·翻译",
+      "temp": 0.3
+    },
+    "T4_translation@T0.6": {
+      "tps_mean": 48.607,
+      "accept_mean": 81.883,
+      "tok_per_cycle_mean": 2.577,
+      "backbone_ms_mean": 49.92,
+      "mtp_ms_mean": 1.437,
+      "cache_ms_mean": 0.374,
+      "sample_ms_mean": 0.026,
+      "out_tokens_mean": 82.333,
+      "tps_all": [
+        54.68,
+        50.48,
+        40.66
+      ],
+      "accept_all": [
+        91.07,
+        83.61,
+        70.97
+      ],
+      "accept_den_all": [
+        56,
+        61,
+        62
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=25/37,d2=19/25",
+      "n_runs": 3,
+      "entropy": "低熵·翻译",
+      "temp": 0.6
+    },
+    "T4_translation@T0.9": {
+      "tps_mean": 47.003,
+      "accept_mean": 79.19,
+      "tok_per_cycle_mean": 2.487,
+      "backbone_ms_mean": 49.527,
+      "mtp_ms_mean": 1.45,
+      "cache_ms_mean": 0.387,
+      "sample_ms_mean": 0.024,
+      "out_tokens_mean": 82.667,
+      "tps_all": [
+        46.49,
+        45.67,
+        48.85
+      ],
+      "accept_all": [
+        76.19,
+        78.33,
+        83.05
+      ],
+      "accept_den_all": [
+        63,
+        60,
+        59
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=26/33,d2=23/26",
+      "n_runs": 3,
+      "entropy": "低熵·翻译",
+      "temp": 0.9
+    },
+    "T4_translation@T1.2": {
+      "tps_mean": 48.85,
+      "accept_mean": 81.05,
+      "tok_per_cycle_mean": 2.557,
+      "backbone_ms_mean": 49.24,
+      "mtp_ms_mean": 1.403,
+      "cache_ms_mean": 0.372,
+      "sample_ms_mean": 0.023,
+      "out_tokens_mean": 81.667,
+      "tps_all": [
+        46.68,
+        49.68,
+        50.19
+      ],
+      "accept_all": [
+        79.03,
+        81.36,
+        82.76
+      ],
+      "accept_den_all": [
+        62,
+        59,
+        58
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=26/32,d2=22/26",
+      "n_runs": 3,
+      "entropy": "低熵·翻译",
+      "temp": 1.2
+    },
+    "T4_translation@T1.6": {
+      "tps_mean": 45.43,
+      "accept_mean": 76.907,
+      "tok_per_cycle_mean": 2.417,
+      "backbone_ms_mean": 50.007,
+      "mtp_ms_mean": 1.442,
+      "cache_ms_mean": 0.38,
+      "sample_ms_mean": 0.023,
+      "out_tokens_mean": 82,
+      "tps_all": [
+        45.21,
+        47.0,
+        44.08
+      ],
+      "accept_all": [
+        76.67,
+        77.78,
+        76.27
+      ],
+      "accept_den_all": [
+        60,
+        63,
+        59
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=24/35,d2=21/24",
+      "n_runs": 3,
+      "entropy": "低熵·翻译",
+      "temp": 1.6
+    },
+    "T5_extraction@T0.0": {
+      "tps_mean": 55.063,
+      "accept_mean": 92.62,
+      "tok_per_cycle_mean": 2.83,
+      "backbone_ms_mean": 48.813,
+      "mtp_ms_mean": 1.165,
+      "cache_ms_mean": 0.367,
+      "sample_ms_mean": 0.023,
+      "out_tokens_mean": 177,
+      "tps_all": [
+        50.7,
+        57.12,
+        57.37
+      ],
+      "accept_all": [
+        92.62,
+        92.62,
+        92.62
+      ],
+      "accept_den_all": [
+        122,
+        122,
+        122
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=59/63,d2=54/59",
+      "n_runs": 3,
+      "entropy": "中低熵·信息抽取",
+      "temp": 0.0
+    },
+    "T5_extraction@T0.3": {
+      "tps_mean": 52.667,
+      "accept_mean": 91.303,
+      "tok_per_cycle_mean": 2.773,
+      "backbone_ms_mean": 49.703,
+      "mtp_ms_mean": 1.523,
+      "cache_ms_mean": 0.379,
+      "sample_ms_mean": 0.025,
+      "out_tokens_mean": 188.333,
+      "tps_all": [
+        51.77,
+        54.66,
+        51.57
+      ],
+      "accept_all": [
+        88.8,
+        93.5,
+        91.61
+      ],
+      "accept_den_all": [
+        125,
+        123,
+        143
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=67/76,d2=64/67",
+      "n_runs": 3,
+      "entropy": "中低熵·信息抽取",
+      "temp": 0.3
+    },
+    "T5_extraction@T0.6": {
+      "tps_mean": 53.327,
+      "accept_mean": 89.857,
+      "tok_per_cycle_mean": 2.767,
+      "backbone_ms_mean": 48.917,
+      "mtp_ms_mean": 1.511,
+      "cache_ms_mean": 0.386,
+      "sample_ms_mean": 0.023,
+      "out_tokens_mean": 187,
+      "tps_all": [
+        52.63,
+        54.22,
+        53.13
+      ],
+      "accept_all": [
+        89.13,
+        90.84,
+        89.6
+      ],
+      "accept_den_all": [
+        138,
+        131,
+        125
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=59/66,d2=53/59",
+      "n_runs": 3,
+      "entropy": "中低熵·信息抽取",
+      "temp": 0.6
+    },
+    "T5_extraction@T0.9": {
+      "tps_mean": 53.47,
+      "accept_mean": 90.267,
+      "tok_per_cycle_mean": 2.763,
+      "backbone_ms_mean": 48.837,
+      "mtp_ms_mean": 1.493,
+      "cache_ms_mean": 0.379,
+      "sample_ms_mean": 0.023,
+      "out_tokens_mean": 185,
+      "tps_all": [
+        54.83,
+        53.39,
+        52.19
+      ],
+      "accept_all": [
+        91.94,
+        90.62,
+        88.24
+      ],
+      "accept_den_all": [
+        124,
+        128,
+        136
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=65/71,d2=55/65",
+      "n_runs": 3,
+      "entropy": "中低熵·信息抽取",
+      "temp": 0.9
+    },
+    "T5_extraction@T1.2": {
+      "tps_mean": 51.207,
+      "accept_mean": 87.593,
+      "tok_per_cycle_mean": 2.68,
+      "backbone_ms_mean": 49.567,
+      "mtp_ms_mean": 1.452,
+      "cache_ms_mean": 0.376,
+      "sample_ms_mean": 0.022,
+      "out_tokens_mean": 215,
+      "tps_all": [
+        50.86,
+        49.74,
+        53.02
+      ],
+      "accept_all": [
+        87.18,
+        85.26,
+        90.34
+      ],
+      "accept_den_all": [
+        156,
+        156,
+        145
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=69/76,d2=62/69",
+      "n_runs": 3,
+      "entropy": "中低熵·信息抽取",
+      "temp": 1.2
+    },
+    "T5_extraction@T1.6": {
+      "tps_mean": 52.59,
+      "accept_mean": 90.757,
+      "tok_per_cycle_mean": 2.76,
+      "backbone_ms_mean": 49.587,
+      "mtp_ms_mean": 1.498,
+      "cache_ms_mean": 0.381,
+      "sample_ms_mean": 0.024,
+      "out_tokens_mean": 161,
+      "tps_all": [
+        55.32,
+        52.85,
+        49.6
+      ],
+      "accept_all": [
+        94.59,
+        89.29,
+        88.39
+      ],
+      "accept_den_all": [
+        111,
+        112,
+        112
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=52/60,d2=47/52",
+      "n_runs": 3,
+      "entropy": "中低熵·信息抽取",
+      "temp": 1.6
+    },
+    "T6_qa_factual@T0.0": {
+      "tps_mean": 37.85,
+      "accept_mean": 62.93,
+      "tok_per_cycle_mean": 2.03,
+      "backbone_ms_mean": 51.467,
+      "mtp_ms_mean": 1.189,
+      "cache_ms_mean": 0.416,
+      "sample_ms_mean": 0.024,
+      "out_tokens_mean": 401,
+      "tps_all": [
+        34.82,
+        39.89,
+        38.84
+      ],
+      "accept_all": [
+        62.93,
+        62.93,
+        62.93
+      ],
+      "accept_den_all": [
+        321,
+        321,
+        321
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=123/198,d2=79/123",
+      "n_runs": 3,
+      "entropy": "中熵·知识问答",
+      "temp": 0.0
+    },
+    "T6_qa_factual@T0.3": {
+      "tps_mean": 34.783,
+      "accept_mean": 60.997,
+      "tok_per_cycle_mean": 2.0,
+      "backbone_ms_mean": 55.043,
+      "mtp_ms_mean": 1.304,
+      "cache_ms_mean": 0.367,
+      "sample_ms_mean": 0.022,
+      "out_tokens_mean": 403.333,
+      "tps_all": [
+        33.76,
+        35.13,
+        35.46
+      ],
+      "accept_all": [
+        58.15,
+        61.46,
+        63.38
+      ],
+      "accept_den_all": [
+        313,
+        314,
+        355
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=136/219,d2=89/136",
+      "n_runs": 3,
+      "entropy": "中熵·知识问答",
+      "temp": 0.3
+    },
+    "T6_qa_factual@T0.6": {
+      "tps_mean": 35.13,
+      "accept_mean": 62.393,
+      "tok_per_cycle_mean": 2.023,
+      "backbone_ms_mean": 55.083,
+      "mtp_ms_mean": 1.4,
+      "cache_ms_mean": 0.391,
+      "sample_ms_mean": 0.024,
+      "out_tokens_mean": 404.667,
+      "tps_all": [
+        36.07,
+        35.59,
+        33.73
+      ],
+      "accept_all": [
+        64.24,
+        64.13,
+        58.81
+      ],
+      "accept_den_all": [
+        330,
+        329,
+        318
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=119/199,d2=68/119",
+      "n_runs": 3,
+      "entropy": "中熵·知识问答",
+      "temp": 0.6
+    },
+    "T6_qa_factual@T0.9": {
+      "tps_mean": 34.233,
+      "accept_mean": 62.893,
+      "tok_per_cycle_mean": 2.03,
+      "backbone_ms_mean": 56.567,
+      "mtp_ms_mean": 1.471,
+      "cache_ms_mean": 0.413,
+      "sample_ms_mean": 0.025,
+      "out_tokens_mean": 445.333,
+      "tps_all": [
+        35.5,
+        33.93,
+        33.27
+      ],
+      "accept_all": [
+        66.48,
+        62.2,
+        60.0
+      ],
+      "accept_den_all": [
+        349,
+        418,
+        305
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=115/190,d2=68/115",
+      "n_runs": 3,
+      "entropy": "中熵·知识问答",
+      "temp": 0.9
+    },
+    "T6_qa_factual@T1.2": {
+      "tps_mean": 33.547,
+      "accept_mean": 62.043,
+      "tok_per_cycle_mean": 2.04,
+      "backbone_ms_mean": 58.103,
+      "mtp_ms_mean": 1.44,
+      "cache_ms_mean": 0.403,
+      "sample_ms_mean": 0.023,
+      "out_tokens_mean": 446.333,
+      "tps_all": [
+        32.38,
+        35.02,
+        33.24
+      ],
+      "accept_all": [
+        59.29,
+        65.69,
+        61.15
+      ],
+      "accept_den_all": [
+        366,
+        411,
+        314
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=120/194,d2=72/120",
+      "n_runs": 3,
+      "entropy": "中熵·知识问答",
+      "temp": 1.2
+    },
+    "T6_qa_factual@T1.6": {
+      "tps_mean": 32.603,
+      "accept_mean": 61.857,
+      "tok_per_cycle_mean": 2.02,
+      "backbone_ms_mean": 59.347,
+      "mtp_ms_mean": 1.395,
+      "cache_ms_mean": 0.391,
+      "sample_ms_mean": 0.023,
+      "out_tokens_mean": 409.667,
+      "tps_all": [
+        32.98,
+        32.09,
+        32.74
+      ],
+      "accept_all": [
+        60.16,
+        63.29,
+        62.12
+      ],
+      "accept_den_all": [
+        251,
+        414,
+        330
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=129/201,d2=76/129",
+      "n_runs": 3,
+      "entropy": "中熵·知识问答",
+      "temp": 1.6
+    },
+    "T7_math_reasoning@T0.0": {
+      "tps_mean": 47.517,
+      "accept_mean": 92.74,
+      "tok_per_cycle_mean": 2.79,
+      "backbone_ms_mean": 55.957,
+      "mtp_ms_mean": 1.44,
+      "cache_ms_mean": 0.452,
+      "sample_ms_mean": 0.027,
+      "out_tokens_mean": 600,
+      "tps_all": [
+        46.48,
+        48.09,
+        47.98
+      ],
+      "accept_all": [
+        92.74,
+        92.74,
+        92.74
+      ],
+      "accept_den_all": [
+        413,
+        413,
+        413
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=198/215,d2=185/198",
+      "n_runs": 3,
+      "entropy": "中高熵·数学推理",
+      "temp": 0.0
+    },
+    "T7_math_reasoning@T0.3": {
+      "tps_mean": 44.53,
+      "accept_mean": 90.053,
+      "tok_per_cycle_mean": 2.707,
+      "backbone_ms_mean": 57.74,
+      "mtp_ms_mean": 1.807,
+      "cache_ms_mean": 0.453,
+      "sample_ms_mean": 0.029,
+      "out_tokens_mean": 600,
+      "tps_all": [
+        46.51,
+        44.14,
+        42.94
+      ],
+      "accept_all": [
+        92.98,
+        89.47,
+        87.71
+      ],
+      "accept_den_all": [
+        413,
+        418,
+        423
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=196/227,d2=175/196",
+      "n_runs": 3,
+      "entropy": "中高熵·数学推理",
+      "temp": 0.3
+    },
+    "T7_math_reasoning@T0.6": {
+      "tps_mean": 45.24,
+      "accept_mean": 90.767,
+      "tok_per_cycle_mean": 2.747,
+      "backbone_ms_mean": 57.61,
+      "mtp_ms_mean": 1.821,
+      "cache_ms_mean": 0.453,
+      "sample_ms_mean": 0.028,
+      "out_tokens_mean": 600,
+      "tps_all": [
+        45.6,
+        44.58,
+        45.54
+      ],
+      "accept_all": [
+        91.37,
+        89.1,
+        91.83
+      ],
+      "accept_den_all": [
+        417,
+        422,
+        416
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=200/216,d2=182/200",
+      "n_runs": 3,
+      "entropy": "中高熵·数学推理",
+      "temp": 0.6
+    },
+    "T7_math_reasoning@T0.9": {
+      "tps_mean": 43.59,
+      "accept_mean": 88.297,
+      "tok_per_cycle_mean": 2.663,
+      "backbone_ms_mean": 58.197,
+      "mtp_ms_mean": 1.736,
+      "cache_ms_mean": 0.443,
+      "sample_ms_mean": 0.026,
+      "out_tokens_mean": 600,
+      "tps_all": [
+        45.87,
+        44.27,
+        40.63
+      ],
+      "accept_all": [
+        91.81,
+        89.52,
+        83.56
+      ],
+      "accept_den_all": [
+        415,
+        420,
+        432
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=195/237,d2=166/195",
+      "n_runs": 3,
+      "entropy": "中高熵·数学推理",
+      "temp": 0.9
+    },
+    "T7_math_reasoning@T1.2": {
+      "tps_mean": 43.033,
+      "accept_mean": 86.133,
+      "tok_per_cycle_mean": 2.607,
+      "backbone_ms_mean": 57.677,
+      "mtp_ms_mean": 1.721,
+      "cache_ms_mean": 0.443,
+      "sample_ms_mean": 0.026,
+      "out_tokens_mean": 600,
+      "tps_all": [
+        43.38,
+        42.37,
+        43.35
+      ],
+      "accept_all": [
+        88.33,
+        84.22,
+        85.85
+      ],
+      "accept_den_all": [
+        420,
+        431,
+        431
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=203/228,d2=167/203",
+      "n_runs": 3,
+      "entropy": "中高熵·数学推理",
+      "temp": 1.2
+    },
+    "T7_math_reasoning@T1.6": {
+      "tps_mean": 41.377,
+      "accept_mean": 82.45,
+      "tok_per_cycle_mean": 2.507,
+      "backbone_ms_mean": 57.657,
+      "mtp_ms_mean": 1.662,
+      "cache_ms_mean": 0.434,
+      "sample_ms_mean": 0.025,
+      "out_tokens_mean": 600,
+      "tps_all": [
+        38.48,
+        43.41,
+        42.24
+      ],
+      "accept_all": [
+        77.13,
+        86.62,
+        83.6
+      ],
+      "accept_den_all": [
+        446,
+        426,
+        433
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=197/236,d2=165/197",
+      "n_runs": 3,
+      "entropy": "中高熵·数学推理",
+      "temp": 1.6
+    },
+    "T8_creative_writing@T0.0": {
+      "tps_mean": 32.373,
+      "accept_mean": 56.73,
+      "tok_per_cycle_mean": 1.9,
+      "backbone_ms_mean": 56.137,
+      "mtp_ms_mean": 1.304,
+      "cache_ms_mean": 0.465,
+      "sample_ms_mean": 0.026,
+      "out_tokens_mean": 457,
+      "tps_all": [
+        30.41,
+        33.11,
+        33.6
+      ],
+      "accept_all": [
+        56.73,
+        56.73,
+        56.73
+      ],
+      "accept_den_all": [
+        379,
+        379,
+        379
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=138/241,d2=77/138",
+      "n_runs": 3,
+      "entropy": "高熵·创意写作",
+      "temp": 0.0
+    },
+    "T8_creative_writing@T0.3": {
+      "tps_mean": 30.993,
+      "accept_mean": 57.57,
+      "tok_per_cycle_mean": 1.937,
+      "backbone_ms_mean": 59.95,
+      "mtp_ms_mean": 1.417,
+      "cache_ms_mean": 0.403,
+      "sample_ms_mean": 0.024,
+      "out_tokens_mean": 465,
+      "tps_all": [
+        30.9,
+        30.69,
+        31.39
+      ],
+      "accept_all": [
+        58.96,
+        55.67,
+        58.08
+      ],
+      "accept_den_all": [
+        402,
+        397,
+        365
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=140/225,d2=72/140",
+      "n_runs": 3,
+      "entropy": "高熵·创意写作",
+      "temp": 0.3
+    },
+    "T8_creative_writing@T0.6": {
+      "tps_mean": 30.953,
+      "accept_mean": 56.51,
+      "tok_per_cycle_mean": 1.903,
+      "backbone_ms_mean": 58.987,
+      "mtp_ms_mean": 1.414,
+      "cache_ms_mean": 0.403,
+      "sample_ms_mean": 0.024,
+      "out_tokens_mean": 475.333,
+      "tps_all": [
+        31.04,
+        30.43,
+        31.39
+      ],
+      "accept_all": [
+        56.54,
+        56.99,
+        56.0
+      ],
+      "accept_den_all": [
+        405,
+        386,
+        400
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=153/247,d2=71/153",
+      "n_runs": 3,
+      "entropy": "高熵·创意写作",
+      "temp": 0.6
+    },
+    "T8_creative_writing@T0.9": {
+      "tps_mean": 31.107,
+      "accept_mean": 56.687,
+      "tok_per_cycle_mean": 1.91,
+      "backbone_ms_mean": 58.82,
+      "mtp_ms_mean": 1.448,
+      "cache_ms_mean": 0.415,
+      "sample_ms_mean": 0.025,
+      "out_tokens_mean": 480.333,
+      "tps_all": [
+        31.63,
+        30.66,
+        31.03
+      ],
+      "accept_all": [
+        58.88,
+        55.23,
+        55.95
+      ],
+      "accept_den_all": [
+        394,
+        440,
+        370
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=135/235,d2=72/135",
+      "n_runs": 3,
+      "entropy": "高熵·创意写作",
+      "temp": 0.9
+    },
+    "T8_creative_writing@T1.2": {
+      "tps_mean": 30.597,
+      "accept_mean": 55.443,
+      "tok_per_cycle_mean": 1.87,
+      "backbone_ms_mean": 58.5,
+      "mtp_ms_mean": 1.397,
+      "cache_ms_mean": 0.4,
+      "sample_ms_mean": 0.024,
+      "out_tokens_mean": 472,
+      "tps_all": [
+        29.88,
+        31.75,
+        30.16
+      ],
+      "accept_all": [
+        53.98,
+        57.0,
+        55.35
+      ],
+      "accept_den_all": [
+        402,
+        393,
+        383
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=133/250,d2=79/133",
+      "n_runs": 3,
+      "entropy": "高熵·创意写作",
+      "temp": 1.2
+    },
+    "T8_creative_writing@T1.6": {
+      "tps_mean": 29.423,
+      "accept_mean": 52.553,
+      "tok_per_cycle_mean": 1.813,
+      "backbone_ms_mean": 59.093,
+      "mtp_ms_mean": 1.414,
+      "cache_ms_mean": 0.408,
+      "sample_ms_mean": 0.024,
+      "out_tokens_mean": 475,
+      "tps_all": [
+        28.79,
+        30.23,
+        29.25
+      ],
+      "accept_all": [
+        50.65,
+        54.64,
+        52.37
+      ],
+      "accept_den_all": [
+        387,
+        399,
+        422
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=148/274,d2=73/148",
+      "n_runs": 3,
+      "entropy": "高熵·创意写作",
+      "temp": 1.6
+    },
+    "T9_rust_impl@T0.0": {
+      "tps_mean": 45.863,
+      "accept_mean": 89.52,
+      "tok_per_cycle_mean": 2.72,
+      "backbone_ms_mean": 56.517,
+      "mtp_ms_mean": 1.469,
+      "cache_ms_mean": 0.467,
+      "sample_ms_mean": 0.028,
+      "out_tokens_mean": 800,
+      "tps_all": [
+        44.2,
+        46.56,
+        46.83
+      ],
+      "accept_all": [
+        89.52,
+        89.52,
+        89.52
+      ],
+      "accept_den_all": [
+        563,
+        563,
+        563
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=269/294,d2=235/269",
+      "n_runs": 3,
+      "entropy": "低熵·Rust 实现",
+      "temp": 0.0
+    },
+    "T9_rust_impl@T0.3": {
+      "tps_mean": 42.56,
+      "accept_mean": 85.93,
+      "tok_per_cycle_mean": 2.613,
+      "backbone_ms_mean": 58.48,
+      "mtp_ms_mean": 1.708,
+      "cache_ms_mean": 0.441,
+      "sample_ms_mean": 0.027,
+      "out_tokens_mean": 800,
+      "tps_all": [
+        39.96,
+        42.82,
+        44.9
+      ],
+      "accept_all": [
+        80.95,
+        86.84,
+        90.0
+      ],
+      "accept_den_all": [
+        588,
+        570,
+        560
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=266/294,d2=238/266",
+      "n_runs": 3,
+      "entropy": "低熵·Rust 实现",
+      "temp": 0.3
+    },
+    "T9_rust_impl@T0.6": {
+      "tps_mean": 44.62,
+      "accept_mean": 90.453,
+      "tok_per_cycle_mean": 2.73,
+      "backbone_ms_mean": 58.127,
+      "mtp_ms_mean": 1.745,
+      "cache_ms_mean": 0.443,
+      "sample_ms_mean": 0.028,
+      "out_tokens_mean": 800,
+      "tps_all": [
+        45.66,
+        43.4,
+        44.8
+      ],
+      "accept_all": [
+        91.89,
+        88.48,
+        90.99
+      ],
+      "accept_den_all": [
+        555,
+        564,
+        555
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=262/293,d2=243/262",
+      "n_runs": 3,
+      "entropy": "低熵·Rust 实现",
+      "temp": 0.6
+    },
+    "T9_rust_impl@T0.9": {
+      "tps_mean": 43.57,
+      "accept_mean": 87.877,
+      "tok_per_cycle_mean": 2.663,
+      "backbone_ms_mean": 57.96,
+      "mtp_ms_mean": 1.734,
+      "cache_ms_mean": 0.445,
+      "sample_ms_mean": 0.027,
+      "out_tokens_mean": 800,
+      "tps_all": [
+        42.99,
+        43.6,
+        44.12
+      ],
+      "accept_all": [
+        87.3,
+        88.03,
+        88.3
+      ],
+      "accept_den_all": [
+        567,
+        568,
+        564
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=264/300,d2=234/264",
+      "n_runs": 3,
+      "entropy": "低熵·Rust 实现",
+      "temp": 0.9
+    },
+    "T9_rust_impl@T1.2": {
+      "tps_mean": 38.19,
+      "accept_mean": 75.923,
+      "tok_per_cycle_mean": 2.357,
+      "backbone_ms_mean": 58.88,
+      "mtp_ms_mean": 1.61,
+      "cache_ms_mean": 0.427,
+      "sample_ms_mean": 0.027,
+      "out_tokens_mean": 653,
+      "tps_all": [
+        41.18,
+        42.16,
+        31.23
+      ],
+      "accept_all": [
+        83.65,
+        86.01,
+        58.11
+      ],
+      "accept_den_all": [
+        575,
+        572,
+        296
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=110/186,d2=62/110",
+      "n_runs": 3,
+      "entropy": "低熵·Rust 实现",
+      "temp": 1.2
+    },
+    "T9_rust_impl@T1.6": {
+      "tps_mean": 35.397,
+      "accept_mean": 64.08,
+      "tok_per_cycle_mean": 2.097,
+      "backbone_ms_mean": 56.06,
+      "mtp_ms_mean": 1.395,
+      "cache_ms_mean": 0.387,
+      "sample_ms_mean": 0.024,
+      "out_tokens_mean": 359,
+      "tps_all": [
+        30.44,
+        43.48,
+        32.27
+      ],
+      "accept_all": [
+        48.72,
+        85.54,
+        57.98
+      ],
+      "accept_den_all": [
+        39,
+        574,
+        188
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=69/119,d2=40/69",
+      "n_runs": 3,
+      "entropy": "低熵·Rust 实现",
+      "temp": 1.6
+    },
+    "T10_ts_component@T0.0": {
+      "tps_mean": 47.817,
+      "accept_mean": 95.34,
+      "tok_per_cycle_mean": 2.87,
+      "backbone_ms_mean": 57.12,
+      "mtp_ms_mean": 1.44,
+      "cache_ms_mean": 0.447,
+      "sample_ms_mean": 0.028,
+      "out_tokens_mean": 725,
+      "tps_all": [
+        45.09,
+        49.4,
+        48.96
+      ],
+      "accept_all": [
+        95.34,
+        95.34,
+        95.34
+      ],
+      "accept_den_all": [
+        494,
+        494,
+        494
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=241/253,d2=230/241",
+      "n_runs": 3,
+      "entropy": "低熵·TypeScript 组件",
+      "temp": 0.0
+    },
+    "T10_ts_component@T0.3": {
+      "tps_mean": 47.317,
+      "accept_mean": 94.973,
+      "tok_per_cycle_mean": 2.867,
+      "backbone_ms_mean": 57.387,
+      "mtp_ms_mean": 1.839,
+      "cache_ms_mean": 0.453,
+      "sample_ms_mean": 0.028,
+      "out_tokens_mean": 764.667,
+      "tps_all": [
+        47.81,
+        47.06,
+        47.08
+      ],
+      "accept_all": [
+        96.14,
+        94.61,
+        94.17
+      ],
+      "accept_den_all": [
+        518,
+        501,
+        549
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=268/281,d2=249/268",
+      "n_runs": 3,
+      "entropy": "低熵·TypeScript 组件",
+      "temp": 0.3
+    },
+    "T10_ts_component@T0.6": {
+      "tps_mean": 47.243,
+      "accept_mean": 94.583,
+      "tok_per_cycle_mean": 2.843,
+      "backbone_ms_mean": 56.997,
+      "mtp_ms_mean": 1.784,
+      "cache_ms_mean": 0.446,
+      "sample_ms_mean": 0.027,
+      "out_tokens_mean": 711.667,
+      "tps_all": [
+        47.27,
+        47.58,
+        46.88
+      ],
+      "accept_all": [
+        93.93,
+        95.49,
+        94.33
+      ],
+      "accept_den_all": [
+        445,
+        466,
+        547
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=265/282,d2=251/265",
+      "n_runs": 3,
+      "entropy": "低熵·TypeScript 组件",
+      "temp": 0.6
+    },
+    "T10_ts_component@T0.9": {
+      "tps_mean": 47.775,
+      "accept_mean": 93.005,
+      "tok_per_cycle_mean": 2.825,
+      "backbone_ms_mean": 55.975,
+      "mtp_ms_mean": 1.776,
+      "cache_ms_mean": 0.439,
+      "sample_ms_mean": 0.028,
+      "out_tokens_mean": 728,
+      "tps_all": [
+        47.07,
+        48.48
+      ],
+      "accept_all": [
+        92.53,
+        93.48
+      ],
+      "accept_den_all": [
+        455,
+        552
+      ],
+      "n_valid": 2,
+      "n_invalid": 1,
+      "depth_hist_last": "d1=270/282,d2=246/270",
+      "n_runs": 3,
+      "entropy": "低熵·TypeScript 组件",
+      "temp": 0.9
+    },
+    "T10_ts_component@T1.2": {
+      "tps_mean": 45.02,
+      "accept_mean": 86.343,
+      "tok_per_cycle_mean": 2.633,
+      "backbone_ms_mean": 55.37,
+      "mtp_ms_mean": 1.619,
+      "cache_ms_mean": 0.414,
+      "sample_ms_mean": 0.027,
+      "out_tokens_mean": 506.333,
+      "tps_all": [
+        47.53,
+        41.84,
+        45.69
+      ],
+      "accept_all": [
+        95.16,
+        75.0,
+        88.87
+      ],
+      "accept_den_all": [
+        434,
+        60,
+        566
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=271/295,d2=232/271",
+      "n_runs": 3,
+      "entropy": "低熵·TypeScript 组件",
+      "temp": 1.2
+    },
+    "T10_ts_component@T1.6": {
+      "tps_mean": 47.673,
+      "accept_mean": 95.173,
+      "tok_per_cycle_mean": 2.867,
+      "backbone_ms_mean": 56.903,
+      "mtp_ms_mean": 1.82,
+      "cache_ms_mean": 0.449,
+      "sample_ms_mean": 0.028,
+      "out_tokens_mean": 800,
+      "tps_all": [
+        46.97,
+        47.42,
+        48.63
+      ],
+      "accept_all": [
+        93.45,
+        95.4,
+        96.67
+      ],
+      "accept_den_all": [
+        550,
+        544,
+        541
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=266/275,d2=257/266",
+      "n_runs": 3,
+      "entropy": "低熵·TypeScript 组件",
+      "temp": 1.6
+    },
+    "T11_doc_rewrite@T0.0": {
+      "tps_mean": 41.507,
+      "accept_mean": 80.41,
+      "tok_per_cycle_mean": 2.46,
+      "backbone_ms_mean": 56.537,
+      "mtp_ms_mean": 1.41,
+      "cache_ms_mean": 0.461,
+      "sample_ms_mean": 0.027,
+      "out_tokens_mean": 659,
+      "tps_all": [
+        39.98,
+        42.38,
+        42.16
+      ],
+      "accept_all": [
+        80.41,
+        80.41,
+        80.41
+      ],
+      "accept_den_all": [
+        485,
+        485,
+        485
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=217/268,d2=173/217",
+      "n_runs": 3,
+      "entropy": "中熵·技术文档重写",
+      "temp": 0.0
+    },
+    "T11_doc_rewrite@T0.3": {
+      "tps_mean": 39.873,
+      "accept_mean": 81.163,
+      "tok_per_cycle_mean": 2.477,
+      "backbone_ms_mean": 59.03,
+      "mtp_ms_mean": 1.694,
+      "cache_ms_mean": 0.444,
+      "sample_ms_mean": 0.028,
+      "out_tokens_mean": 733.333,
+      "tps_all": [
+        38.6,
+        42.13,
+        38.89
+      ],
+      "accept_all": [
+        79.42,
+        85.15,
+        78.92
+      ],
+      "accept_den_all": [
+        588,
+        431,
+        593
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=263/330,d2=205/263",
+      "n_runs": 3,
+      "entropy": "中熵·技术文档重写",
+      "temp": 0.3
+    },
+    "T11_doc_rewrite@T0.6": {
+      "tps_mean": 40.027,
+      "accept_mean": 80.293,
+      "tok_per_cycle_mean": 2.463,
+      "backbone_ms_mean": 58.473,
+      "mtp_ms_mean": 1.73,
+      "cache_ms_mean": 0.454,
+      "sample_ms_mean": 0.028,
+      "out_tokens_mean": 680,
+      "tps_all": [
+        40.93,
+        39.82,
+        39.33
+      ],
+      "accept_all": [
+        80.98,
+        81.51,
+        78.39
+      ],
+      "accept_den_all": [
+        410,
+        584,
+        509
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=226/283,d2=173/226",
+      "n_runs": 3,
+      "entropy": "中熵·技术文档重写",
+      "temp": 0.6
+    },
+    "T11_doc_rewrite@T0.9": {
+      "tps_mean": 39.253,
+      "accept_mean": 79.267,
+      "tok_per_cycle_mean": 2.427,
+      "backbone_ms_mean": 58.86,
+      "mtp_ms_mean": 1.673,
+      "cache_ms_mean": 0.443,
+      "sample_ms_mean": 0.027,
+      "out_tokens_mean": 774,
+      "tps_all": [
+        41.16,
+        37.59,
+        39.01
+      ],
+      "accept_all": [
+        82.7,
+        76.21,
+        78.89
+      ],
+      "accept_den_all": [
+        526,
+        597,
+        592
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=261/331,d2=206/261",
+      "n_runs": 3,
+      "entropy": "中熵·技术文档重写",
+      "temp": 0.9
+    },
+    "T11_doc_rewrite@T1.2": {
+      "tps_mean": 37.52,
+      "accept_mean": 74.763,
+      "tok_per_cycle_mean": 2.31,
+      "backbone_ms_mean": 58.73,
+      "mtp_ms_mean": 1.642,
+      "cache_ms_mean": 0.449,
+      "sample_ms_mean": 0.026,
+      "out_tokens_mean": 742.667,
+      "tps_all": [
+        38.4,
+        37.64,
+        36.52
+      ],
+      "accept_all": [
+        76.58,
+        74.68,
+        73.03
+      ],
+      "accept_den_all": [
+        602,
+        474,
+        608
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=254/354,d2=190/254",
+      "n_runs": 3,
+      "entropy": "中熵·技术文档重写",
+      "temp": 1.2
+    },
+    "T11_doc_rewrite@T1.6": {
+      "tps_mean": 35.95,
+      "accept_mean": 71.827,
+      "tok_per_cycle_mean": 2.243,
+      "backbone_ms_mean": 59.527,
+      "mtp_ms_mean": 1.587,
+      "cache_ms_mean": 0.433,
+      "sample_ms_mean": 0.025,
+      "out_tokens_mean": 785.333,
+      "tps_all": [
+        36.27,
+        35.77,
+        35.81
+      ],
+      "accept_all": [
+        73.43,
+        70.92,
+        71.13
+      ],
+      "accept_den_all": [
+        572,
+        619,
+        620
+      ],
+      "n_valid": 3,
+      "n_invalid": 0,
+      "depth_hist_last": "d1=263/357,d2=178/263",
+      "n_runs": 3,
+      "entropy": "中熵·技术文档重写",
+      "temp": 1.6
+    }
+  }
+}
