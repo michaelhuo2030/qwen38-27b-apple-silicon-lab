@@ -1,0 +1,228 @@
+{
+ "rows": [
+  {
+   "tier": "4bit",
+   "depth": 0,
+   "context": "1k",
+   "n": 3,
+   "tps_median": 16.7,
+   "tps_iqr": 7.39,
+   "tps_min": 11.38,
+   "ttft_median": 0.46,
+   "ctok_median": 900,
+   "alpha_weighted": null,
+   "mtp_lines": 0,
+   "tok_per_cycle_median": null,
+   "tps_all": [
+    18.77,
+    16.7,
+    11.38
+   ]
+  },
+  {
+   "tier": "4bit",
+   "depth": 0,
+   "context": "16k",
+   "n": 3,
+   "tps_median": 17.56,
+   "tps_iqr": 0.58,
+   "tps_min": 17.39,
+   "ttft_median": 0.53,
+   "ctok_median": 680,
+   "alpha_weighted": null,
+   "mtp_lines": 0,
+   "tok_per_cycle_median": null,
+   "tps_all": [
+    17.97,
+    17.56,
+    17.39
+   ]
+  },
+  {
+   "tier": "4bit",
+   "depth": 1,
+   "context": "1k",
+   "n": 3,
+   "tps_median": 19.19,
+   "tps_iqr": 1.46,
+   "tps_min": 18.85,
+   "ttft_median": 0.46,
+   "ctok_median": 764,
+   "alpha_weighted": 0.75,
+   "mtp_lines": 1325,
+   "tok_per_cycle_median": 1.76,
+   "tps_all": [
+    20.31,
+    19.19,
+    18.85
+   ]
+  },
+  {
+   "tier": "4bit",
+   "depth": 1,
+   "context": "16k",
+   "n": 3,
+   "tps_median": 16.46,
+   "tps_iqr": 0.84,
+   "tps_min": 15.88,
+   "ttft_median": 0.55,
+   "ctok_median": 797,
+   "alpha_weighted": 0.73,
+   "mtp_lines": 1362,
+   "tok_per_cycle_median": 1.73,
+   "tps_all": [
+    16.72,
+    16.46,
+    15.88
+   ]
+  },
+  {
+   "tier": "4bit",
+   "depth": 2,
+   "context": "1k",
+   "n": 3,
+   "tps_median": 20.8,
+   "tps_iqr": 1.27,
+   "tps_min": 20.64,
+   "ttft_median": 0.48,
+   "ctok_median": 763,
+   "alpha_weighted": 0.69,
+   "mtp_lines": 1899,
+   "tok_per_cycle_median": 2.21,
+   "tps_all": [
+    21.91,
+    20.64,
+    20.8
+   ]
+  },
+  {
+   "tier": "4bit",
+   "depth": 2,
+   "context": "16k",
+   "n": 3,
+   "tps_median": 16.96,
+   "tps_iqr": 1.09,
+   "tps_min": 16.79,
+   "ttft_median": 0.55,
+   "ctok_median": 787,
+   "alpha_weighted": 0.65,
+   "mtp_lines": 1922,
+   "tok_per_cycle_median": 2.13,
+   "tps_all": [
+    17.88,
+    16.96,
+    16.79
+   ]
+  },
+  {
+   "tier": "4bit",
+   "depth": 3,
+   "context": "1k",
+   "n": 3,
+   "tps_median": 23.48,
+   "tps_iqr": 2.03,
+   "tps_min": 23.25,
+   "ttft_median": 0.47,
+   "ctok_median": 834,
+   "alpha_weighted": 0.67,
+   "mtp_lines": 2088,
+   "tok_per_cycle_median": 2.49,
+   "tps_all": [
+    25.28,
+    23.48,
+    23.25
+   ]
+  },
+  {
+   "tier": "4bit",
+   "depth": 3,
+   "context": "16k",
+   "n": 3,
+   "tps_median": 22.03,
+   "tps_iqr": 0.87,
+   "tps_min": 21.2,
+   "ttft_median": 0.55,
+   "ctok_median": 761,
+   "alpha_weighted": 0.67,
+   "mtp_lines": 2064,
+   "tok_per_cycle_median": 2.46,
+   "tps_all": [
+    21.2,
+    22.07,
+    22.03
+   ]
+  },
+  {
+   "tier": "4bit",
+   "depth": 4,
+   "context": "1k",
+   "n": 3,
+   "tps_median": 24.42,
+   "tps_iqr": 2.57,
+   "tps_min": 23.34,
+   "ttft_median": 0.48,
+   "ctok_median": 784,
+   "alpha_weighted": 0.65,
+   "mtp_lines": 2242,
+   "tok_per_cycle_median": 2.52,
+   "tps_all": [
+    24.42,
+    25.91,
+    23.34
+   ]
+  },
+  {
+   "tier": "4bit",
+   "depth": 4,
+   "context": "16k",
+   "n": 3,
+   "tps_median": 21.04,
+   "tps_iqr": 1.86,
+   "tps_min": 19.74,
+   "ttft_median": 0.57,
+   "ctok_median": 864,
+   "alpha_weighted": 0.64,
+   "mtp_lines": 2322,
+   "tok_per_cycle_median": 2.6,
+   "tps_all": [
+    19.74,
+    21.6,
+    21.04
+   ]
+  }
+ ],
+ "regression": {
+  "n": 3,
+  "tps_median": 17.37,
+  "tps_iqr": 0.37,
+  "tps_min": 17.24,
+  "ttft_median": 3.55,
+  "ctok_median": 900,
+  "alpha_weighted": null,
+  "mtp_lines": 0,
+  "tok_per_cycle_median": null,
+  "tps_all": [
+   17.61,
+   17.24,
+   17.37
+  ]
+ },
+ "drift_pct": 4.011976047904202,
+ "verdict": "✅ 可用",
+ "config": {
+  "tier": "4bit",
+  "depths": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "contexts": [
+   "1k",
+   "16k"
+  ],
+  "reps": 3,
+  "cooldown": 180.0
+ }
+}

@@ -1,0 +1,228 @@
+{
+ "rows": [
+  {
+   "tier": "4bit",
+   "depth": 0,
+   "context": "1k",
+   "n": 3,
+   "tps_median": 15.27,
+   "tps_iqr": 9.61,
+   "tps_min": 8.86,
+   "ttft_median": 0.47,
+   "ctok_median": 736,
+   "alpha_weighted": null,
+   "mtp_lines": 0,
+   "tok_per_cycle_median": null,
+   "tps_all": [
+    18.47,
+    15.27,
+    8.86
+   ]
+  },
+  {
+   "tier": "4bit",
+   "depth": 0,
+   "context": "16k",
+   "n": 3,
+   "tps_median": 15.88,
+   "tps_iqr": 7.0,
+   "tps_min": 10.7,
+   "ttft_median": 0.54,
+   "ctok_median": 836,
+   "alpha_weighted": null,
+   "mtp_lines": 0,
+   "tok_per_cycle_median": null,
+   "tps_all": [
+    17.7,
+    15.88,
+    10.7
+   ]
+  },
+  {
+   "tier": "4bit",
+   "depth": 1,
+   "context": "1k",
+   "n": 3,
+   "tps_median": 19.7,
+   "tps_iqr": 1.75,
+   "tps_min": 18.44,
+   "ttft_median": 0.65,
+   "ctok_median": 733,
+   "alpha_weighted": 0.75,
+   "mtp_lines": 1332,
+   "tok_per_cycle_median": 1.76,
+   "tps_all": [
+    20.19,
+    19.7,
+    18.44
+   ]
+  },
+  {
+   "tier": "4bit",
+   "depth": 1,
+   "context": "16k",
+   "n": 3,
+   "tps_median": 16.4,
+   "tps_iqr": 0.51,
+   "tps_min": 15.95,
+   "ttft_median": 0.57,
+   "ctok_median": 691,
+   "alpha_weighted": 0.7,
+   "mtp_lines": 1237,
+   "tok_per_cycle_median": 1.71,
+   "tps_all": [
+    16.46,
+    15.95,
+    16.4
+   ]
+  },
+  {
+   "tier": "4bit",
+   "depth": 2,
+   "context": "1k",
+   "n": 3,
+   "tps_median": 21.5,
+   "tps_iqr": 1.18,
+   "tps_min": 21.07,
+   "ttft_median": 0.46,
+   "ctok_median": 886,
+   "alpha_weighted": 0.74,
+   "mtp_lines": 2022,
+   "tok_per_cycle_median": 2.3,
+   "tps_all": [
+    22.25,
+    21.5,
+    21.07
+   ]
+  },
+  {
+   "tier": "4bit",
+   "depth": 2,
+   "context": "16k",
+   "n": 3,
+   "tps_median": 18.76,
+   "tps_iqr": 2.57,
+   "tps_min": 16.39,
+   "ttft_median": 0.55,
+   "ctok_median": 693,
+   "alpha_weighted": 0.67,
+   "mtp_lines": 1765,
+   "tok_per_cycle_median": 2.17,
+   "tps_all": [
+    18.96,
+    18.76,
+    16.39
+   ]
+  },
+  {
+   "tier": "4bit",
+   "depth": 3,
+   "context": "1k",
+   "n": 3,
+   "tps_median": 24.95,
+   "tps_iqr": 1.5,
+   "tps_min": 24.31,
+   "ttft_median": 0.68,
+   "ctok_median": 900,
+   "alpha_weighted": 0.69,
+   "mtp_lines": 2191,
+   "tok_per_cycle_median": 2.54,
+   "tps_all": [
+    25.81,
+    24.31,
+    24.95
+   ]
+  },
+  {
+   "tier": "4bit",
+   "depth": 3,
+   "context": "16k",
+   "n": 3,
+   "tps_median": 21.76,
+   "tps_iqr": 1.21,
+   "tps_min": 20.69,
+   "ttft_median": 0.56,
+   "ctok_median": 850,
+   "alpha_weighted": 0.66,
+   "mtp_lines": 2036,
+   "tok_per_cycle_median": 2.42,
+   "tps_all": [
+    21.76,
+    21.9,
+    20.69
+   ]
+  },
+  {
+   "tier": "4bit",
+   "depth": 4,
+   "context": "1k",
+   "n": 3,
+   "tps_median": 25.6,
+   "tps_iqr": 3.3,
+   "tps_min": 24.53,
+   "ttft_median": 0.48,
+   "ctok_median": 685,
+   "alpha_weighted": 0.68,
+   "mtp_lines": 2071,
+   "tok_per_cycle_median": 2.79,
+   "tps_all": [
+    27.83,
+    24.53,
+    25.6
+   ]
+  },
+  {
+   "tier": "4bit",
+   "depth": 4,
+   "context": "16k",
+   "n": 3,
+   "tps_median": 22.04,
+   "tps_iqr": 0.39,
+   "tps_min": 21.8,
+   "ttft_median": 0.55,
+   "ctok_median": 850,
+   "alpha_weighted": 0.64,
+   "mtp_lines": 2319,
+   "tok_per_cycle_median": 2.56,
+   "tps_all": [
+    21.8,
+    22.19,
+    22.04
+   ]
+  }
+ ],
+ "regression": {
+  "n": 3,
+  "tps_median": 18.72,
+  "tps_iqr": 0.49,
+  "tps_min": 18.39,
+  "ttft_median": 0.47,
+  "ctok_median": 736,
+  "alpha_weighted": null,
+  "mtp_lines": 0,
+  "tok_per_cycle_median": null,
+  "tps_all": [
+   18.88,
+   18.72,
+   18.39
+  ]
+ },
+ "drift_pct": 22.59332023575638,
+ "verdict": "❌ 漂移 >5%，整轮作废（热污染），需加大 --cooldown 重跑",
+ "config": {
+  "tier": "4bit",
+  "depths": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "contexts": [
+   "1k",
+   "16k"
+  ],
+  "reps": 3,
+  "cooldown": 180.0
+ }
+}

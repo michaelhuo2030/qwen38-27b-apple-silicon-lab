@@ -139,8 +139,31 @@ def mtp_stats_since(offset: int) -> tuple[float | None, int, list[dict]]:
     return ((num / den * 100) if den else None), den, rows
 
 
-def measure(lad, prompt: str, reps: int) -> dict:
-    """跑 reps 次，返回中位数与 IQR（不是均值）。"""
+def measure(lad, prompt: str, reps: int, warmup: int = 1) -> dict:
+    """跑 reps 次，返回中位数与 IQR（不是均值）。
+
+    ⚠️ warmup 不是可选项——**去掉它整轮数据会作废**（2026-10-03 实测教训）。
+
+    第一版 measure() 没有预热，结果 depth=0 的三个 rep 是
+    `[18.47, 15.27, 8.86]`（末/首 = 48%），而同一配置在 45 分钟后的回归里
+    是 `[18.88, 18.72, 18.39]`（末/首 = 97%）。**回测比首测快 22.6%** ——
+    方向和热污染相反（热污染只会越来越慢），所以这不是降频，是**暖机**：
+    前几个请求要付 MLX kernel 编译 + 内存分配器扩张的一次性代价。
+
+    为什么只有 depth=0 崩塌：编译代价与「图有多少条不同路径」相关。
+    depth≥1 的组在 depth=0 之后跑，kernel 已经热了；depth=0 是第一个组，
+    独自扛下了全部编译。
+    更糟的是它污染了**基线**——用它算「depth=1 快 29%」是假的，
+    用稳态基线重算只有 +5.3%。
+
+    现在：每组先跑 warmup 次（不计入），再跑 reps 次。
+    """
+    for _ in range(max(0, warmup)):
+        w = lad.ask(prompt, max_tokens=64)   # 短请求，只为触发编译/分配
+        if w.error:
+            break
+        time.sleep(0.5)
+
     tps, ttft, ctok = [], [], []
     rows_all: list[dict] = []
     for _ in range(reps):
