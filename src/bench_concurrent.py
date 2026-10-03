@@ -103,6 +103,8 @@ def main() -> int:
     ap.add_argument("--cooldown", type=float, default=180.0)
     ap.add_argument("--precool", type=float, default=300.0)
     ap.add_argument("--out", default="../results/bench_concurrent.json")
+    ap.add_argument("--allow-overload", action="store_true",
+                    help="跳过内存闸门（不推荐：root 运行的 omlx-server 崩了救不回来）")
     a = ap.parse_args()
 
     depths = [int(x) for x in a.depths.split(",")]
@@ -114,6 +116,32 @@ def main() -> int:
     if a.precool > 0:
         print(f"开跑前预冷 {a.precool:.0f}s（并发是持续满载，散热条件与单请求不同）…", flush=True)
         time.sleep(a.precool)
+
+    # ---- 内存闸门：必须在激活模型**之前** ----
+    #
+    # 为什么放在这里：并发压测会把 N 条序列的 KV cache 同时压进
+    # Metal cap（本机 85.9GB）。如果机器本来就被别的程序塞满
+    # （实测 2026-10-03：swap 已用 93%、load 8.92、其余进程合计 36.9GB），
+    # 再加并发就是真实的崩溃风险。而 omlx-server 是 **root 运行**，
+    # 崩了 agent 自己救不回来（ps 里 kill 不掉）。
+    #
+    # 所以先查、后跑，不靠"跑着看看会不会崩"。
+    print("\n=== 内存闸门 ===", flush=True)
+    import memgate
+    ok, reasons, data = memgate.check(strict=not a.allow_overload)
+    sw = data.get("swap") or {}
+    print(f"  可用内存 {data['mem_free_pct']}%  "
+          f"swap 已用 {sw.get('used_pct')}%  剩 {sw.get('free_mb')}MB  "
+          f"load {data['load1']}")
+    for r in data.get("top_rss", [])[:5]:
+        print(f"    {r['rss_gb']:6.2f} GB  {r['proc']}")
+    if not ok:
+        print("❌ 内存不达标，拒绝启动并发压测：", flush=True)
+        for r in reasons:
+            print(f"   - {r}")
+        print("   关掉占内存的程序后重跑；确需强压加 --allow-overload（不推荐）")
+        return 3
+    print("✅ 放行\n", flush=True)
 
     lad = L.Ladder(a.tier, think=False, ane=True, turboquant=0, mtp=True,
                    verbose=False)

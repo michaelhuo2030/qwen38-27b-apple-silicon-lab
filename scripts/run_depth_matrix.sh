@@ -25,8 +25,21 @@ for pid in 54109; do
   fi
 done
 
+FAILED=""
+
 for TIER in oq3e 6bit 8bit ternary; do
   echo "=============== $(date '+%H:%M') 档位 $TIER 开始 ==============="
+
+  # 内存闸门：换档要 unload + load 不同体积的模型（13.8GB → 30GB），
+  # 机器本身若已被塞满，这一步就有把 omlx-server（root 运行）拖崩的风险。
+  # 崩了 agent 救不回来，所以先查后跑。
+  if ! python3 "$REPO/src/memgate.py"; then
+    echo "❌ 内存不达标，跳过 $TIER（不硬跑）"
+    FAILED="$FAILED $TIER"
+    sleep 300
+    continue
+  fi
+
   cd "$REPO" || exit 1
   python3 -u src/bench_speed.py \
       --tier "$TIER" --depths 0 1 2 3 4 --contexts 1k 16k \
