@@ -10,7 +10,10 @@
 
 ```python
 import sys
-sys.path.insert(0, "/Users/a1-6/Documents/mtp-depth-lab/src")
+from pathlib import Path
+
+REPO = Path(__file__).resolve().parent      # 本仓库根目录，自适应所在位置
+sys.path.insert(0, str(REPO / "src"))
 from ask import Assistant
 
 client = Assistant()                    # 整个进程构造一次
@@ -26,8 +29,10 @@ text = client.ask("你的 prompt", mode="code").text
 ````python
 import sys
 from concurrent.futures import ThreadPoolExecutor
+from pathlib import Path
 
-sys.path.insert(0, "/Users/a1-6/Documents/mtp-depth-lab/src")
+REPO = Path(__file__).resolve().parent      # 本仓库根目录，自适应所在位置
+sys.path.insert(0, str(REPO / "src"))
 from ask import Assistant
 
 # 整个进程一次。构造耗时 0.1s——它会先读当前配置，已经对就不写，
@@ -60,7 +65,7 @@ def complete_many(prompts, *, mode="code", max_tokens=1200) -> list[str]:
 命令行也可用（适合手工验证）：
 
 ```bash
-python3 /Users/a1-6/Documents/mtp-depth-lab/src/ask.py "写个回文判断函数" --mode code
+python3 src/ask.py "写个回文判断函数" --mode code
 ```
 
 ---
@@ -200,7 +205,7 @@ ans.warnings         # ["模型又套围栏了，已处理", "撞了 token 上�
 ## 9. 自检（先跑这个再接进生产）
 
 ```bash
-python3 /Users/a1-6/Documents/mtp-depth-lab/examples/pipeline_integration.py
+python3 examples/pipeline_integration.py
 ```
 
 它会验证：code 模式围栏被剥且 `compile()` 通过、markdown 模式围栏保留且以标题开头、
